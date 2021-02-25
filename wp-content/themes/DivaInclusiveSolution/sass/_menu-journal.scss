@@ -1,0 +1,160 @@
+.menu-journal {
+	// display: flex;
+	margin-bottom: 4%;
+	
+	.adjust-margin-journal {
+		margin-right: -8px;
+		margin-left: -8px;
+	}
+
+	.adjust-padding-journal {
+		padding-left: 8px;
+		padding-right: 8px;
+	}
+
+	@media screen and (min-width: 2000px) {
+		margin-bottom: 19%;
+	}
+
+	.busca {
+		input {
+			height: 40px;
+			width: 100%;
+			border: none;
+			border-bottom: 1px solid $verde;
+			color: $verde;
+			text-transform: uppercase;
+			padding-left: 40px;
+			font-size: 16px;
+			line-height: 20px;
+			letter-spacing: 3.2px;
+			background: image-url('search-solid.svg') left 10px center no-repeat;
+			background-size: 20px;
+
+			&:focus {
+				outline: none;
+			}
+
+			@media screen and (min-width: 2000px) {
+				height: 3vw;
+				font-size: 1.3vw;
+				background: image-url('search-solid.svg') left 0.5vw center no-repeat;
+				background-size: 1.5vw;
+				padding-left: 2.5vw;
+			}
+		}
+	}
+
+	.menu-dropdown {
+		.dropdown-button {
+			width: 100%;
+			height: 40px;
+			border: none;
+			border-bottom: 1px solid $verde;
+			color: $verde;
+			text-transform: uppercase;
+			background-color: transparent;
+			font-size: 16px;
+			line-height: 20px;
+			letter-spacing: 3.2px;
+
+			&:focus {
+				outline: none;
+			}
+
+			@media screen and (min-width: 2000px) {
+				height: 3vw;
+				font-size: 1.3vw;
+			}
+		}
+
+		.dropdown-toggle {
+			position: relative;
+
+			&:after {
+				content: image-url('down.svg');
+				border: none;
+				position: absolute;
+				width: 100%;
+				height: 40px;
+				left: 0;
+				bottom: -100%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+		}
+
+		.dropdown-menu {
+			width: calc(100% - 30px);
+			padding: 0;
+
+			li {
+				text-align: center;
+
+				a {
+					padding: 12px 20px;
+					text-transform: uppercase;
+					border-bottom: 1px solid $verde;
+					font-size: 16px;
+					line-height: 20px;
+					letter-spacing: 3.2px;
+
+					&:hover {
+						background-color: $verde;
+						color: $branco;
+					}
+
+					&:last-of-type {
+						&:hover {
+							border-bottom: 1px solid $branco;
+						}
+					}
+
+					@media screen and (min-width: 2000px) {
+						font-size: 1.3vw;
+						padding: 1vw 2vw;
+					}
+				}
+
+				&.last {
+					height: 40px;
+					background-color: $verde;
+					color: $branco;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					cursor: pointer;
+
+					@media screen and (min-width: 2000px) {
+						height: 3vw;
+					}
+				}
+			}
+		}
+	}
+
+	.envie {
+		display: flex;
+		align-items: center;
+
+		a {
+			width: 100%;
+			padding: 11px 15px;
+			text-align: right;
+			color: $verde;
+			text-transform: uppercase;
+			text-decoration: none;
+			border-bottom: 1px solid $verde;
+			font-size: 16px;
+			line-height: 20px;
+			letter-spacing: 3.2px;
+
+			@media screen and (min-width: 2000px) {
+				font-size: 1.3vw;
+				padding: 0;
+				padding-right: 1vw;
+			}
+		}
+	}
+}

@@ -1,0 +1,239 @@
+.single {
+	.container {
+		@media screen and (min-width: 1400px) {
+			min-width: 1230px;
+		}
+		@media screen and (min-width: 1700px) {
+			min-width: 1535px;
+		}
+	}
+
+	.subtitle {
+		font-size: 16px;
+		padding: 20px 0 46px 0;
+
+		@media screen and (min-width: 2000px) {
+			font-size: 1.5vw;
+		}
+	}
+
+	.header-post {
+		text-align: center;
+		margin-bottom: 60px;
+
+		@media screen and (max-width: 1400px) {
+			margin-bottom: 30px;
+		}
+
+		.title {
+			font-size: 70px;
+			line-height: 85px;
+			padding: 20px 15px;
+			padding-bottom: 65px;
+
+			@media screen and (min-width: 2000px) {
+				font-size: 1.5vw;
+				line-height: 1.5;
+			}
+
+			@media screen and (max-width: 1400px) {
+				font-size: 50px;
+				line-height: 69px;
+			}
+
+			@media screen and (max-width: 991px) {
+				font-size: 35px;
+				line-height: 54px;
+			}
+
+			@media screen and (max-width: 767px) {
+				font-size: 25px;
+				line-height: 44px;
+			}
+		}
+
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+
+	.single-content {
+		font-family: 'Akkurat';
+		
+		.title {
+			font-family: 'Monarch';
+			font-size: 30px;
+			line-height: 40px;
+
+			@media screen and (min-width: 2000px) {
+				font-size: 1vw;
+				line-height: 1.5;
+			}
+
+			@media screen and (max-width: 1400px) {
+				font-size: 25px;
+				line-height: 35px;
+			}
+
+			@media screen and (max-width: 767px) {
+				font-size: 15px;
+				line-height: 25px;
+			}
+		}
+
+		p:not(.subtitle) {
+			font-family: 'Akkurat';
+			font-size: 21px;
+			line-height: 30px;
+			letter-spacing: 0.32px;
+			padding-bottom: 45px;
+
+			@media screen and (min-width: 2000px) {
+				font-size: 1.5vw;
+			}
+		}
+
+		img {
+			max-width: 100%;
+			height: auto;
+			margin-bottom: 24px;
+		}
+
+		h1{
+			font-size: 35px;
+			line-height: 42px;
+			padding-bottom: 60px;
+
+			@media screen and (min-width: 2000px) {
+				font-size: 3vw;
+				line-height: 3vw;
+				padding-bottom: 2vw;
+			}
+		}
+		h2{
+			font-size: 25px;
+			line-height: 36px;
+			padding-bottom: 20px;
+
+			@media screen and (min-width: 2000px) {
+				font-size: 2.5vw;
+				line-height: 2.5vw;
+				padding-bottom: 2vw;
+			}
+		}
+		h3{
+			font-size: 22px;
+			line-height: 32px;
+			padding-bottom: 20px;
+
+			@media screen and (min-width: 2000px) {
+				font-size: 2.2vw;
+				line-height: 2.2vw;
+				padding-bottom: 2vw;
+			}
+		}
+		h4{
+			font-size: 20px;
+			line-height: 30px;
+			padding-bottom: 20px;
+
+			@media screen and (min-width: 2000px) {
+				font-size: 2vw;
+				line-height: 2vw;
+				padding-bottom: 2vw;
+			}
+		}
+		h5{
+			font-size: 18px;
+			line-height: 28px;
+			padding-bottom: 20px;
+
+			@media screen and (min-width: 2000px) {
+				font-size: 1.8vw;
+				line-height: 1.8vw;
+				padding-bottom: 2vw;
+			}
+		}
+		h6{
+			font-size: 16px;
+			line-height: 26px;
+			padding-bottom: 20px;
+
+			@media screen and (min-width: 2000px) {
+				font-size: 1.5vw;
+				line-height: 1.5vw;
+				padding-bottom: 2vw;
+			}
+		}
+
+		legend {
+			font-family: 'Akkurat';
+			font-size: 14px;
+			line-height: 20px;
+			letter-spacing: 0.35px;
+			padding-bottom: 50px;
+
+			@media screen and (min-width: 2000px) {
+				font-size: 0.7vw;
+			}
+		}
+
+		ul {
+			padding-bottom: 20px;
+
+			li {
+				line-height: 1.5;
+			}
+		}
+	}
+
+	.share {
+		.social-midias {
+			a {
+				text-decoration: none;
+			}
+		}
+
+		p {
+			padding: 20px 0px;
+
+			a {
+				color: $verde;
+				font-weight: 700;
+			}
+		}
+	}
+
+	.outros-posts {
+		display: flex;
+		justify-content: space-between;
+		padding-top: 30px;
+		padding-bottom: 30px;
+
+		.prev, .next {
+			display: flex;
+			align-items: center;
+
+			a {
+				text-decoration: none;
+				color: $verde;
+			}
+		}
+
+		.prev {
+			text-align: left;
+
+			svg {
+				margin-right: 20px;
+			}
+		}
+		.next {
+			text-align: right;
+
+			svg {
+				margin-left: 20px;
+			}
+		}
+	}
+}

@@ -1,0 +1,39 @@
+.sobre {
+	color: $rosa-escuro;
+	padding-bottom: 60px;
+
+	// .container {
+	// 	@media screen and (min-width: 1400px) {
+	// 		min-width: 1230px;
+	// 	}
+	// 	@media screen and (min-width: 1700px) {
+	// 		min-width: 1530px;
+	// 	}
+	// }
+
+	.sobre-content {
+		text-align: center;
+		justify-content: center;
+
+		img {
+			max-width: 100%;
+			height: auto;
+			margin: 20px auto;
+		}
+
+		p {
+			font-size: 16px;
+			line-height: 1.5;
+			padding-bottom: 20px;
+			
+			@media screen and (min-width: 2000px) {
+				font-size: 1.5vw;
+				padding-bottom: 2vw;
+			}
+		}
+
+		.text-decoration-underline {
+			text-decoration: underline;
+		}
+	}
+}

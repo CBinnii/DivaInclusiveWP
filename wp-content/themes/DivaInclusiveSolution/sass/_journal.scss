@@ -1,0 +1,102 @@
+.journal {
+	padding: 38px;
+
+	@media screen and (max-width: 991px) {
+		padding: 25px;
+	}
+
+	.posts-journal {
+		columns: 3 300px;
+		column-gap: 16px;
+
+		div:not(.journal-text) {
+			width: 150px;
+			color: $preto;
+			margin: 0 0 130px 0;
+			display: inline-block;
+			width: 100%;
+			text-align: center;
+
+			img {
+				width: 100%;
+				height: auto;
+			}
+			
+			a {
+				color: $preto;
+				text-decoration: none;
+			}
+
+			p {
+				font-family: 'Akkurat-Mono';
+				font-size: 16px;
+				text-transform: uppercase;
+				padding: 38px 0 64px 0;
+				text-align: center;
+
+				@media screen and (min-width: 2000px) {
+					font-size: 1vw;
+					padding: 1vw;
+				}
+
+				@media screen and (max-width: 1400px) {
+					padding: 25px 0 38px 0;
+				}
+			}
+
+			.title {
+				font-size: 35px;
+				line-height: 46px;
+				padding: 10px;
+
+				@media screen and (min-width: 2000px) {
+					font-size: 2vw;
+					line-height: 2.5vw;
+				}
+				
+				@media screen and (max-width: 1400px) {
+					font-size: 25px;
+					line-height: 35px;
+				}
+
+				@media screen and (max-width: 991px) {
+					font-size: 15px;
+					line-height: 26px;
+				}
+			}
+		}
+	}
+
+	.pagination-journal {
+		justify-content: center;
+		align-items: center;
+
+		.page-link {
+			color: $verde;
+			background-color: $branco;
+			border: none;
+			font-size: 16px;
+			line-height: 20px;
+			letter-spacing: 3.2px;
+			outline: none;
+
+			@media screen and (max-width: 991px) {
+				font-size: 13px;
+			}
+
+			span {
+				margin: 0 40px;
+
+				@media screen and (max-width: 991px) {
+					margin: 0 20px;
+				}
+			}
+
+			&:hover, &:focus {
+				outline: none;
+				box-shadow: none;
+				text-decoration: underline;
+			}
+		}
+	}
+}

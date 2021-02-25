@@ -1,0 +1,334 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, p, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+
+html {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+	vertical-align: middle;
+}
+
+q, blockquote {
+	quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+	content: "";
+	content: none;
+}
+
+a img {
+	border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+	display: block;
+}
+
+strong {
+	font-weight: bold;
+}
+
+body {
+	font-family: monospace, sans-serif;
+}
+
+body {
+	&:-moz-selection {
+		background: #b3d4fc;
+		text-shadow: none;
+	}
+
+	&:selection {
+		background: #b3d4fc;
+		text-shadow: none;
+	}
+
+}
+
+.title {
+	font-family: 'Monarch';
+	text-transform: uppercase;
+	width: 100%;
+
+	@media screen and (min-width: 2000px) {
+		font-size: 4vw;
+		line-height: 1;
+		padding-top: 1vw;
+	}
+}
+
+.subtitle {
+	font-family: 'Akkurat-Mono';
+	text-transform: uppercase;
+	width: 100%;
+	line-height: 35px;
+	font-size: 16px;
+	letter-spacing: 3.2px;
+	padding: 0;
+
+	@media screen and (min-width: 2000px) {
+		font-size: 1.5vw;
+		line-height: 1.5;
+		padding: 1vw 0;
+	}
+
+	@media screen and (max-width: 767px) {
+		font-size: 13px;
+		line-height: 20px;
+	}
+}
+
+@media screen and (min-width: 2000px) {
+	.container {
+		max-width: 80vw;
+	}
+}
+
+.header-text {
+	padding-top: 150px;
+	padding-bottom: 85px;
+
+	@media screen and (max-width: 1400px) {
+		padding-top: 80px;
+		padding-bottom: 40px;
+	}
+
+	.title {
+		font-size: 70px;
+		line-height: 89px;
+		text-align: center;
+
+		@media screen and (min-width: 2000px) {
+			font-size: 4vw;
+			line-height: 4vw;
+		}
+
+		svg {
+			max-width: 100%;
+			height: auto;
+
+			overflow: hidden;
+			vertical-align: middle;
+		}
+	}
+	.subtitle {
+		font-size: 16px;
+		text-align: center;
+		padding-bottom: 30px;
+
+		@media screen and (min-width: 2000px) {
+			font-size: 1.5vw;
+		}
+	}
+}
+
+.main-image {
+	display: flex;
+	align-self: center;
+	position: relative;
+	padding-top: 196px;
+	padding-bottom: 196px;
+
+	@media screen and (min-width: 2000px) {
+		margin: 5vw 0;
+	}
+
+	@media screen and (max-width: 1400px) {
+		padding-top: 115px;
+		padding-bottom: 115px;
+	}
+
+	.main-img {
+		height: 480px !important;
+		margin: 0 !important;
+
+		@media screen and (min-width: 2000px) {
+			height: 40vw !important;
+		}
+	}
+
+	.overlay-circle {
+		width: 220px;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		right: -110px;
+		margin: 0;
+
+		@media screen and (min-width: 2000px) {
+			width: 25vw;
+			right: -47%;
+		}
+
+	}
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Monarch';
+	text-transform: uppercase;
+	padding-top: 15px;
+}
+
+h1{
+	font-size: 35px;
+	line-height: 42px;
+	padding-bottom: 20px;
+
+	@media screen and (min-width: 2000px) {
+		font-size: 3vw;
+		line-height: 3vw;
+		padding-bottom: 2vw;
+	}
+}
+h2{
+	font-size: 26px;
+	line-height: 36px;
+	padding-bottom: 20px;
+
+	@media screen and (min-width: 2000px) {
+		font-size: 2.5vw;
+		line-height: 2.5vw;
+		padding-bottom: 2vw;
+	}
+}
+h3{
+	font-size: 22px;
+	line-height: 32px;
+	padding-bottom: 20px;
+
+	@media screen and (min-width: 2000px) {
+		font-size: 2.2vw;
+		line-height: 2.2vw;
+		padding-bottom: 2vw;
+	}
+}
+h4{
+	font-size: 20px;
+	line-height: 30px;
+	padding-bottom: 20px;
+
+	@media screen and (min-width: 2000px) {
+		font-size: 2vw;
+		line-height: 2vw;
+		padding-bottom: 2vw;
+	}
+}
+h5{
+	font-size: 18px;
+	line-height: 28px;
+	padding-bottom: 20px;
+
+	@media screen and (min-width: 2000px) {
+		font-size: 1.8vw;
+		line-height: 1.8vw;
+		padding-bottom: 2vw;
+	}
+}
+h6{
+	font-size: 16px;
+	line-height: 26px;
+	padding-bottom: 20px;
+
+	@media screen and (min-width: 2000px) {
+		font-size: 1.5vw;
+		line-height: 1.5vw;
+		padding-bottom: 2vw;
+	}
+}
+
+.pt-196 {
+	padding-top: 196px;
+
+	@media screen and (max-width: 1400px) {
+		padding-top: 115px;
+	}
+
+	@media screen and (max-width: 1300px) {
+		padding-top: 5%;
+	}
+}
+
+.pb-196 {
+	padding-bottom: 196px;
+
+	@media screen and (max-width: 1400px) {
+		padding-bottom: 115px;
+	}
+
+	@media screen and (max-width: 1300px) {
+		padding-bottom: 5%;
+	}
+}
+
+.only-mobile {
+	display: none;
+
+	@media screen and (max-width: 767px) {
+		display: block;
+	}
+}
+
+.only-desktop {
+	display: block;
+
+	@media screen and (max-width: 767px) {
+		display: none;
+	}
+}
+
+.searchform {
+	height: 40px;
+	width: 100%;
+	border: none;
+	border-bottom: 1px solid $verde;
+	color: $verde;
+	text-transform: uppercase;
+	padding-left: 40px;
+	font-size: 16px;
+	line-height: 20px;
+	letter-spacing: 3.2px;
+	background: image-url('search-solid.svg') left 10px center no-repeat;
+	background-size: 20px;
+
+	&:focus {
+		outline: none;
+	}
+
+	@media screen and (min-width: 2000px) {
+		height: 3vw;
+		font-size: 1.3vw;
+		background: image-url('search-solid.svg') left 0.5vw center no-repeat;
+		background-size: 1.5vw;
+		padding-left: 2.5vw;
+	}
+}

@@ -1,0 +1,217 @@
+.newsletter {
+	width: 100%;
+	background-color: $claro;
+	color: $rosa-escuro;
+
+	.left {
+		padding: 38px 6%;
+		background-color: $rosa-claro;
+		text-align: center;
+
+		@media screen and (min-width: 2000px) {
+			padding: 2vw 4vw;
+		}
+
+		@media screen and (max-width: 991px) {
+			padding: 20px 25px;
+		}
+
+		p:not(.subtitle) {
+			text-transform: uppercase;
+			margin-bottom: 30px;
+			line-height: 35px;
+			font-size: 16px;
+			letter-spacing: 3.2px;
+
+			@media screen and (min-width: 2000px) {
+				font-size: 1.5vw;
+				line-height: 1.5;
+			}
+
+			@media screen and (max-width: 991px) {
+				font-size: 13px;
+				line-height: 20px;
+			}
+		}
+
+		.title {
+			font-size: 55px;
+			line-height: 66px;
+			padding-top: 150px;
+			padding-bottom: 0;
+
+			@media screen and (min-width: 2000px) {
+				font-size: 3vw;
+				line-height: 3vw;
+			}
+
+			@media screen and (max-width: 1400px) {
+				font-size: 40px;
+				line-height: 56px;
+				padding-top: 110px;
+			}
+
+			@media screen and (max-width: 991px) {
+				font-size: 35px;
+				line-height: 42px;
+				padding-top: 40px;
+			}
+		}
+
+		.subtitle {
+			@media screen and (min-width: 2000px) {
+				font-size: 1vw;
+				line-height: 1.5;
+				padding: 3vw 0;
+			}
+		}
+
+		.newsletter-input {
+			background-color: transparent;
+			border: none;
+			border-bottom: 1px solid $rosa-escuro;
+			color: $rosa-escuro;
+			text-transform: uppercase;
+			text-align: center;
+			border-radius: 0;
+			height: 75px;
+			line-height: 35px;
+			font-size: 16px;
+			letter-spacing: 3.2px;
+			width: 70%;
+			padding-top: 40px;
+
+			&:focus {
+				box-shadow: none;
+			}
+
+			&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+				color: $rosa-escuro;
+			}
+			&::-moz-placeholder { /* Firefox 19+ */
+				color: $rosa-escuro;
+			}
+			&:-ms-input-placeholder { /* IE 10+ */
+				color: $rosa-escuro;
+			}
+			&:-moz-placeholder { /* Firefox 18- */
+				color: $rosa-escuro;
+			}
+
+			@media screen and (min-width: 2000px) {
+				font-size: 2vw;
+				border-bottom: 0.1vw solid $rosa-escuro;
+				padding: 0.7vw;
+				width: 30vw;
+			}
+
+			@media screen and (max-width: 991px) {
+				width: 100%;
+			}
+		}
+
+		.form {
+			margin: 60px 0;
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		input[type=button], input[type=submit], input[type=reset] {
+			font-family: 'Akkurat-Mono';
+			text-transform: uppercase;
+			color: $rosa-escuro;
+			text-decoration: none;
+			background-color: transparent;
+			border: none;
+			padding-top: 150px;
+			line-height: 35px;
+			font-size: 16px;
+			letter-spacing: 3.2px;
+
+			&:hover {
+				font-weight: 700;
+			}
+
+			@media screen and (min-width: 2000px) {
+				font-size: 1.5vw;
+				line-height: 1.5;
+				padding: 0;
+			}
+
+			@media screen and (max-width: 1400px) {
+				padding-top: 110px;
+			}
+
+			@media screen and (max-width: 767px) {
+				padding-top: 40px;
+				font-size: 13px;
+				line-height: 20px;
+			}
+		}
+
+
+	}
+
+	.right {
+		position: relative;
+		padding: 38px 5%;
+		background-color: $branco;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+
+		&.escuro {
+			background-color: $verde;
+		}
+
+		img {
+			max-width: 100%;
+
+			@media screen and (min-width: 2000px) {
+				width: 100%;
+			}
+		}
+
+		.subtitle {
+			text-align: center;
+			position: absolute;
+			bottom: 38px;
+			width: 100%;
+		}
+
+		@media screen and (max-width: 991px) {
+			display: none;
+		}
+	}
+}
+
+.agreeterms {
+	input[type=radio], input[type=checkbox] {
+		display: none; /* Esconde os inputs */
+
+		+ label {
+			display: inline-block;
+			height: 20px;
+			padding: 0 0 0 25px;
+			margin: 0 10px 0 0;
+			background-image: url(http://www.webcis.com.br/images/imagens-noticias/checkbox/ico-master.webp);
+			background-repeat: no-repeat;
+			background-position: 0 0;
+		}
+	}
+
+	input[type=checkbox] + label {
+		background-position: 0 -60px; /* Muda a posição do background só no checkbox */
+	}
+
+	input[type=radio]:checked + label {
+		background-position: 0 -30px;
+	}
+
+	input[type=checkbox]:checked + label {
+		background-position: 0 -90px;
+	}
+}
