@@ -16,6 +16,12 @@
 			}
 		}
 
+		@media screen and (min-width: 2000px) {
+			.container {
+				max-width: 80vw;
+			}
+		}
+
 		@media screen and (max-width: 991px) {
 			padding: 25px;
 		}
@@ -141,6 +147,15 @@
 	background-repeat: no-repeat;
 	padding: 38px;
 
+	@media screen and (min-width: 1700px) {
+		height: 100vh;
+
+		a {
+			height: 100%;
+		}
+	}
+
+
 	@media screen and (max-width: 991px) {
 		padding: 25px;
 	}
@@ -177,6 +192,13 @@
 			&:first-of-type {
 				padding-top: 200px;
 
+				@media screen and (min-width: 1700px) {
+					height: 100%;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+				}
+			
 				@media screen and (max-width: 1400px) {
 					padding: 120px 0;
 				}
@@ -191,6 +213,10 @@
 			width: 60vw;
 			height: auto;
 			
+			@media screen and (min-width: 2000px) {
+				width: 70vw
+			}
+
 			@media screen and (max-width: 767px) {
 				max-width: 100%;
 				width: 100%;

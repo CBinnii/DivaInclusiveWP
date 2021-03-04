@@ -11437,6 +11437,13 @@ h6 {
   line-height: 35px;
   text-transform: uppercase;
 }
+@media screen and (min-width: 2000px) {
+  .header .header-menu .menu p {
+    font-size: 1.5vw;
+    bottom: 1.5vw;
+    left: 1.5vw;
+  }
+}
 @media screen and (max-width: 991px) {
   .header .header-menu .menu p {
     bottom: 25px;
@@ -11473,6 +11480,11 @@ h6 {
   line-height: 1;
   text-transform: uppercase;
   z-index: 1000;
+}
+@media screen and (min-width: 2000px) {
+  .header .header-menu .menu label.inside {
+    font-size: 1.5vw;
+  }
 }
 @media screen and (max-width: 991px) {
   .header .header-menu .menu label.inside {
@@ -11524,6 +11536,7 @@ h6 {
 @media screen and (min-width: 2000px) {
   .header .header-menu .menu ul li a {
     font-size: 4vw;
+    line-height: 4.3vw;
   }
 }
 @media screen and (max-width: 1400px) {
@@ -11568,6 +11581,7 @@ h6 {
 .menu-journal .adjust-margin-journal {
   margin-right: -8px;
   margin-left: -8px;
+  align-items: flex-end;
 }
 .menu-journal .adjust-padding-journal {
   padding-left: 8px;
@@ -11641,17 +11655,22 @@ h6 {
   align-items: center;
 }
 .menu-journal .menu-dropdown .dropdown-menu {
-  width: calc(100% - 30px);
+  width: calc(100% - 16px);
   padding: 0;
 }
 .menu-journal .menu-dropdown .dropdown-menu li {
   text-align: center;
+  display: flex;
+  width: 100%;
 }
 .menu-journal .menu-dropdown .dropdown-menu li a {
   padding: 12px 20px;
   text-transform: uppercase;
+  text-decoration: none;
   border-bottom: 1px solid #253825;
+  color: #253825;
   font-size: 16px;
+  width: 100%;
   line-height: 20px;
   letter-spacing: 3.2px;
 }
@@ -11667,6 +11686,11 @@ h6 {
     font-size: 1.3vw;
     padding: 1vw 2vw;
   }
+}
+.menu-journal .menu-dropdown .dropdown-menu li.current-menu-item a {
+  color: #FFFFFF;
+  background-color: #253825;
+  border-bottom: 1px solid #FFFFFF;
 }
 .menu-journal .menu-dropdown .dropdown-menu li.last {
   height: 40px;
@@ -11716,6 +11740,12 @@ h6 {
   font-size: 18px;
   position: relative;
   height: auto;
+}
+@media screen and (min-width: 2000px) {
+  .slider-home .swiper-container .swiper-slide img {
+    width: 100%;
+    height: auto;
+  }
 }
 .slider-home .swiper-container .swiper-slide .overlay-slider {
   position: absolute;
@@ -12065,6 +12095,11 @@ h6 {
     max-width: 960px;
   }
 }
+@media screen and (min-width: 2000px) {
+  .home .home-edicao .container {
+    max-width: 80vw;
+  }
+}
 @media screen and (max-width: 991px) {
   .home .home-edicao {
     padding: 25px;
@@ -12199,6 +12234,14 @@ h6 {
   background-repeat: no-repeat;
   padding: 38px;
 }
+@media screen and (min-width: 1700px) {
+  .home-manifesto {
+    height: 100vh;
+  }
+  .home-manifesto a {
+    height: 100%;
+  }
+}
 @media screen and (max-width: 991px) {
   .home-manifesto {
     padding: 25px;
@@ -12239,6 +12282,14 @@ h6 {
 .home-manifesto a .title:first-of-type {
   padding-top: 200px;
 }
+@media screen and (min-width: 1700px) {
+  .home-manifesto a .title:first-of-type {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
 @media screen and (max-width: 1400px) {
   .home-manifesto a .title:first-of-type {
     padding: 120px 0;
@@ -12252,6 +12303,11 @@ h6 {
 .home-manifesto a svg {
   width: 60vw;
   height: auto;
+}
+@media screen and (min-width: 2000px) {
+  .home-manifesto a svg {
+    width: 70vw;
+  }
 }
 @media screen and (max-width: 767px) {
   .home-manifesto a svg {
@@ -12278,63 +12334,83 @@ h6 {
     padding: 25px;
   }
 }
-.journal .posts-journal {
-  columns: 3 300px;
-  column-gap: 16px;
-}
-.journal .posts-journal div:not(.journal-text) {
-  width: 150px;
-  color: #000000;
-  margin: 0 0 130px 0;
-  display: inline-block;
-  width: 100%;
+.journal .posts-journal .seach-none {
+  font-size: 70px;
+  line-height: 89px;
   text-align: center;
 }
-.journal .posts-journal div:not(.journal-text) img {
+@media screen and (min-width: 2000px) {
+  .journal .posts-journal .seach-none {
+    font-size: 4vw;
+    line-height: 4vw;
+  }
+}
+.journal .posts-journal .adjust-margin-journal {
+  margin-right: -8px;
+  margin-left: -8px;
+}
+.journal .posts-journal .adjust-padding-journal {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.journal .posts-journal .imagem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 400px;
+  height: 400px;
+}
+.journal .posts-journal .imagem img {
   width: 100%;
   height: auto;
 }
-.journal .posts-journal div:not(.journal-text) a {
+.journal .posts-journal a {
   color: #000000;
   text-decoration: none;
 }
-.journal .posts-journal div:not(.journal-text) p {
+.journal .posts-journal p {
   font-family: 'Akkurat-Mono';
   font-size: 16px;
   text-transform: uppercase;
   padding: 38px 0 64px 0;
   text-align: center;
+  line-height: 20px;
+  letter-spacing: 3.2px;
 }
 @media screen and (min-width: 2000px) {
-  .journal .posts-journal div:not(.journal-text) p {
+  .journal .posts-journal p {
     font-size: 1vw;
     padding: 1vw;
   }
 }
 @media screen and (max-width: 1400px) {
-  .journal .posts-journal div:not(.journal-text) p {
+  .journal .posts-journal p {
     padding: 25px 0 38px 0;
   }
 }
-.journal .posts-journal div:not(.journal-text) .title {
+.journal .posts-journal .title {
   font-size: 35px;
   line-height: 46px;
   padding: 10px;
 }
 @media screen and (min-width: 2000px) {
-  .journal .posts-journal div:not(.journal-text) .title {
+  .journal .posts-journal .title {
     font-size: 2vw;
     line-height: 2.5vw;
   }
 }
 @media screen and (max-width: 1400px) {
-  .journal .posts-journal div:not(.journal-text) .title {
+  .journal .posts-journal .title {
     font-size: 25px;
     line-height: 35px;
   }
 }
 @media screen and (max-width: 991px) {
-  .journal .posts-journal div:not(.journal-text) .title {
+  .journal .posts-journal .title {
     font-size: 15px;
     line-height: 26px;
   }
@@ -12343,31 +12419,41 @@ h6 {
   justify-content: center;
   align-items: center;
 }
-.journal .pagination-journal .page-link {
+.journal .pagination-journal a {
+  position: relative;
+  display: block;
+  padding: .5rem .75rem;
   color: #253825;
   background-color: #FFFFFF;
   border: none;
   font-size: 16px;
   line-height: 20px;
-  letter-spacing: 3.2px;
+  letter-spacing: 0;
   outline: none;
 }
 @media screen and (max-width: 991px) {
-  .journal .pagination-journal .page-link {
+  .journal .pagination-journal a {
     font-size: 13px;
   }
 }
-.journal .pagination-journal .page-link span {
+.journal .pagination-journal a span {
   margin: 0 40px;
 }
 @media screen and (max-width: 991px) {
-  .journal .pagination-journal .page-link span {
+  .journal .pagination-journal a span {
     margin: 0 20px;
   }
 }
-.journal .pagination-journal .page-link:hover, .journal .pagination-journal .page-link:focus {
+.journal .pagination-journal a:hover, .journal .pagination-journal a:focus {
   outline: none;
   box-shadow: none;
+  text-decoration: underline;
+}
+.journal .pagination-journal .current {
+  position: relative;
+  display: block;
+  padding: .5rem .75rem;
+  color: #253825;
   text-decoration: underline;
 }
 
@@ -12393,7 +12479,6 @@ h6 {
 }
 .newsletter .left p:not(.subtitle) {
   text-transform: uppercase;
-  margin-bottom: 30px;
   line-height: 35px;
   font-size: 16px;
   letter-spacing: 3.2px;
@@ -12451,12 +12536,10 @@ h6 {
   text-transform: uppercase;
   text-align: center;
   border-radius: 0;
-  height: 75px;
   line-height: 35px;
   font-size: 16px;
   letter-spacing: 3.2px;
-  width: 70%;
-  padding-top: 40px;
+  margin-top: 40px;
 }
 .newsletter .left .newsletter-input:focus {
   box-shadow: none;
@@ -12504,7 +12587,7 @@ h6 {
   text-decoration: none;
   background-color: transparent;
   border: none;
-  padding-top: 150px;
+  margin-top: 150px;
   line-height: 35px;
   font-size: 16px;
   letter-spacing: 3.2px;
@@ -13265,6 +13348,28 @@ h6 {
 .contato .form-email .input-width {
   width: calc(100% - 130px);
 }
+.contato .form-email .enviar-arquivo input[type="file"] {
+  display: none;
+}
+.contato .form-email .enviar-arquivo label {
+  padding: 27px;
+  width: 90%;
+  height: auto;
+  font-size: 24px;
+  letter-spacing: 3.2px;
+  line-height: 1;
+  background-color: #FFFFFF;
+  border: 1px solid #E05555;
+  color: #E05555;
+  text-transform: uppercase;
+  display: flex;
+  margin-top: 10px;
+  cursor: pointer;
+  align-items: center;
+}
+.contato .form-email .enviar-arquivo label svg {
+  margin-right: 27px;
+}
 .contato .form-email label {
   font-family: 'Akkurat-Mono';
   font-size: 16px;
@@ -13300,7 +13405,7 @@ h6 {
   border-bottom: 1px solid #E05555;
   border-top: 1px solid #E05555;
   padding: 40px 0;
-  margin-top: 45px;
+  margin-top: 64px;
 }
 .contato .form-email .btn-enviar {
   background-color: #E05555;
@@ -13311,6 +13416,7 @@ h6 {
   border: none;
   outline: none;
   width: 450px;
+  background: url('../images/enviar.svg?1614567484') #E05555 no-repeat right 30px center;
   font-family: 'Akkurat-Mono';
   font-size: 24px;
   line-height: 30px;

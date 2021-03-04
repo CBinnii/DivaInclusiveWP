@@ -8,47 +8,44 @@
 ?>
 	<div class="content sobre">
 		<div class="header-text">
-			<p class="subtitle">Manifesto</p>
-			<h1 class="title">Histórias são formas de poder</h1>
+			<p class="subtitle"><?php echo get_the_title(); ?></p>
+			<?php
+				$titulo_1 = get_field('titulo_1');
+				$titulo_2 = get_field('titulo_2');
+
+				if( $titulo_1 != "" || $titulo_1 != null ) { ?>
+						<h1 class="title"><?php the_field('titulo_1');  ?></h1>
+				<?php } 
+				if( $titulo_2 != "" || $titulo_2 != null ) { ?>
+						<h1 class="title"><?php the_field('titulo_2');  ?></h1>
+				<?php } 
+			?>
 		</div>
 
 		<div class="container">
 			<div class="row sobre-content">
-				<p>A diversidade é um conceito bastante flexível. Ela adquire novas formas em cada um de nós. Mas há um princípio comum: todes precisamos dela. E todes estamos suscetíveis à falta dela. Somos todes diverses em alguma medida, pois carregamos heranças, referências, vestígios de inúmeras e plurais formas de vida. Mas vivemos num mundo global que estimula a formação de redutos de verdades que se pretendem universais: as bolhas. Elas corroem a nossa diversidade, aprisionam nossas identidades e impedem que nos tornemos maiores. A diversidade que eu preciso não é a mesma que você precisa. Por isso mesmo as nossas diferenças são complementares. Eu preciso de você. E você de mim.</p>
+				<?php echo apply_filters('the_content', $post->post_content); ?>
 			</div>
 		</div>
 	</div>
 	
-	<div class="home-manifesto">
-		<a href="" class="link-manifesto" title="">
-			<h1 class="title">Diva* <br> Manifesto</h1>
-			<div class="arrow">
-				<p>></p>
-			</div>
-		</a>
-	</div>
-	
-	<div class="newsletter">
-		<div class="row m-0 h-100">
-			<div class="col-md-6 left">
-				<p class="subtitle">newsletter</p>
+	<?php if (get_field('link_manifesto')) { ?>
+		<div class="home-manifesto" style="background-image: url('<?php the_field('background_imagem_manifesto'); ?>');">
+			<a href="<?php the_field('link_manifesto'); ?>" class="link-manifesto" title="Manifesto">
+				<p class="subtitle"><?php the_field('subtitulo_manisfesto'); ?></p>
 
-				<h1 class="title">Nossos principais conteúdos vão primeiro para o seu email.</h1>
-				
-				<div class="form">
-					<input type="text" class="form-control newsletter-input" name="nome" placeholder="NOME">
-					<input type="text" class="form-control newsletter-input" name="email" placeholder="EMAIL">
-				</div>
-
-				<p>assinando a newsletter eu concordo em receber conteúdos e ofertas por email da diva inclusive solutions e seus parceiros.</p>
-
-				<button type="button">Enviar ></button>
-			</div>
-			<div class="col-md-6 right escuro">
-				<img src="images/mandala.png" alt="Mandala">
-			</div>
+				<h1 class="title">
+					<?php the_field('svg_titulo_manifesto'); ?>
+				</h1>
+			</a>
 		</div>
-	</div>
+	<?php } ?>
+	
+	<?php
+		if( get_field('tem_newsletter') ) {
+			get_template_part( 'newsletter-escuro' );
+		}
+	?>
 <?php
 	get_footer();
 ?>

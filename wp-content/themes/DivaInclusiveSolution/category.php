@@ -1,22 +1,12 @@
-<?php
-/**
- * Template Name: Journal
- *
- **/
+<?php 
 	get_header('dark');
 
+	$category = get_queried_object();
+	$catID = $category->term_id;
 ?>
 	<div class="content journal">
 		<div class="header-text">
-			<?php
-				$svg_titulo = get_field('svg_titulo');
-
-				if( $svg_titulo != "" || $svg_titulo != null ) { ?>
-					<h1 class="title"><?php echo $svg_titulo; ?></h1>
-				<?php } else { ?>
-					<h1 class="title"><?php echo get_the_title(); ?></h1>
-				<?php } 
-			?>
+			<h1 class="title"><?php echo $category->name ?></h1>
 		</div>
 		
 		<div class="menu-journal">
@@ -53,7 +43,10 @@
 			$args = array(
 				'post_type' => 'post',
 				'status' => 'publish',
-				'showposts' => 3,
+				'showposts' => -1,
+				'category__in' => $catID,
+				'post__not_in' => $postsID,
+				's' => $s,
 				'paged' => $paged
 			);
 
@@ -84,8 +77,14 @@
 					</div>
 				</div>
 				<?php echo paginatorNews($more);
+			else :
+				wp_reset_query();
+			?>
+				<div>
+					<h1 class="title">Nenhum post foi encontrado nessa categoria.</h1>
+				</div>
+		<?php
 			endif;
-			wp_reset_query();
 		?>
 	</div>
 
@@ -100,4 +99,5 @@
 
 <script type="text/javascript">
 	$("ul#dropdownMenuButton").append("<li class='last'><svg xmlns='http://www.w3.org/2000/svg' width='40.32' height='16.56' viewBox='0 0 40.32 16.56'><path id='Caminho_157' data-name='Caminho 157' d='M-22.56-102.84q3.84-2.4,7.44-5.04,3.12-2.16,6.6-4.8a71.157,71.157,0,0,0,6.12-5.16,71.158,71.158,0,0,0,6.12,5.16q3.48,2.64,6.6,4.8,3.6,2.64,7.44,5.04l-.96,1.56-19.2-9.6-19.2,9.6Z' transform='translate(22.56 117.84)' fill='#f7f4f2'></path></svg></li>");
+	
 </script>

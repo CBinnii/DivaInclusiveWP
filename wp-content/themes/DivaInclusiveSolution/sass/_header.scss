@@ -116,6 +116,12 @@
 				line-height: 35px;
 				text-transform: uppercase;
 
+				@media screen and (min-width: 2000px) {
+					font-size: 1.5vw;
+					bottom: 1.5vw;
+					left: 1.5vw;
+				}
+
 				@media screen and (max-width: 991px) {
 					bottom: 25px;
 					left: 25px;
@@ -150,6 +156,10 @@
 					line-height: 1;
 					text-transform: uppercase;
 					z-index: 1000;
+					
+					@media screen and (min-width: 2000px) {
+						font-size: 1.5vw;
+					}
 
 					@media screen and (max-width: 991px) {
 						font-size: 13px;
@@ -202,6 +212,7 @@
 
 						@media screen and (min-width: 2000px) {
 							font-size: 4vw;
+							line-height: 4.3vw;
 						}
 
 						@media screen and (max-width: 1400px) {

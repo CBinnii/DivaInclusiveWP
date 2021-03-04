@@ -5,6 +5,7 @@
 	.adjust-margin-journal {
 		margin-right: -8px;
 		margin-left: -8px;
+		align-items: flex-end;
 	}
 
 	.adjust-padding-journal {
@@ -86,17 +87,22 @@
 		}
 
 		.dropdown-menu {
-			width: calc(100% - 30px);
+			width: calc(100% - 16px);
 			padding: 0;
 
 			li {
 				text-align: center;
+				display: flex;
+				width: 100%;
 
 				a {
 					padding: 12px 20px;
 					text-transform: uppercase;
+					text-decoration: none;
 					border-bottom: 1px solid $verde;
+					color: $verde;
 					font-size: 16px;
+					width: 100%;
 					line-height: 20px;
 					letter-spacing: 3.2px;
 
@@ -114,6 +120,14 @@
 					@media screen and (min-width: 2000px) {
 						font-size: 1.3vw;
 						padding: 1vw 2vw;
+					}
+				}
+
+				&.current-menu-item {
+					a {
+						color: $branco;
+						background-color: $verde;
+						border-bottom: 1px solid $branco;
 					}
 				}
 

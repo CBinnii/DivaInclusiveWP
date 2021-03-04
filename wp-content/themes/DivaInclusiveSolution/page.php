@@ -14,6 +14,12 @@
 			</div>
 		</div>
 	</div>
+
+	<?php
+		if( get_field('tem_newsletter') ) {
+			get_template_part( 'newsletter-escuro' );
+		}
+	?>
 <?php
 	get_footer();
 ?>

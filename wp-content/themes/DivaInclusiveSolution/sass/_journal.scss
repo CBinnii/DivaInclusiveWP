@@ -6,63 +6,86 @@
 	}
 
 	.posts-journal {
-		columns: 3 300px;
-		column-gap: 16px;
-
-		div:not(.journal-text) {
-			width: 150px;
-			color: $preto;
-			margin: 0 0 130px 0;
-			display: inline-block;
-			width: 100%;
+		.seach-none {
+			font-size: 70px;
+			line-height: 89px;
 			text-align: center;
+
+			@media screen and (min-width: 2000px) {
+				font-size: 4vw;
+				line-height: 4vw;
+			}
+		}
+
+		.adjust-margin-journal {
+			margin-right: -8px;
+			margin-left: -8px;
+		}
+
+		.adjust-padding-journal {
+			padding-left: 8px;
+			padding-right: 8px;
+		}
+
+		.imagem {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			overflow: hidden;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+			width: 400px;
+			height: 400px;
 
 			img {
 				width: 100%;
 				height: auto;
 			}
+		}
+		
+		a {
+			color: $preto;
+			text-decoration: none;
+		}
+
+		p {
+			font-family: 'Akkurat-Mono';
+			font-size: 16px;
+			text-transform: uppercase;
+			padding: 38px 0 64px 0;
+			text-align: center;
+			line-height: 20px;
+			letter-spacing: 3.2px;
+
+			@media screen and (min-width: 2000px) {
+				font-size: 1vw;
+				padding: 1vw;
+			}
+
+			@media screen and (max-width: 1400px) {
+				padding: 25px 0 38px 0;
+			}
+		}
+
+		.title {
+			font-size: 35px;
+			line-height: 46px;
+			padding: 10px;
+
+			@media screen and (min-width: 2000px) {
+				font-size: 2vw;
+				line-height: 2.5vw;
+			}
 			
-			a {
-				color: $preto;
-				text-decoration: none;
+			@media screen and (max-width: 1400px) {
+				font-size: 25px;
+				line-height: 35px;
 			}
 
-			p {
-				font-family: 'Akkurat-Mono';
-				font-size: 16px;
-				text-transform: uppercase;
-				padding: 38px 0 64px 0;
-				text-align: center;
-
-				@media screen and (min-width: 2000px) {
-					font-size: 1vw;
-					padding: 1vw;
-				}
-
-				@media screen and (max-width: 1400px) {
-					padding: 25px 0 38px 0;
-				}
-			}
-
-			.title {
-				font-size: 35px;
-				line-height: 46px;
-				padding: 10px;
-
-				@media screen and (min-width: 2000px) {
-					font-size: 2vw;
-					line-height: 2.5vw;
-				}
-				
-				@media screen and (max-width: 1400px) {
-					font-size: 25px;
-					line-height: 35px;
-				}
-
-				@media screen and (max-width: 991px) {
-					font-size: 15px;
-					line-height: 26px;
-				}
+			@media screen and (max-width: 991px) {
+				font-size: 15px;
+				line-height: 26px;
 			}
 		}
 	}
@@ -71,13 +94,16 @@
 		justify-content: center;
 		align-items: center;
 
-		.page-link {
+		a  {
+			position: relative;
+			display: block;
+			padding: .5rem .75rem;
 			color: $verde;
 			background-color: $branco;
 			border: none;
 			font-size: 16px;
 			line-height: 20px;
-			letter-spacing: 3.2px;
+			letter-spacing: 0;
 			outline: none;
 
 			@media screen and (max-width: 991px) {
@@ -97,6 +123,14 @@
 				box-shadow: none;
 				text-decoration: underline;
 			}
+		}
+
+		.current {
+			position: relative;
+			display: block;
+			padding: .5rem .75rem;
+			color: $verde;
+			text-decoration: underline;
 		}
 	}
 }

@@ -12,6 +12,7 @@
 		<?php wp_head(); ?>
 		<style type="text/css">
 			html { margin-top: 0px !important; }
+			.widget.widget_text { list-style: none; }
 		</style>
 	</head>
 

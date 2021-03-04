@@ -18,7 +18,7 @@
 
 		p:not(.subtitle) {
 			text-transform: uppercase;
-			margin-bottom: 30px;
+			// margin-bottom: 30px;
 			line-height: 35px;
 			font-size: 16px;
 			letter-spacing: 3.2px;
@@ -74,12 +74,12 @@
 			text-transform: uppercase;
 			text-align: center;
 			border-radius: 0;
-			height: 75px;
+			// height: 75px;
 			line-height: 35px;
 			font-size: 16px;
 			letter-spacing: 3.2px;
-			width: 70%;
-			padding-top: 40px;
+			// width: 70%;
+			margin-top: 40px;
 
 			&:focus {
 				box-shadow: none;
@@ -125,7 +125,7 @@
 			text-decoration: none;
 			background-color: transparent;
 			border: none;
-			padding-top: 150px;
+			margin-top: 150px;
 			line-height: 35px;
 			font-size: 16px;
 			letter-spacing: 3.2px;

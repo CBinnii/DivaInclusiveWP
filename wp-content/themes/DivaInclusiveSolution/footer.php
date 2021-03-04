@@ -2,76 +2,58 @@
 			<div class="row h-100 w-100 m-0">
 				<div class="col-lg-6 left">
 					<h1>
-						<svg id="Grupo_9" data-name="Grupo 9" xmlns="http://www.w3.org/2000/svg" width="148.47" height="44.114" viewBox="0 0 148.47 44.114">
-							<g id="Grupo_4" data-name="Grupo 4" transform="translate(131.598)">
-								<g id="Grupo_1" data-name="Grupo 1" transform="translate(6.99)">
-									<path id="Caminho_1" data-name="Caminho 1" d="M51.245,0h0A28.1,28.1,0,0,1,49.87,8.708l-.057.2-.057-.2A28.972,28.972,0,0,1,48.38,0h2.865Z" transform="translate(-48.38)" fill="#253825"/>
-									<path id="Caminho_2" data-name="Caminho 2" d="M48.38,12.029h0a28.1,28.1,0,0,1,1.375-8.708l.057-.2.057.2a28.972,28.972,0,0,1,1.375,8.708H48.38Z" transform="translate(-48.38 5.817)" fill="#253825"/>
-								</g>
-								<g id="Grupo_2" data-name="Grupo 2" transform="translate(0 3.237)">
-									<path id="Caminho_3" data-name="Caminho 3" d="M45.94,6.347h0a28.158,28.158,0,0,1,8.221-3.18l.229-.057-.143.172A27.92,27.92,0,0,1,47.372,8.81h0Z" transform="translate(-45.94 2.562)" fill="#253825"/>
-									<path id="Caminho_4" data-name="Caminho 4" d="M57.33,3.594h0a28.158,28.158,0,0,1-8.221,3.18l-.229.057.143-.172A27.92,27.92,0,0,1,55.9,1.13h0Z" transform="translate(-40.458 -1.13)" fill="#253825"/>
-								</g>
-								<g id="Grupo_3" data-name="Grupo 3" transform="translate(0 3.237)">
-									<path id="Caminho_5" data-name="Caminho 5" d="M47.372,1.13h0a29.752,29.752,0,0,1,6.875,5.529l.143.172-.229-.057a28.158,28.158,0,0,1-8.221-3.18h0Z" transform="translate(-45.94 -1.13)" fill="#253825"/>
-									<path id="Caminho_6" data-name="Caminho 6" d="M55.9,8.81h0a29.752,29.752,0,0,1-6.875-5.529L48.88,3.11l.229.057a28.158,28.158,0,0,1,8.221,3.18h0Z" transform="translate(-40.458 2.562)" fill="#253825"/>
-								</g>
-							</g>
-							<g id="Grupo_5" data-name="Grupo 5" transform="translate(0 1.604)">
-								<path id="Caminho_7" data-name="Caminho 7" d="M30.565,6.49a18.712,18.712,0,0,0-6.588-4.383A22.754,22.754,0,0,0,15.44.56H0V43.07H15.44a21.973,21.973,0,0,0,8.45-1.576,19.57,19.57,0,0,0,6.617-4.411,20.224,20.224,0,0,0,4.3-6.732,23.552,23.552,0,0,0,1.518-8.536,23.641,23.641,0,0,0-1.49-8.594A20.156,20.156,0,0,0,30.565,6.49Zm-.6,23.26a16.566,16.566,0,0,1-2.922,6.388,14.3,14.3,0,0,1-5.557,4.3A20.9,20.9,0,0,1,12.8,42.01H4.383V1.62H12.8a20.369,20.369,0,0,1,8.937,1.719,14.322,14.322,0,0,1,5.529,4.555,17.268,17.268,0,0,1,2.807,6.5,36.336,36.336,0,0,1,.773,7.534A35.71,35.71,0,0,1,29.963,29.75Z" transform="translate(0 -0.56)" fill="#253825"/>
-								<rect id="Retângulo_1" data-name="Retângulo 1" width="4.383" height="42.51" transform="translate(43.771)" fill="#253825"/>
-								<path id="Caminho_8" data-name="Caminho 8" d="M53.236.56H48.424l3.81,11a12.479,12.479,0,0,1,.4,6.875,18.944,18.944,0,0,1-2.693,6.474l-9.2,13.836a1.684,1.684,0,0,1-1.375.659,2.071,2.071,0,0,1-1.06-.315,1.629,1.629,0,0,1-.716-.859L24.677.56H19.32L34.388,43.07h5.156l16.1-22.2a10.8,10.8,0,0,0,1.8-4.5,10.67,10.67,0,0,0-.4-4.841Z" transform="translate(36.023 -0.56)" fill="#253825"/>
-								<path id="Caminho_9" data-name="Caminho 9" d="M66.162,43.07H70.8L52.1.56h-.659L32.79,43.07h4.984c.172-1.031.372-2.034.544-2.951.172-.945.4-1.919.659-2.922s.544-2.091.831-3.237c.143-.63.315-1.232.487-1.8H61.378C63.441,36.854,66.162,43.07,66.162,43.07Zm-25.581-12c.716-2.464,1.49-4.469,1.891-5.529.544-1.461,1.232-3.18,2.034-5.128s1.69-4.068,2.693-6.359c1-2.32,2.062-4.7,3.208-7.161L59.259,27.2c.258.6.888,2.062,1.661,3.867Z" transform="translate(61.139 -0.56)" fill="#253825"/>
-							</g>
-						</svg>
+						<?php if(get_field('svg_logo_footer', 'option')) : ?>
+							<?php echo the_field('svg_logo_footer', 'option'); ?>
+						<?php endif; ?>
 					</h1>
 				</div>	
 				<div class="col-lg-6 right">
 					<div class="row">
 						<div class="col-md-6">
-							<ul>
-								<li>
-									<a href="#" title="Contato">contato</a>
-								</li>
-								<li>
-									<a href="#" title="Conte sua história">conte sua história</a>
-								</li>
-								<li>
-									<a href="#" title="Seja um investidor">seja um investidor</a>
-								</li>
-								<li>
-									<a href="#" title="Colabore">colabore</a>
-								</li>
-								<li>
-									<a href="contatos-uteis.html" title="Contatos úteis">contatos úteis</a>
-								</li>
-								<li>
-									<a href="privacidade.html" title="Privacidade">privacidade</a>
-								</li>
-								<li>
-									<a href="termo.html" title="Termos de uso">termos de uso</a>
-								</li>
-							</ul>
+							<?php
+								wp_nav_menu(
+									array(
+										'theme_location'	=> '',
+										'menu'				=> 'Menu Footer',
+										'echo'				=> true,
+										'fallback_cb'		=> 'wp_page_menu',
+										'items_wrap'		=> '<ul>%3$s</ul>',
+										'depth'				=> 0
+									)
+								);
+							?>
 						</div>	
 						<div class="col-md-6 midia-social-desktop">
 							<ul>
 								<li>
-									<a href="mailto:ola@divainclusive.com" target="_blank" title="se conecte">se conecte</a>
+									<?php if(get_field('email', 'option')) : ?>
+										<a href="<?php echo the_field('email', 'option'); ?>" target="_blank" title="se conecte">se conecte</a>
+									<?php endif; ?>
 								</li>
 								<li>
-									<a href="https://instagram.com/divainclusive" target="_blank" title="instagram ">instagram </a>
+									<?php if(get_field('link_instagram', 'option')) : ?>
+										<a href="<?php echo the_field('link_instagram', 'option'); ?>" target="_blank" title="instagram ">instagram </a>
+									<?php endif; ?>
 								</li>
 								<li>
-									<a href="#" target="_blank" title="youtube">youtube</a>
+									<?php if(get_field('link_youtube', 'option')) : ?>
+										<a href="<?php echo the_field('link_youtube', 'option'); ?>" target="_blank" title="youtube">youtube</a>
+									<?php endif; ?>
 								</li>
 								<li>
-									<a href="https://www.facebook.com/divainclusive" target="_blank" title="facebook">facebook</a>
+									<?php if(get_field('link_facebook', 'option')) : ?>
+										<a href="<?php echo the_field('link_facebook', 'option'); ?>" target="_blank" title="facebook">facebook</a>
+									<?php endif; ?>
 								</li>
 								<li>
-									<a href="https://www.linkedin.com/company/diva-inclusive-solutions" target="_blank" title="linkedin">linkedin</a>
+									<?php if(get_field('link_linkedin', 'option')) : ?>
+										<a href="<?php echo the_field('link_linkedin', 'option'); ?>" target="_blank" title="linkedin">linkedin</a>
+									<?php endif; ?>
 								</li>
 								<li>
-									<a href="https://twitter.com/DivaInclusive" target="_blank" title="twitter">twitter</a>
+									<?php if(get_field('link_twitter', 'option')) : ?>
+										<a href="<?php echo the_field('link_twitter', 'option'); ?>" target="_blank" title="twitter">twitter</a>
+									<?php endif; ?>
 								</li>
 							</ul>
 						</div>
