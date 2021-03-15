@@ -1,4 +1,6 @@
 .single {
+	color: $verde;
+
 	.container {
 		@media screen and (min-width: 1400px) {
 			min-width: 1230px;
@@ -10,7 +12,8 @@
 
 	.subtitle {
 		font-size: 16px;
-		padding: 20px 0 46px 0;
+		padding: 20px 0 ;
+		color: $verde;
 
 		@media screen and (min-width: 2000px) {
 			font-size: 1.5vw;
@@ -19,17 +22,13 @@
 
 	.header-post {
 		text-align: center;
-		margin-bottom: 60px;
-
-		@media screen and (max-width: 1400px) {
-			margin-bottom: 30px;
-		}
+		margin-bottom: 10px;
 
 		.title {
 			font-size: 70px;
 			line-height: 85px;
 			padding: 20px 15px;
-			padding-bottom: 65px;
+			padding-bottom: 45px;
 
 			@media screen and (min-width: 2000px) {
 				font-size: 1.5vw;
@@ -65,6 +64,7 @@
 			font-family: 'Monarch';
 			font-size: 30px;
 			line-height: 40px;
+			color: $verde;
 
 			@media screen and (min-width: 2000px) {
 				font-size: 1vw;
@@ -88,9 +88,20 @@
 			line-height: 30px;
 			letter-spacing: 0.32px;
 			padding-bottom: 45px;
+			color: $verde;
 
 			@media screen and (min-width: 2000px) {
 				font-size: 1.5vw;
+			}
+
+			@media screen and (max-width: 1400px) {
+				font-size: 18px;
+				line-height: 30px;
+			}
+
+			@media screen and (max-width: 991px) {
+				font-size: 14px;
+				line-height: 20px;
 			}
 		}
 
@@ -98,6 +109,10 @@
 			max-width: 100%;
 			height: auto;
 			margin-bottom: 24px;
+		}
+
+		figure {
+			margin: 0;
 		}
 
 		h1{
@@ -155,9 +170,13 @@
 				padding-bottom: 2vw;
 			}
 		}
+
 		h6{
+			font-family: 'Akkurat-Mono';
+			text-transform: uppercase;
 			font-size: 16px;
-			line-height: 26px;
+			line-height: 20px;
+			letter-spacing: 3.2px;
 			padding-bottom: 20px;
 
 			@media screen and (min-width: 2000px) {
@@ -167,12 +186,13 @@
 			}
 		}
 
-		legend {
+		legend, figcaption {
 			font-family: 'Akkurat';
 			font-size: 14px;
 			line-height: 20px;
 			letter-spacing: 0.35px;
-			padding-bottom: 50px;
+			margin: 0;
+			padding-bottom: 20px;
 
 			@media screen and (min-width: 2000px) {
 				font-size: 0.7vw;
@@ -183,7 +203,25 @@
 			padding-bottom: 20px;
 
 			li {
-				line-height: 1.5;
+				font-family: 'Akkurat';
+				font-size: 21px;
+				line-height: 30px;
+				letter-spacing: 0.32px;
+				color: $verde;
+
+				@media screen and (min-width: 2000px) {
+					font-size: 1.5vw;
+				}
+
+				@media screen and (max-width: 1400px) {
+					font-size: 18px;
+					line-height: 30px;
+				}
+
+				@media screen and (max-width: 991px) {
+					font-size: 14px;
+					line-height: 20px;
+				}
 			}
 		}
 	}
@@ -192,6 +230,7 @@
 		.social-midias {
 			a {
 				text-decoration: none;
+				margin-right: 15px;
 			}
 		}
 
@@ -205,6 +244,18 @@
 		}
 	}
 
+	.sidebar {
+		padding-right: 35px;
+
+		@media screen and (max-width: 1400px) {
+			padding-right: 20px;
+		}
+
+		@media screen and (max-width: 991px) {
+			padding: 0 15px;
+		}
+	}
+	
 	.outros-posts {
 		display: flex;
 		justify-content: space-between;
@@ -212,12 +263,24 @@
 		padding-bottom: 30px;
 
 		.prev, .next {
-			display: flex;
-			align-items: center;
+			p {
+				display: flex;
+				align-items: center;
 
-			a {
-				text-decoration: none;
-				color: $verde;
+				a {
+					text-decoration: none;
+					color: $verde;
+					font-family: 'Akkurat-Mono';
+					font-size: 16px;
+					line-height: 1;
+					text-transform: uppercase;
+					letter-spacing: 3.2px;
+					color: $verde;
+
+					@media screen and (max-width: 991px) {
+						font-size: 13px;
+					}
+				}
 			}
 		}
 

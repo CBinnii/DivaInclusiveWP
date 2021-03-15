@@ -26,13 +26,17 @@
 		h1 {
 			font-family: "Monarch";
 			font-size: 55px;
-			line-height: 66px;
+			line-height: 0;
 			padding: 0;
-			margin-bottom: -15px;
+			// margin-bottom: -15px;
 
 			@media screen and (min-width: 2000px) {
 				font-size: 4vw;
-				line-height: 3vw;
+
+				svg {
+					width: 10vw;
+					height: auto;
+				}
 			}
 
 			@media screen and (max-width: 991px) {
@@ -68,7 +72,7 @@
 
 					@media screen and (min-width: 2000px) {
 						font-size: 1.5vw;
-						line-height: 1.5;
+						line-height: 2.8vw;
 					}
 
 					@media screen and (max-width: 991px) {
@@ -144,6 +148,8 @@
 		}
 
 		.copyright {
+			padding-top: 50px;
+			
 			@media screen and (max-width: 991px) {
 				padding: 0;
 			}

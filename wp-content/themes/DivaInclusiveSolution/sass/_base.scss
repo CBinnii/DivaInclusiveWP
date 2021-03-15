@@ -60,6 +60,7 @@ strong {
 
 body {
 	font-family: monospace, sans-serif;
+	background-color: $claro;
 }
 
 body {
@@ -97,8 +98,8 @@ body {
 	padding: 0;
 
 	@media screen and (min-width: 2000px) {
-		font-size: 1.5vw;
-		line-height: 1.5;
+		font-size: 1vw;
+		line-height: 1.5vw;
 		padding: 1vw 0;
 	}
 
@@ -133,6 +134,16 @@ body {
 			line-height: 4vw;
 		}
 
+		@media screen and (max-width: 1400px) {
+			font-size: 50px;
+			line-height: 60px;
+		}
+
+		@media screen and (max-width: 991px) {
+			font-size: 35px;
+			line-height: 1.5;
+		}
+
 		svg {
 			max-width: 100%;
 			height: auto;
@@ -143,53 +154,20 @@ body {
 	}
 	.subtitle {
 		font-size: 16px;
+		line-height: 20px;
+		letter-spacing: 3.2px;
 		text-align: center;
 		padding-bottom: 30px;
 
 		@media screen and (min-width: 2000px) {
-			font-size: 1.5vw;
-		}
-	}
-}
-
-.main-image {
-	display: flex;
-	align-self: center;
-	position: relative;
-	padding-top: 196px;
-	padding-bottom: 196px;
-
-	@media screen and (min-width: 2000px) {
-		margin: 5vw 0;
-	}
-
-	@media screen and (max-width: 1400px) {
-		padding-top: 115px;
-		padding-bottom: 115px;
-	}
-
-	.main-img {
-		height: 480px !important;
-		margin: 0 !important;
-
-		@media screen and (min-width: 2000px) {
-			height: 40vw !important;
-		}
-	}
-
-	.overlay-circle {
-		width: 220px;
-		position: absolute;
-		top: 50%;
-		transform: translateY(-50%);
-		right: -110px;
-		margin: 0;
-
-		@media screen and (min-width: 2000px) {
-			width: 25vw;
-			right: -47%;
+			font-size: 1vw;
+			line-height: 1.5vw;
+			padding: 1vw 0;
 		}
 
+		@media screen and (max-width: 991px) {
+			font-size: 13px;
+		}
 	}
 }
 
@@ -267,10 +245,14 @@ h6{
 }
 
 .pt-196 {
-	padding-top: 196px;
+	padding-top: 10%;
+
+	@media screen and (max-width: 1700px) {
+		padding-top: 8%;
+	}
 
 	@media screen and (max-width: 1400px) {
-		padding-top: 115px;
+		padding-top: 6%;
 	}
 
 	@media screen and (max-width: 1300px) {

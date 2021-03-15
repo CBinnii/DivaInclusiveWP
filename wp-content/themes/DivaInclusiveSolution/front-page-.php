@@ -25,7 +25,7 @@
 								<img src="<?php echo get_sub_field('imagem-desktop'); ?>" class="only-desktop">
 								
 								<div class="overlay-slider">
-									<h6 class="subtitle pt-196"><?php echo get_sub_field('titulo') ?></h6>
+									<h6 class="subtitle"><?php echo get_sub_field('titulo') ?></h6>
 									
 									<div class="title container">
 										<?php 

@@ -29,7 +29,7 @@
 								<img src="<?php echo get_sub_field('imagem-desktop'); ?>" class="only-desktop">
 								
 								<div class="overlay-slider">
-									<h6 class="subtitle pt-196"><?php echo get_sub_field('titulo') ?></h6>
+									<h6 class="subtitle"><?php echo get_sub_field('titulo') ?></h6>
 									
 									<div class="title container">
 										<?php 
@@ -110,20 +110,23 @@
 								<div class="row h-100">
 									<div class="col-lg-6 left">
 										<p class="subtitle">diva*journal</p>
-										<h1 class="title"><?php echo get_the_title(); ?></h1>
 
-										<p><?php echo $post->post_excerpt; ?></p>
+										<div class="post_content">
+											<h1 class="title"><?php echo get_the_title(); ?></h1>
 
-										<?php 
-											$image = get_field('featured_image');
+											<p><?php echo $post->post_excerpt; ?></p>
 
-											if( !empty( $image ) ): ?>
-												<img src="<?php echo esc_url($image); ?>" alt="<?php echo get_the_title(); ?>" />
 											<?php 
-											endif; 
-										?>
-										
-										<a href="<?php echo get_the_permalink(get_the_ID()); ?>" title="" class="btn-leia-mais">entenda o assunto ></a>
+												$image = get_field('featured_image');
+
+												if( !empty( $image ) ): ?>
+													<img src="<?php echo esc_url($image); ?>" alt="<?php echo get_the_title(); ?>" />
+												<?php 
+												endif; 
+											?>
+											
+											<a href="<?php echo get_the_permalink(get_the_ID()); ?>" title="" class="btn-leia-mais">entenda o assunto ></a>
+										</div>
 									</div>
 									<div class="col-lg-6 right" style="<?php if(!empty( $image )){?>background-image: url('<?php echo esc_url($image); ?>')<?php }?>"></div>
 								</div>

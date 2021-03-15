@@ -29,8 +29,10 @@
 		img {
 			max-width: 860px;
 			height: auto;
-			padding-top: 196px;
-			padding-bottom: 196px;
+			// padding-top: 196px;
+			// padding-bottom: 196px;
+			padding-top: 10%;
+			padding-bottom: 10%;
 
 			@media screen and (min-width: 2000px) {
 				max-width: 1000px;
@@ -38,8 +40,6 @@
 
 			@media screen and (max-width: 1400px) {
 				max-width: 560px;
-				padding-top: 115px;
-				padding-bottom: 115px;
 			}
 			
 			@media screen and (max-width: 1300px) {
@@ -55,8 +55,8 @@
 		h1 {
 			font-size: 80px;
 			line-height: 99px;
-			padding-top: 196px;
-			padding-bottom: 113px;
+			padding-top: 135px;
+			padding-bottom: 110px;
 
 			@media screen and (min-width: 2000px) {
 				font-size: 5vw;
@@ -104,24 +104,23 @@
 			}
 		}
 
-		h4 {
-			padding-top: 196px;
+		// h4 {
+		// 	padding-top: 196px;
 
-			@media screen and (max-width: 1400px) {
-				padding-top: 115px;
-			}
+		// 	@media screen and (max-width: 1400px) {
+		// 		padding-top: 115px;
+		// 	}
 
-			@media screen and (max-width: 1300px) {
-				padding-top: 5%;
-			}
-		}
+		// 	@media screen and (max-width: 1300px) {
+		// 		padding-top: 5%;
+		// 	}
+		// }
 
 		p {
 			font-family: 'Akkurat-Mono';
 			font-size: 21px;
 			letter-spacing: 0.51px;
 			line-height: 35px;
-			// padding: 20px 0;
 
 			@media screen and (min-width: 2000px) {
 				font-size: 1.5vw;
@@ -129,7 +128,8 @@
 			}
 
 			@media screen and (max-width: 1400px) {
-				font-size: 18px;
+				font-size: 16px;
+				line-height: 30px;
 			}
 
 			@media screen and (max-width: 991px) {

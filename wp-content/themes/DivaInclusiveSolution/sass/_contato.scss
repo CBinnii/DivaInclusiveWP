@@ -4,7 +4,7 @@
 
 	.form-tabs {
 		.tab {
-			background-color: $branco;
+			background-color: $claro;
 			height: 0;
 			opacity: 0;
 			min-height: 0;
@@ -22,6 +22,11 @@
 				line-height: 30px;
 				letter-spacing: 0.32px;
 				padding-bottom: 64px;
+
+				@media screen and (min-width: 2000px) {
+					font-size: 1vw;
+					line-height: 1.5vw;
+				}
 
 				&.container {
 					max-width: 915px;
@@ -52,11 +57,11 @@
 			display: flex;
 			justify-content: space-around;
 			position: relative;
-			margin-bottom: 113px;
+			margin-bottom: 60px;
 
-			label {
-				// margin-bottom: -2px;
-				// border-bottom: 2px solid $rosa-escuro;
+			@media screen and (max-width: 991px) {
+				flex-wrap: wrap;
+				justify-content: center;
 			}
 		}
 
@@ -99,12 +104,22 @@
 			cursor: pointer;
 			margin: 0;
 			padding: 0 3px;
-			font-size: 16px;
+			font-size: 24px;
 			line-height: 30px;
 			letter-spacing: 3.2px;
 			text-transform: uppercase;
 			border: none;
-			background-color: $branco;
+			background-color: $claro;
+
+			@media screen and (min-width: 2000px) {
+				font-size: 1.3vw;
+				line-height: 1.5vw;
+				padding: 1vw 0;
+			}
+
+			@media screen and (max-width: 991px) {
+				padding: 20px 0;
+			}
 		}
 	}
 
@@ -112,6 +127,10 @@
 		.border-bottom {
 			border-color: $rosa-escuro !important;
 			margin-bottom: 20px;
+
+			@media screen and (max-width: 991px) {
+				margin: 0;
+			}
 		}
 		
 		.label-width {
@@ -133,7 +152,7 @@
 				font-size: 24px;
 				letter-spacing: 3.2px;
 				line-height: 1;
-				background-color: $branco;
+				background-color: $claro;
 				border: 1px solid $rosa-escuro;
 				color: $rosa-escuro;
 				text-transform: uppercase;
@@ -158,6 +177,7 @@
 			display: flex;
 			align-items: center;
 		}
+
 		input {
 			font-family: 'Akkurat-Mono';
 			font-size: 21px;
@@ -171,12 +191,14 @@
 			letter-spacing: 0.32px;
 			width: 100%;
 		}
+
 		textarea {
 			font-family: 'Akkurat-Mono';
 			font-size: 21px;
 			line-height: 35px;
 			letter-spacing: 0.32px;
 			color: $rosa-escuro;
+			background-color: $claro;
 			width: 100%;
 			height: 450px;
 			border: none;
@@ -184,14 +206,18 @@
 			border-top: 1px solid $rosa-escuro;
 			padding: 40px 0;
 			margin-top: 64px;
+
+			@media screen and (max-width: 991px) {
+				margin-top: -1px;
+			}
 		}
 
 		.btn-enviar {
 			background-color: $rosa-escuro;
-			color: $branco;
+			color: $claro;
 			padding-left: 35px;
 			padding-right: 24px;
-			margin-top: 60px;
+			margin-top: 0;
 			border: none;
 			outline: none;
 			width: 450px;
@@ -211,12 +237,13 @@
 			}
 
 			@media screen and (max-width: 991px) {
-				width: 200px;
+				width: 250px;
+			}
+
+			@media screen and (max-width: 450px) {
+				width: 100%;
 			}
 		}
-	}
-
-	.email {
 	}
 
 	input, textarea {
@@ -236,6 +263,39 @@
 		}
 		&:-moz-placeholder { /* Firefox 18- */
 			color: $rosa-escuro;
+		}
+	}
+
+	#list {
+		width: 95%;
+
+		ul {
+			width: 100%;
+			text-align: left;
+			margin-top: 20px;
+
+			li {
+				font-family: 'Akkurat-Mono';
+				font-size: 21px;
+				line-height: 35px;
+				letter-spacing: 0.53px;
+				padding-bottom: 12px;
+				border-bottom: 1px solid $rosa-escuro;
+
+				@media screen and (min-width: 2000px) {
+					font-size: 1.5vw;
+				}
+
+				@media screen and (max-width: 1400px) {
+					font-size: 18px;
+					line-height: 30px;
+				}
+
+				@media screen and (max-width: 991px) {
+					font-size: 14px;
+					line-height: 20px;
+				}
+			}
 		}
 	}
 }

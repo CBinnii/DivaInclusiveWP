@@ -80,8 +80,6 @@
 
 <script type="text/javascript">
 	$( document ).ready(function() {
-		$("#files").attr('multiple', true);
-
 		// Checked input by URL HASH
 		var id = window.location.hash;
 		console.log(id);
@@ -133,9 +131,9 @@
 						//Obtém o tamanho:
 						//Só é possível obter o tamanho do arquivo após o carregamento dele na miniatura, como o src é um base64 gerado à partir do arquivo local não terá custo de carregamento através da rede.
 						img.onload = function(){
-							var i = document.createElement('i');
-						i.innerHTML = "<br>Tamanho Miniatura: " + img.width + "px Largura - " + img.height + "px Altura <br> Tamanho original:"+ img.naturalWidth+ "px Largura - " + img.naturalWidth+ "px Altura";
-						span.appendChild(i);
+						// 	var i = document.createElement('i');
+						// i.innerHTML = "<br>Tamanho Miniatura: " + img.width + "px Largura - " + img.height + "px Altura <br> Tamanho original:"+ img.naturalWidth+ "px Largura - " + img.naturalWidth+ "px Altura";
+						// span.appendChild(i);
 
 						//Esse método retorna o tamanho calculado: Resultado esperado ((proporcional)x75) 
 
@@ -156,7 +154,7 @@
 			// 	f.size, ' bytes,  última modificação: ',
 			// 	f.lastModifiedDate ? f.lastModifiedDate.toLocaleDateString() : 'n/a',
 			// 	'</li>');
-			output.push('<li><strong>', escape(f.name), '</strong></li>');
+			output.push('<li>', escape(f.name), '</li>');
 		}
 		document.getElementById('list').innerHTML = '<ul>' + output.join('') + '</ul>';
 	}

@@ -14,10 +14,10 @@
 				$titulo_2 = get_field('titulo_2');
 
 				if( $titulo_1 != "" || $titulo_1 != null ) { ?>
-						<h1 class="title"><?php the_field('titulo_1');  ?></h1>
+						<h1 class="title"><?php the_field('titulo_1');?></h1>
 				<?php } 
 				if( $titulo_2 != "" || $titulo_2 != null ) { ?>
-						<h1 class="title"><?php the_field('titulo_2');  ?></h1>
+						<h1 class="title"><?php the_field('titulo_2');?></h1>
 				<?php } 
 			?>
 		</div>

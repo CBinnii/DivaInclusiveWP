@@ -56,23 +56,23 @@
 				$more = new WP_Query( $args );
 				
 				if (!empty($more->posts)):  ?>
+
 					<div class="posts-journal">
 						<div class="row adjust-margin-journal">
 							<?php foreach ( $more->posts as $post ): ?>
 								<div class="col-md-4 adjust-padding-journal">
 									<a href="<?php echo get_the_permalink(); ?>" title="<?php echo get_the_title($post->ID); ?>">
-										<?php 
-											$image = get_field('featured_image');
-											if( !empty( $image ) ): ?>
-												<div class="imagem" style="background-image: url('<?php echo esc_url($image); ?>');">
-												</div>
-										<?php endif; ?>
+
+										<?php if(has_post_thumbnail()){?>
+											<img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id(), 'full');?>">
+										<?php }?>
 										
 										<div class="journal-text">
 											<?php $cat = get_the_category();?>
 											<p><?php echo $cat[0]->name; ?></p>
 											
 											<h1 class="title"><?php echo get_the_title($post->ID); ?></h1>
+											<div class="hr"></div>
 										</div>
 									</a>
 								</div>

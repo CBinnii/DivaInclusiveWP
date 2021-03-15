@@ -6,7 +6,7 @@
 	get_header();
 
 ?>
-	<div class="content sobre">
+	<div class="content sobre servicos">
 		<div class="container">
 			<div class="header-text">
 				<p class="subtitle"><?php echo get_the_title(); ?></p>
