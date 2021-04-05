@@ -2,6 +2,17 @@
 	color: $rosa-escuro;
     padding-bottom: 175px;
 
+    @media screen and (max-width: 991px) {
+    	padding: 0 25px;
+    	padding-bottom: 40px;
+    }
+
+	.header-text {
+		@media screen and (max-width: 991px){
+			padding-bottom: 0px;
+		}
+	}
+
 	.form-tabs {
 		.tab {
 			background-color: $claro;
@@ -15,7 +26,7 @@
 			-moz-transition: opacity .25s ease-in-out;
 			-webkit-transition: opacity .25s ease-in-out;
 
-			p {
+			.form-about {
 				font-family: 'Akkurat-Mono';
 				font-size: 21px;
 				text-align: center;
@@ -26,6 +37,11 @@
 				@media screen and (min-width: 2000px) {
 					font-size: 1vw;
 					line-height: 1.5vw;
+				}
+
+				@media screen and (max-width: 991px) {
+					font-size: 15px;
+					padding-bottom: 25px;
 				}
 
 				&.container {
@@ -62,6 +78,7 @@
 			@media screen and (max-width: 991px) {
 				flex-wrap: wrap;
 				justify-content: center;
+				margin-bottom: 25px;
 			}
 		}
 
@@ -76,6 +93,10 @@
 			&:nth-of-type(6):checked ~ .menu .tab__label:nth-of-type(6) {
 				border-bottom: 4px solid $rosa-escuro;
 				z-index: 1;
+
+				@media screen and (max-width: 991px) {
+					border-bottom: 2px solid $rosa-escuro;
+				}
 			}
 
 			&:nth-of-type(1):checked ~ .tab:nth-of-type(2),
@@ -93,6 +114,10 @@
 				-ms-transition: opacity .25s ease-in-out;
 				-moz-transition: opacity .25s ease-in-out;
 				-webkit-transition: opacity .25s ease-in-out;
+
+				@media screen and (max-width: 991px){
+					padding: 0px;
+				}
 			}
 		}
 
@@ -109,6 +134,7 @@
 			letter-spacing: 3.2px;
 			text-transform: uppercase;
 			border: none;
+			font-family: 'Akkurat-Mono';
 			background-color: $claro;
 
 			@media screen and (min-width: 2000px) {
@@ -118,7 +144,13 @@
 			}
 
 			@media screen and (max-width: 991px) {
-				padding: 20px 0;
+				padding: 0;
+				margin-bottom: 15px;
+				font-size: 18px;
+
+				&:last-of-type {
+					margin: 0;
+				}
 			}
 		}
 	}
@@ -135,6 +167,10 @@
 		
 		.label-width {
 			width: 130px;
+
+			@media screen and (max-width: 991px) {
+				width: 90px;
+			}
 		}
 
 		.input-width {
@@ -142,6 +178,11 @@
 		}
 
 		.enviar-arquivo {
+			@media screen and (max-width: 991px) {
+				margin: 0;
+				margin-bottom: 16px;
+			}
+
 			input[type="file"] {
 				display: none;
 			}
@@ -164,6 +205,17 @@
 				svg {
 					margin-right: 27px;
 				}
+
+				@media screen and (max-width: 991px) {
+					font-size: 18px;
+					padding: 20px;
+					margin-top: 15px;
+					width: 100%;
+
+					svg {
+						margin-right: 20px;
+					}
+				}
 			}
 		}
 
@@ -176,6 +228,11 @@
 			height: 45px;
 			display: flex;
 			align-items: center;
+
+			@media screen and (max-width: 991px) {
+				font-size: 13px;
+				height: 35px;
+			}
 		}
 
 		input {
@@ -190,6 +247,10 @@
 			line-height: 35px;
 			letter-spacing: 0.32px;
 			width: 100%;
+
+			@media screen and (max-width: 991px) {
+				font-size: 16px;
+			}
 		}
 
 		textarea {
@@ -205,10 +266,13 @@
 			border-bottom: 1px solid $rosa-escuro;
 			border-top: 1px solid $rosa-escuro;
 			padding: 40px 0;
-			margin-top: 64px;
+			margin-top: 45px;
 
 			@media screen and (max-width: 991px) {
 				margin-top: -1px;
+				font-size: 16px;
+				padding: 20px 0;
+				height: 250px;
 			}
 		}
 
@@ -217,7 +281,7 @@
 			color: $claro;
 			padding-left: 35px;
 			padding-right: 24px;
-			margin-top: 0;
+			margin-top: 35px;
 			border: none;
 			outline: none;
 			width: 450px;
@@ -242,6 +306,11 @@
 
 			@media screen and (max-width: 450px) {
 				width: 100%;
+				font-size: 16px;
+				height: 64px;
+				padding: 0 30px;
+				background-size: 14px;
+				margin-top: 25px;
 			}
 		}
 	}

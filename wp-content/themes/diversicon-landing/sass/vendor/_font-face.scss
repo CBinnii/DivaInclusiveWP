@@ -1,0 +1,29 @@
+@font-face {
+	font-family: 'Akkurat-Mono';
+	src: url('../font/Akkurat-Mono.woff2') format('woff2'),
+		url('../font/Akkurat-Mono.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Monarch';
+	src: url('../font/MONARCH_1.4.woff2') format('woff2'),
+		url('../font/MONARCH_1.4.woff') format('woff'),
+		url('../font/MONARCH_1.4.eot') format('eot');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Druk';
+	src: url('../font/Druk-Bold.woff2') format('woff2'),
+	     url('../font/Druk-Bold.woff') format('woff'),
+	     url('../font/Druk-Bold.ttf')  format('truetype'),
+		 url('../font/Druk-Bold.eot') format('eot');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}

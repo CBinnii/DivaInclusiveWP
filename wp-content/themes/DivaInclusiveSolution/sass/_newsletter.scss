@@ -3,6 +3,14 @@
 	background-color: $claro;
 	color: $rosa-escuro;
 
+	@media screen and (min-width: 1700px) {
+		height: 100vh;
+	}
+
+	@media screen and (min-width: 1300px) {
+		min-height: 800px;
+	}
+
 	.left {
 		padding: 38px 8%;
 		background-color: $rosa-claro;
@@ -30,8 +38,8 @@
 			}
 
 			@media screen and (max-width: 991px) {
-				font-size: 13px;
-				line-height: 20px;
+				font-size: 9px;
+				line-height: 15px;
 			}
 		}
 
@@ -71,6 +79,7 @@
 		}
 
 		.newsletter-input {
+			font-family: 'Akkurat-Mono';
 			background-color: transparent;
 			border: none;
 			border-bottom: 1px solid $rosa-escuro;
@@ -111,6 +120,7 @@
 
 			@media screen and (max-width: 991px) {
 				width: 100%;
+				font-size: 13px;
 			}
 		}
 
@@ -121,6 +131,11 @@
 			display: flex;
 			flex-direction: column;
 			align-items: center;
+			
+			@media screen and (min-width: 1700px) {
+				margin: 0;
+				margin-top: -20px;
+			}
 		}
 
 		input[type=button], input[type=submit], input[type=reset] {
@@ -192,30 +207,27 @@
 	}
 }
 
-.agreeterms {
-	input[type=radio], input[type=checkbox] {
-		display: none; /* Esconde os inputs */
 
-		+ label {
-			display: inline-block;
-			height: 20px;
-			padding: 0 0 0 25px;
-			margin: 0 10px 0 0;
-			background-image: url(http://www.webcis.com.br/images/imagens-noticias/checkbox/ico-master.webp);
-			background-repeat: no-repeat;
-			background-position: 0 0;
+@media screen and (min-width: 1700px) {
+	.widget.widget_text {
+		list-style: none;
+		height: calc(100% - 38px);
+
+		.textwidget {
+			height: 100%;
+
+			.wpcf7 {
+				height: 100%;
+
+				.wpcf7-form {
+					height: 100%;
+					display: flex;
+					flex-wrap: wrap;
+					justify-content: space-between;
+					flex-direction: column;
+					align-items: center;
+				}
+			}
 		}
-	}
-
-	input[type=checkbox] + label {
-		background-position: 0 -60px; /* Muda a posição do background só no checkbox */
-	}
-
-	input[type=radio]:checked + label {
-		background-position: 0 -30px;
-	}
-
-	input[type=checkbox]:checked + label {
-		background-position: 0 -90px;
 	}
 }

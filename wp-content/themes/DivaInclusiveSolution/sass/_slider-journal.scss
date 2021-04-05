@@ -4,16 +4,24 @@
 		background-color: $claro;
 		color: $rosa-escuro;
 
-		// @media screen and (min-width: 1700px) {
-		// 	height: 100vh;
-		// }
+		@media screen and (min-width: 1700px) {
+			height: 100vh;
+		}
+		
+		@media screen and (min-width: 1300px) {
+			min-height: 800px;
+		}
 		
 		.swiper-wrapper {
 			height: auto;
 
-			// @media screen and (min-width: 1700px) {
-			// 	height: 100vh;
-			// }
+			@media screen and (min-width: 1700px) {
+				height: 100vh;
+			}
+		
+			@media screen and (min-width: 1300px) {
+				min-height: 800px;
+			}
 		}
 		
 		.swiper-slide {
@@ -21,9 +29,13 @@
 			background-color: $verde;
 			height: auto;
 
-			// @media screen and (min-width: 1700px) {
-			// 	height: 100vh;
-			// }
+			@media screen and (min-width: 1700px) {
+				height: 100vh;
+			}
+		
+			@media screen and (min-width: 1300px) {
+				min-height: 800px;
+			}
 
 			.title {
 				font-size: 55px;
@@ -56,36 +68,39 @@
 			}
 
 			.left {
-				padding: 38px 8%;
-				// display: flex;
-				// flex-direction: column;
-				// justify-content: space-between;
-				padding-bottom: 76px;
+				padding: 76px 8%;
+				position: relative;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
 
 				@media screen and (min-width: 2000px) {
 					padding: 2vw 4vw;
 				}
 
-				@media screen and (max-width: 767px) {
+				@media screen and (max-width: 991px) {
 					min-height: 500px;
 					display: block;
-					padding: 25px;
-					// padding-bottom: 100px;
+					padding: 75px 25px;
 				}
 
 				.post_content {
 					// padding: 170px 0;
-					padding: 15% 0;
+					// padding: 15% 0;
 				}
 				
 				.subtitle {
 					padding: 0;
-					display: block;
+					width: 100%;
+					position: absolute;
+					left: 0;
+					top: 38px;
 
 					@media screen and (min-width: 2000px) {
 						font-size: 1.5vw;
 						line-height: 1.5;
-						padding: 3vw 0;
+						top: 2vw;
 					}
 				}
 
@@ -163,6 +178,7 @@
 		}
 
 		.swiper-pagination-bullet {
+			font-family: 'Akkurat-Mono';
 			width: auto;
 			height: auto;
 			text-align: center;
@@ -176,6 +192,10 @@
 			@media screen and (min-width: 2000px) {
 				font-size: 1.3vw;
 			}
+
+			@media screen and (max-width: 991px) {
+				font-size: 13px;
+			}
 		}
 
 		.swiper-pagination-bullet-active {
@@ -186,11 +206,11 @@
 		.swiper-button-next {
 			background-image: image-url("next.png");
 			background-repeat: no-repeat;
-			background-position: center;
+			background-position: right center;
 			right: 38px;
 
 			@media screen and (max-width: 991px) {
-				right: 25px;
+				right: 15px;
 			}
 
 			&:after {
@@ -201,11 +221,11 @@
 		.swiper-button-prev {
 			background-image: image-url("prev.png");
 			background-repeat: no-repeat;
-			background-position: center;
+			background-position: left center;
 			left: 38px;
 
 			@media screen and (max-width: 991px) {
-				left: 25px;
+				left: 15px;
 			}
 			
 			&:after {

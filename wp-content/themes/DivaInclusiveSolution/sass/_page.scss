@@ -1,6 +1,13 @@
 .page {
 	color: $rosa-escuro;
+	padding: 0 25px;
 	padding-bottom: 70px;
+
+	@media screen and (max-width: 991px) {
+		.container {
+			padding: 0;
+		}
+	}
 
 	.content-page {
 		p {
@@ -21,31 +28,131 @@
 
 			@media screen and (max-width: 767px) {
 				font-size: 14px;
+				line-height: 24px;
+				padding-bottom: 25px;
 			}
 		}
 
-		legend {
-			font-size: 12px;
-			line-height: 1.5;
+		h1{
+			font-size: 35px;
+			line-height: 42px;
+			padding-bottom: 60px;
+
+			@media screen and (min-width: 2000px) {
+				font-size: 3vw;
+				line-height: 3vw;
+				padding-bottom: 2vw;
+			}
+
+			@media screen and (max-width: 991px) {
+				font-size: 30px;
+				line-height: 37px;
+				padding-bottom: 25px;
+			}
+		}
+
+		h2{
+			font-size: 30px;
+			line-height: 37px;
+			padding-bottom: 60px;
+
+			@media screen and (min-width: 2000px) {
+				font-size: 2.5vw;
+				line-height: 2.5vw;
+				padding-bottom: 2vw;
+			}
+
+			@media screen and (max-width: 991px) {
+				font-size: 25px;
+				line-height: 32px;
+				padding-bottom: 25px;
+			}
+		}
+
+		h3{
+			font-size: 25px;
+			line-height: 32px;
+			padding-bottom: 60px;
+
+			@media screen and (min-width: 2000px) {
+				font-size: 2.2vw;
+				line-height: 2.2vw;
+				padding-bottom: 2vw;
+			}
+
+			@media screen and (max-width: 991px) {
+				font-size: 20px;
+				line-height: 27px;
+				padding-bottom: 25px;
+			}
+		}
+
+		h4{
+			font-size: 20px;
+			line-height: 30px;
+			padding-bottom: 60px;
+
+			@media screen and (min-width: 2000px) {
+				font-size: 2vw;
+				line-height: 2vw;
+				padding-bottom: 2vw;
+			}
+
+			@media screen and (max-width: 991px) {
+				font-size: 18px;
+				line-height: 25px;
+				padding-bottom: 25px;
+			}
+		}
+
+		h5{
+			font-size: 18px;
+			line-height: 28px;
+			padding-bottom: 60px;
+
+			@media screen and (min-width: 2000px) {
+				font-size: 1.8vw;
+				line-height: 1.8vw;
+				padding-bottom: 2vw;
+			}
+
+			@media screen and (max-width: 991px) {
+				font-size: 15px;
+				line-height: 22px;
+				padding-bottom: 25px;
+			}
+		}
+
+
+		h6{
+			font-family: 'Akkurat-Mono';
+			text-transform: uppercase;
+			font-size: 16px;
+			line-height: 20px;
+			letter-spacing: 3.2px;
 			padding-bottom: 20px;
 
 			@media screen and (min-width: 2000px) {
-				font-size: 0.7vw;
+				font-size: 1.5vw;
+				line-height: 1.5vw;
+				padding-bottom: 2vw;
 			}
 
-			@media screen and (max-width: 767px) {
-				font-size: 10px;
+			@media screen and (max-width: 991px) {
+				font-size: 13px;
+				padding-bottom: 25px;
 			}
 		}
 
 		ul {
-			padding-bottom: 20px;
+			padding-bottom: 25px;
 
 			li {
+				font-family: 'Akkurat';
 				font-size: 21px;
-				font-family: 'Akkurat-Mono';
-				line-height: 35px;
-				letter-spacing: 0.53px;
+				line-height: 30px;
+				letter-spacing: 0.32px;
+				color: $verde;
 
 				@media screen and (min-width: 2000px) {
 					font-size: 1.5vw;
@@ -64,13 +171,14 @@
 		}
 
 		ol {
-			padding-bottom: 20px;
+			padding-bottom: 25px;
 
 			li {
+				font-family: 'Akkurat';
 				font-size: 21px;
-				font-family: 'Akkurat-Mono';
-				line-height: 35px;
-				letter-spacing: 0.53px;
+				line-height: 30px;
+				letter-spacing: 0.32px;
+				color: $verde;
 
 				@media screen and (min-width: 2000px) {
 					font-size: 1.5vw;
@@ -98,6 +206,10 @@
 		img {
 			max-width: 100%;
 			height: auto;
+
+			@media screen and (max-width: 991px) {
+				margin-bottom: 15px;
+			}
 		}
 
 		figure {
@@ -115,11 +227,21 @@
 			@media screen and (min-width: 2000px) {
 				font-size: 0.7vw;
 			}
+
+			@media screen and (max-width: 991px) {
+				font-size: 10px;
+				line-height: 15px;
+				padding-bottom: 25px;
+			}
 		}
 
 		.wp-block-table {
 			overflow: initial;
 			padding-bottom: 20px;
+
+			@media screen and (max-width: 991px) {
+				padding-bottom: 25px;
+			}
 		}
 
 		table {
@@ -138,10 +260,23 @@
 					line-height: 25px;
 				}
 
-				@media screen and (max-width: 767px) {
+				@media screen and (max-width: 991px) {
 					font-size: 14px;
 					line-height: 20px;
+					width: 100%;
+					display: flex;
+					justify-content: center;
 				}
+			}
+
+			tr {
+				@media screen and (max-width: 991px) {
+					border-bottom: 10px solid transparent;
+				}
+			}
+
+			@media screen and (max-width: 991px) {
+				margin-bottom: 25px;
 			}
 		}
 
@@ -168,6 +303,10 @@
 				font-family: 'Akkurat-Mono';
 				line-height: 35px;
 				letter-spacing: 0.53px;
+
+				@media screen and (max-width: 991px) {
+					font-size: 18px;
+				}
 			}
 		}
 	}

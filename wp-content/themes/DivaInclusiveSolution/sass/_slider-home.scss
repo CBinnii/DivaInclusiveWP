@@ -3,6 +3,14 @@
 		width: 100%;
 		height: auto;
 		background-color: $claro;
+		
+		@media screen and (max-width: 991px) {
+			height: 600px;
+		}
+
+		@media screen and (max-height: 600px) {
+			height: 100vh;
+		}
 
 		.swiper-slide {
 			text-align: center;
@@ -151,6 +159,7 @@
 			}
 		}
 		.swiper-pagination-bullet {
+			font-family: 'Akkurat-Mono';
 			width: auto;
 			height: auto;
 			text-align: center;
@@ -160,13 +169,16 @@
 			opacity: 1;
 			background-color: transparent;
 			outline: none;
-			font-family: 'Akkurat-Mono';
 			font-size: 16px;
 			padding-right: 10px;
 			line-height: 1;
 
 			@media screen and (min-width: 2000px) {
 				font-size: 1.2vw;
+			}
+			
+			@media screen and (max-width: 991px) {
+				font-size: 13px;
 			}
 		}
 

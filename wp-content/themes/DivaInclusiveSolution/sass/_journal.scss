@@ -5,6 +5,18 @@
 		padding: 25px;
 	}
 
+	.header-text {
+		padding: 85px 0;
+
+		@media screen and (min-width: 2000px) {
+			padding: 3vw 0;
+		}
+
+		@media screen and (max-width: 1400px) {
+			padding: 50px 0;
+		}
+	}
+
 	.posts-journal {
 		.seach-none {
 			font-size: 70px;
@@ -62,6 +74,14 @@
 			line-height: 20px;
 			letter-spacing: 3.2px;
 
+			&.categoria {
+				padding: 0;
+				position: absolute;
+				width: 100%;
+				left: 0;
+				top: 38px;
+			}
+
 			@media screen and (min-width: 2000px) {
 				font-size: 1vw;
 				padding: 1.4vw 0 2.8vw;
@@ -91,6 +111,17 @@
 			@media screen and (max-width: 991px) {
 				font-size: 15px;
 				line-height: 22px;
+			}
+		}
+
+		.journal-text {
+			padding: 0 50px;
+			position: relative;
+			display: flex;
+			align-items: center;
+			
+			@media screen and (max-width: 991px) {
+				padding: 0 15px;
 			}
 		}
 

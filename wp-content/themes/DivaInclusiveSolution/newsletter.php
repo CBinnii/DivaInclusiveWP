@@ -1,6 +1,7 @@
 <div class="newsletter">
 	<div class="row m-0 h-100">
 		<div class="col-lg-6 left">
+			<p class="subtitle">newsletter</p>
 			<?php 
 				if ( is_active_sidebar( 'contact-newsletter' ) ) :
 					dynamic_sidebar( 'contact-newsletter' );

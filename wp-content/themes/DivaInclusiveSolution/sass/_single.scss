@@ -8,21 +8,34 @@
 		@media screen and (min-width: 1700px) {
 			min-width: 1535px;
 		}
+
+		@media screen and (max-width: 991px) {
+			padding: 0;
+		}
 	}
 
 	.subtitle {
 		font-size: 16px;
-		padding: 20px 0 ;
+		padding: 45px 0 ;
 		color: $verde;
 
 		@media screen and (min-width: 2000px) {
 			font-size: 1.5vw;
+		}
+
+		@media screen and (max-width: 991px) {
+			font-size: 13px;
+			padding: 25px 0;
 		}
 	}
 
 	.header-post {
 		text-align: center;
 		margin-bottom: 10px;
+
+		@media screen and (max-width: 991px) {
+			margin: 0;
+		}
 
 		.title {
 			font-size: 70px;
@@ -41,13 +54,10 @@
 			}
 
 			@media screen and (max-width: 991px) {
-				font-size: 35px;
-				line-height: 54px;
-			}
-
-			@media screen and (max-width: 767px) {
-				font-size: 25px;
-				line-height: 44px;
+				font-size: 30px;
+				line-height: 40px;
+				padding-top: 25px;
+				padding-bottom: 20px;
 			}
 		}
 
@@ -102,6 +112,7 @@
 			@media screen and (max-width: 991px) {
 				font-size: 14px;
 				line-height: 20px;
+				padding-bottom: 25px;
 			}
 		}
 
@@ -109,6 +120,10 @@
 			max-width: 100%;
 			height: auto;
 			margin-bottom: 24px;
+
+			@media screen and (max-width: 991px) {
+				margin-bottom: 15px;
+			}
 		}
 
 		figure {
@@ -125,49 +140,79 @@
 				line-height: 3vw;
 				padding-bottom: 2vw;
 			}
+
+			@media screen and (max-width: 991px) {
+				font-size: 30px;
+				line-height: 37px;
+				padding-bottom: 25px;
+			}
 		}
 		h2{
-			font-size: 25px;
-			line-height: 36px;
-			padding-bottom: 20px;
+			font-size: 30px;
+			line-height: 37px;
+			padding-bottom: 60px;
 
 			@media screen and (min-width: 2000px) {
 				font-size: 2.5vw;
 				line-height: 2.5vw;
 				padding-bottom: 2vw;
 			}
+
+			@media screen and (max-width: 991px) {
+				font-size: 25px;
+				line-height: 32px;
+				padding-bottom: 25px;
+			}
 		}
 		h3{
-			font-size: 22px;
+			font-size: 25px;
 			line-height: 32px;
-			padding-bottom: 20px;
+			padding-bottom: 60px;
 
 			@media screen and (min-width: 2000px) {
 				font-size: 2.2vw;
 				line-height: 2.2vw;
 				padding-bottom: 2vw;
 			}
+
+			@media screen and (max-width: 991px) {
+				font-size: 20px;
+				line-height: 27px;
+				padding-bottom: 25px;
+			}
 		}
 		h4{
 			font-size: 20px;
 			line-height: 30px;
-			padding-bottom: 20px;
+			padding-bottom: 60px;
 
 			@media screen and (min-width: 2000px) {
 				font-size: 2vw;
 				line-height: 2vw;
 				padding-bottom: 2vw;
 			}
+
+			@media screen and (max-width: 991px) {
+				font-size: 18px;
+				line-height: 25px;
+				padding-bottom: 25px;
+			}
 		}
 		h5{
 			font-size: 18px;
 			line-height: 28px;
-			padding-bottom: 20px;
+			padding-bottom: 60px;
 
 			@media screen and (min-width: 2000px) {
 				font-size: 1.8vw;
 				line-height: 1.8vw;
 				padding-bottom: 2vw;
+			}
+
+			@media screen and (max-width: 991px) {
+				font-size: 15px;
+				line-height: 22px;
+				padding-bottom: 25px;
 			}
 		}
 
@@ -184,6 +229,11 @@
 				line-height: 1.5vw;
 				padding-bottom: 2vw;
 			}
+
+			@media screen and (max-width: 991px) {
+				font-size: 13px;
+				padding-bottom: 25px;
+			}
 		}
 
 		legend, figcaption {
@@ -196,6 +246,12 @@
 
 			@media screen and (min-width: 2000px) {
 				font-size: 0.7vw;
+			}
+
+			@media screen and (max-width: 991px) {
+				font-size: 10px;
+				line-height: 15px;
+				padding-bottom: 25px;
 			}
 		}
 
@@ -228,14 +284,28 @@
 
 	.share {
 		.social-midias {
+			@media screen and (max-width: 991px) {
+				text-align: center;
+			}
+
 			a {
 				text-decoration: none;
 				margin-right: 15px;
+
+				@media screen and (max-width: 991px) {
+					svg {
+						margin-bottom: 15px;
+					}
+				}
 			}
 		}
 
 		p {
 			padding: 20px 0px;
+
+			@media screen and (max-width: 991px) {
+				padding: 25px 0;
+			}
 
 			a {
 				color: $verde;
@@ -253,14 +323,17 @@
 
 		@media screen and (max-width: 991px) {
 			padding: 0 15px;
+
+			.title {
+				padding: 0;
+			}
 		}
 	}
 	
 	.outros-posts {
 		display: flex;
 		justify-content: space-between;
-		padding-top: 30px;
-		padding-bottom: 30px;
+		padding-top: 80px;
 
 		.prev, .next {
 			p {

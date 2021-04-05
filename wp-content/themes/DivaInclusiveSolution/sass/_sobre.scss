@@ -2,8 +2,22 @@
 	color: $rosa-escuro;
 	padding-bottom: 150px;
 
+	@media screen and (max-width: 991px) {
+		padding: 25px;
+	}
+
 	.header-text {
 		padding-bottom: 25px;
+		
+		@media screen and (max-width: 991px) {
+			padding-top: 40px;
+			padding-bottom: 0;
+
+			.title {
+				padding-top: 0;
+				padding-bottom: 20px;
+			}
+		}
 	}
 
 	.sobre-content {
@@ -11,12 +25,13 @@
 		justify-content: center;
 
 		@media screen and (max-width: 991px) {
-			padding: 0 20px;
+			padding: 0;
 		}
 
 		img {
 			max-width: 100%;
 			height: auto;
+			width: 100%;
 			margin: 0 auto;
 		}
 
@@ -47,6 +62,11 @@
 				font-size: 18px;
 				line-height: 30px;
 			}
+
+			@media screen and (max-width: 991px) {
+				font-size: 14px;
+				line-height: 24px;
+			}
 		}
 
 		ul {
@@ -65,6 +85,11 @@
 				@media screen and (max-width: 1400px) {
 					font-size: 18px;
 					line-height: 30px;
+				}
+
+				@media screen and (max-width: 991px) {
+					font-size: 14px;
+					line-height: 24px;
 				}
 			}
 		}
@@ -86,13 +111,19 @@
 					font-size: 18px;
 					line-height: 30px;
 				}
+
+				@media screen and (max-width: 991px) {
+					font-size: 14px;
+					line-height: 24px;
+				}
 			}
 		}
 
+		
 		h1{
-			font-size: 70px;
-			line-height: 85px;
-			padding-bottom: 50px;
+			font-size: 35px;
+			line-height: 42px;
+			padding-bottom: 60px;
 
 			@media screen and (min-width: 2000px) {
 				font-size: 3vw;
@@ -100,20 +131,16 @@
 				padding-bottom: 2vw;
 			}
 
-			@media screen and (max-width: 1400px) {
-				font-size: 50px;
-				line-height: 60px;
-			}
-
 			@media screen and (max-width: 991px) {
-				font-size: 35px;
-				line-height: 1.5;
+				font-size: 30px;
+				line-height: 37px;
+				padding-bottom: 25px;
 			}
 		}
 		h2{
-			font-size: 35px;
-			line-height: 42px;
-			padding-bottom: 20px;
+			font-size: 30px;
+			line-height: 37px;
+			padding-bottom: 60px;
 
 			@media screen and (min-width: 2000px) {
 				font-size: 2.5vw;
@@ -121,42 +148,61 @@
 				padding-bottom: 2vw;
 			}
 
-			@media screen and (max-width: 1400px) {
-				font-size: 30px;
-				line-height: 40px;
+			@media screen and (max-width: 991px) {
+				font-size: 25px;
+				line-height: 32px;
+				padding-bottom: 25px;
 			}
 		}
 		h3{
 			font-size: 25px;
 			line-height: 32px;
-			padding-bottom: 20px;
+			padding-bottom: 60px;
 
 			@media screen and (min-width: 2000px) {
 				font-size: 2.2vw;
 				line-height: 2.2vw;
 				padding-bottom: 2vw;
 			}
+
+			@media screen and (max-width: 991px) {
+				font-size: 20px;
+				line-height: 27px;
+				padding-bottom: 25px;
+			}
 		}
 		h4{
 			font-size: 20px;
 			line-height: 30px;
-			padding-bottom: 20px;
+			padding-bottom: 60px;
 
 			@media screen and (min-width: 2000px) {
 				font-size: 2vw;
 				line-height: 2vw;
 				padding-bottom: 2vw;
 			}
+
+			@media screen and (max-width: 991px) {
+				font-size: 18px;
+				line-height: 25px;
+				padding-bottom: 25px;
+			}
 		}
 		h5{
 			font-size: 18px;
 			line-height: 28px;
-			padding-bottom: 20px;
+			padding-bottom: 60px;
 
 			@media screen and (min-width: 2000px) {
 				font-size: 1.8vw;
 				line-height: 1.8vw;
 				padding-bottom: 2vw;
+			}
+
+			@media screen and (max-width: 991px) {
+				font-size: 15px;
+				line-height: 22px;
+				padding-bottom: 25px;
 			}
 		}
 
@@ -187,6 +233,7 @@
 
 		figure {
 			margin: 0;
+			width: 100%;
 		}
 
 		legend, figcaption {

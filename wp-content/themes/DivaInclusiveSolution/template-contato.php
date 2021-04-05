@@ -51,7 +51,7 @@
 							?>
 								<div class="tab <?php echo $identificador_formulario ?>">
 									<?php if ($texto_formulario != "" || $texto_formulario != null) {?>
-										<p class="container"><?php echo $texto_formulario ?></p>
+										<p class="container form-about"><?php echo $texto_formulario ?></p>
 									<?php }?>
 
 									<div class="form-email">
