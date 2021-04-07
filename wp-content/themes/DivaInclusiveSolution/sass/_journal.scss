@@ -15,6 +15,20 @@
 		@media screen and (max-width: 1400px) {
 			padding: 50px 0;
 		}
+
+		@media screen and (max-width: 991px) {
+			padding-top: 75px;
+
+			.title {
+				line-height: 1;
+				padding: 0;
+
+				svg {
+					width: 280px;
+					width: 70vw;
+				}
+			}
+		}
 	}
 
 	.posts-journal {
@@ -88,6 +102,7 @@
 
 				@media screen and (max-width: 991px) {
 					padding: 15px 0;
+					padding-bottom: 30px;
 				}
 			}
 
@@ -127,17 +142,12 @@
 			}
 
 			@media screen and (max-width: 991px) {
-				font-size: 15px;
-				line-height: 22px;
+				font-size: 25px;
+				line-height: 32px;
 			}
 		}
 
 		.journal-text {
-			// padding: 0 50px;
-			// position: relative;
-			// display: flex;
-			// align-items: center;
-			
 			@media screen and (max-width: 1400px) {
 				padding: 0 30px;
 			}
@@ -146,10 +156,8 @@
 			}
 			@media screen and (max-width: 991px) {
 				padding: 0 15px;
-			}
-
-			.title {
-
+				min-height: 300px;
+				height: auto !important;
 			}
 		}
 

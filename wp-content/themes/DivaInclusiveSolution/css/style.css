@@ -11131,7 +11131,7 @@ body:selection {
 @media screen and (max-width: 991px) {
   .header-text .title {
     font-size: 35px;
-    line-height: 1.5;
+    line-height: 45px;
   }
 }
 .header-text .title svg {
@@ -11575,6 +11575,11 @@ h6 {
   margin-bottom: 6%;
   font-family: 'Akkurat-Mono';
 }
+@media screen and (max-width: 991px) {
+  .menu-journal {
+    margin-bottom: 25px;
+  }
+}
 .menu-journal .adjust-margin-journal {
   margin-right: -8px;
   margin-left: -8px;
@@ -11597,6 +11602,7 @@ h6 {
   letter-spacing: 3.2px;
   background: url('../images/search-solid.png?1615743896') left center no-repeat;
   background-size: 20px;
+  border-radius: 0;
 }
 .menu-journal .busca input:focus {
   outline: none;
@@ -11664,6 +11670,7 @@ h6 {
 }
 .menu-journal .menu-dropdown .dropdown-toggle {
   position: relative;
+  padding: 0 30px;
 }
 .menu-journal .menu-dropdown .dropdown-toggle:after {
   border: none;
@@ -11674,10 +11681,13 @@ h6 {
   height: 10px;
   content: "";
   position: absolute;
-  right: 20px;
+  right: 0;
   top: 15px;
 }
 @media screen and (min-width: 992px) {
+  .menu-journal .menu-dropdown .dropdown-toggle {
+    padding: 0;
+  }
   .menu-journal .menu-dropdown .dropdown-toggle:after {
     content: url('../images/down.svg?1615744962');
     border: none;
@@ -12510,6 +12520,19 @@ h6 {
     padding: 50px 0;
   }
 }
+@media screen and (max-width: 991px) {
+  .journal .header-text {
+    padding-top: 75px;
+  }
+  .journal .header-text .title {
+    line-height: 1;
+    padding: 0;
+  }
+  .journal .header-text .title svg {
+    width: 280px;
+    width: 70vw;
+  }
+}
 .journal .posts-journal .seach-none {
   font-size: 70px;
   line-height: 89px;
@@ -12577,6 +12600,7 @@ h6 {
 @media screen and (max-width: 991px) {
   .journal .posts-journal p.categoria {
     padding: 15px 0;
+    padding-bottom: 30px;
   }
 }
 @media screen and (min-width: 2000px) {
@@ -12621,8 +12645,8 @@ h6 {
 }
 @media screen and (max-width: 991px) {
   .journal .posts-journal .title {
-    font-size: 15px;
-    line-height: 22px;
+    font-size: 25px;
+    line-height: 32px;
   }
 }
 @media screen and (max-width: 1400px) {
@@ -12638,6 +12662,8 @@ h6 {
 @media screen and (max-width: 991px) {
   .journal .posts-journal .journal-text {
     padding: 0 15px;
+    min-height: 300px;
+    height: auto !important;
   }
 }
 .journal .posts-journal .hr {
@@ -12729,7 +12755,7 @@ h6 {
 }
 @media screen and (max-width: 991px) {
   .newsletter .left {
-    padding: 20px 25px;
+    padding: 25px;
   }
 }
 .newsletter .left p:not(.subtitle) {
@@ -13470,7 +13496,9 @@ h6 {
 }
 @media screen and (max-width: 991px) {
   .single .share .social-midias a svg {
-    margin-bottom: 15px;
+    margin-bottom: 0;
+    width: 25px;
+    height: 25px;
   }
 }
 .single .share p {
@@ -13523,6 +13551,7 @@ h6 {
 @media screen and (max-width: 991px) {
   .single .outros-posts .prev p a, .single .outros-posts .next p a {
     font-size: 13px;
+    line-height: 20px;
   }
 }
 .single .outros-posts .prev {
@@ -13874,7 +13903,12 @@ h6 {
   }
   .sobre .header-text .title {
     padding-top: 0;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .sobre .container {
+    padding: 0 20px;
   }
 }
 .sobre .sobre-content {
@@ -13884,6 +13918,7 @@ h6 {
 @media screen and (max-width: 991px) {
   .sobre .sobre-content {
     padding: 0;
+    margin: 0;
   }
 }
 .sobre .sobre-content img {
@@ -13891,6 +13926,12 @@ h6 {
   height: auto;
   width: 100%;
   margin: 0 auto;
+}
+@media screen and (max-width: 991px) {
+  .sobre .sobre-content img {
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
 }
 .sobre .sobre-content svg {
   margin-top: 50px;
@@ -13995,7 +14036,7 @@ h6 {
   .sobre .sobre-content h1 {
     font-size: 30px;
     line-height: 37px;
-    padding-bottom: 25px;
+    padding-bottom: 50px;
   }
 }
 .sobre .sobre-content h2 {
@@ -14014,7 +14055,7 @@ h6 {
   .sobre .sobre-content h2 {
     font-size: 25px;
     line-height: 32px;
-    padding-bottom: 25px;
+    padding-bottom: 50px;
   }
 }
 .sobre .sobre-content h3 {
@@ -14033,7 +14074,7 @@ h6 {
   .sobre .sobre-content h3 {
     font-size: 20px;
     line-height: 27px;
-    padding-bottom: 25px;
+    padding-bottom: 50px;
   }
 }
 .sobre .sobre-content h4 {
@@ -14052,7 +14093,7 @@ h6 {
   .sobre .sobre-content h4 {
     font-size: 18px;
     line-height: 25px;
-    padding-bottom: 25px;
+    padding-bottom: 50px;
   }
 }
 .sobre .sobre-content h5 {
@@ -14071,7 +14112,7 @@ h6 {
   .sobre .sobre-content h5 {
     font-size: 15px;
     line-height: 22px;
-    padding-bottom: 25px;
+    padding-bottom: 50px;
   }
 }
 .sobre .sobre-content h6 {
@@ -14092,7 +14133,7 @@ h6 {
 @media screen and (max-width: 991px) {
   .sobre .sobre-content h6 {
     font-size: 13px;
-    line-height: 1.3;
+    line-height: 20px;
   }
 }
 .sobre .sobre-content img {
@@ -14152,6 +14193,9 @@ h6 {
 @media screen and (max-width: 991px) {
   .contato .header-text {
     padding-bottom: 0px;
+  }
+  .contato .header-text .title {
+    display: none;
   }
 }
 .contato .form-tabs .tab {
@@ -14358,6 +14402,7 @@ h6 {
 }
 .contato .form-email input {
   font-family: 'Akkurat-Mono';
+  border-radius: 0;
   font-size: 21px;
   background-color: transparent;
   border: none;
@@ -14376,6 +14421,7 @@ h6 {
 }
 .contato .form-email textarea {
   font-family: 'Akkurat-Mono';
+  border-radius: 0;
   font-size: 21px;
   line-height: 35px;
   letter-spacing: 0.32px;
@@ -14391,9 +14437,9 @@ h6 {
 }
 @media screen and (max-width: 991px) {
   .contato .form-email textarea {
-    margin-top: -1px;
+    margin-top: -3px;
     font-size: 16px;
-    padding: 20px 0;
+    padding: 10px 0;
     height: 250px;
   }
 }

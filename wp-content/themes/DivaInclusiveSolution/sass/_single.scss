@@ -295,7 +295,9 @@
 
 				@media screen and (max-width: 991px) {
 					svg {
-						margin-bottom: 15px;
+						margin-bottom: 0;
+						width: 25px;
+						height: 25px;
 					}
 				}
 			}
@@ -353,6 +355,7 @@
 
 					@media screen and (max-width: 991px) {
 						font-size: 13px;
+						line-height: 20px;
 					}
 				}
 			}

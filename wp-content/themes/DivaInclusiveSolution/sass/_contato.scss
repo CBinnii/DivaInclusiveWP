@@ -10,6 +10,10 @@
 	.header-text {
 		@media screen and (max-width: 991px){
 			padding-bottom: 0px;
+			
+			.title {
+				display: none;
+			}
 		}
 	}
 
@@ -237,6 +241,7 @@
 
 		input {
 			font-family: 'Akkurat-Mono';
+			border-radius: 0;
 			font-size: 21px;
 			background-color: transparent;
 			border: none;
@@ -255,6 +260,7 @@
 
 		textarea {
 			font-family: 'Akkurat-Mono';
+			border-radius: 0;
 			font-size: 21px;
 			line-height: 35px;
 			letter-spacing: 0.32px;
@@ -269,9 +275,9 @@
 			margin-top: 45px;
 
 			@media screen and (max-width: 991px) {
-				margin-top: -1px;
+				margin-top: -3px;
 				font-size: 16px;
-				padding: 20px 0;
+				padding: 10px 0;
 				height: 250px;
 			}
 		}

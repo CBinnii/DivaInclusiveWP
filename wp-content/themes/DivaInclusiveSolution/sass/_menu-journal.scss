@@ -2,6 +2,10 @@
 	// display: flex;
 	margin-bottom: 6%;
 	font-family: 'Akkurat-Mono';
+
+	@media screen and (max-width: 991px) {
+		margin-bottom: 25px;
+	}
 	
 	.adjust-margin-journal {
 		margin-right: -8px;
@@ -28,6 +32,7 @@
 			letter-spacing: 3.2px;
 			background: image-url('search-solid.png') left center no-repeat;
 			background-size: 20px;
+			border-radius: 0;
 
 			&:focus {
 				outline: none;
@@ -93,7 +98,7 @@
 
 		.dropdown-toggle {
 			position: relative;
-
+			padding: 0 30px;
 			&:after {
 				border: none;
 				background-image: image-url('down.svg');
@@ -103,11 +108,13 @@
 				height: 10px;
 				content: "";
 				position: absolute;
-				right: 20px;
+				right: 0;
 				top: 15px;
 			}
 
 			@media screen and (min-width: 992px) {
+				padding: 0;
+
 				&:after {
 					content: image-url('down.svg');
 					border: none;
