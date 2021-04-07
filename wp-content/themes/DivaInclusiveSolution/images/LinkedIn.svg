@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16.893" height="17" viewBox="0 0 16.893 17">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Caminho_325" data-name="Caminho 325" d="M0,0H16.893V-17H0Z" fill="#253825"/>
+    </clipPath>
+  </defs>
+  <g id="LinkedIn" transform="translate(0 17)">
+    <g id="Grupo_127" data-name="Grupo 127" clip-path="url(#clip-path)">
+      <g id="Grupo_125" data-name="Grupo 125" transform="translate(9.084 -9.332)">
+        <path id="Caminho_323" data-name="Caminho 323" d="M0,0V-.026C0-.017-.011-.009-.017,0Z" fill="#253825"/>
+      </g>
+      <g id="Grupo_126" data-name="Grupo 126" transform="translate(15.644 -17)">
+        <path id="Caminho_324" data-name="Caminho 324" d="M0,0H-14.4a1.234,1.234,0,0,0-1.248,1.218V15.783A1.233,1.233,0,0,0-14.4,17H0a1.234,1.234,0,0,0,1.249-1.217V1.218A1.233,1.233,0,0,0,0,0M-10.524,14.231h-2.551V6.555h2.551ZM-11.8,5.506h-.018A1.32,1.32,0,0,1-13.226,4.18a1.331,1.331,0,0,1,1.443-1.326A1.326,1.326,0,0,1-10.356,4.18,1.331,1.331,0,0,1-11.8,5.506m10.476,8.725H-3.875V10.124c0-1.032-.369-1.736-1.292-1.736a1.4,1.4,0,0,0-1.309.933,1.735,1.735,0,0,0-.084.623v4.287H-9.112s.034-6.957,0-7.676H-6.56V7.641a2.533,2.533,0,0,1,2.3-1.268c1.678,0,2.937,1.1,2.937,3.456Z" fill="#253825"/>
+      </g>
+    </g>
+  </g>
+</svg>

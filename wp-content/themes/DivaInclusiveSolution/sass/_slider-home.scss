@@ -59,6 +59,7 @@
 
 				@media screen and (max-width: 767px) {
 					margin: 0 auto;
+					padding: 0 40px;
 					padding-bottom: 30px;
 				}
 			}
@@ -103,6 +104,7 @@
 					font-size: 35px;
 					line-height: 54px;
 					padding: 30px 10px;
+					padding-bottom: 20px;
 				}
 
 				svg {
@@ -196,6 +198,6 @@
 	}
 
 	@media screen and (max-width: 991px) {
-		bottom: 10px;
+		bottom: 25px;
 	}
 }

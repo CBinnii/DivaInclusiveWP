@@ -61,7 +61,7 @@
 				}
 
 				@media screen and (max-width: 767px) {
-					padding-top: 40px;
+					padding-top: 30px;
 					font-size: 30px;
 					line-height: 38px;
 				}
@@ -82,12 +82,13 @@
 				@media screen and (max-width: 991px) {
 					min-height: 500px;
 					display: block;
-					padding: 75px 25px;
+					padding: 50px 25px;
 				}
 
 				.post_content {
-					// padding: 170px 0;
-					// padding: 15% 0;
+					@media screen and (max-width: 991px) {
+						margin-bottom: 25px;
+					}
 				}
 				
 				.subtitle {
@@ -101,6 +102,10 @@
 						font-size: 1.5vw;
 						line-height: 1.5;
 						top: 2vw;
+					}
+
+					@media screen and (max-width: 991px) {
+						top: 25px;
 					}
 				}
 
@@ -133,7 +138,7 @@
 						max-width: 100%;
 						width: 60%;
 						display: block;
-						margin: 20px auto;
+						margin: 45px auto;
 						margin-bottom: 50px;
 					}
 				}
@@ -239,6 +244,7 @@
 			@media screen and (max-width: 991px) {
 				width: 100%;
 				bottom: 25px;
+				display: none;
 			}
 		}
 	}
