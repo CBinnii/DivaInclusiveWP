@@ -10,7 +10,7 @@
 			?>
 		</div>
 		<div class="col-md-6 right escuro">
-			<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/mandala.png" alt="Mandala">
+			<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/mandala.svg" alt="Mandala">
 			<p class="subtitle">diva* united by difference</p>
 		</div>
 	</div>

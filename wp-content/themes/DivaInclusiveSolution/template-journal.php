@@ -112,7 +112,7 @@
 		$(".journal-text").css("height", img + "px");
 
 		$(window).resize(function () {
-			var footer = $("img").height();
+			var img = $("img").height();
 			
 			$(".journal-text").css("height", img + "px");
 		});

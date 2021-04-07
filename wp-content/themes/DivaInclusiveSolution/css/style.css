@@ -11414,6 +11414,7 @@ h6 {
   position: absolute;
   bottom: 38px;
   left: 38px;
+  color: #253825;
   font-size: 16px;
   letter-spacing: 3.2px;
   line-height: 35px;
@@ -11688,6 +11689,9 @@ h6 {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: none;
+    right: inherit;
+    top: inherit;
   }
 }
 @media screen and (min-width: 992px) and (min-width: 2000px) {
@@ -12538,11 +12542,23 @@ h6 {
   letter-spacing: 3.2px;
 }
 .journal .posts-journal p.categoria {
-  padding: 0;
-  position: absolute;
-  width: 100%;
-  left: 0;
-  top: 38px;
+  padding-top: 35px;
+  padding-bottom: 45px;
+}
+@media screen and (max-width: 1400px) {
+  .journal .posts-journal p.categoria {
+    padding: 25px 0;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .journal .posts-journal p.categoria {
+    padding: 25px 0;
+  }
+}
+@media screen and (max-width: 991px) {
+  .journal .posts-journal p.categoria {
+    padding: 15px 0;
+  }
 }
 @media screen and (min-width: 2000px) {
   .journal .posts-journal p {
@@ -12553,6 +12569,11 @@ h6 {
 @media screen and (max-width: 1400px) {
   .journal .posts-journal p {
     padding: 25px 0 38px 0;
+  }
+}
+@media screen and (max-width: 991px) {
+  .journal .posts-journal p {
+    font-size: 13px;
   }
 }
 .journal .posts-journal .title {
@@ -12573,17 +12594,27 @@ h6 {
     line-height: 32px;
   }
 }
+@media screen and (max-width: 1200px) {
+  .journal .posts-journal .title {
+    font-size: 20px;
+    line-height: 29px;
+  }
+}
 @media screen and (max-width: 991px) {
   .journal .posts-journal .title {
     font-size: 15px;
     line-height: 22px;
   }
 }
-.journal .posts-journal .journal-text {
-  padding: 0 50px;
-  position: relative;
-  display: flex;
-  align-items: center;
+@media screen and (max-width: 1400px) {
+  .journal .posts-journal .journal-text {
+    padding: 0 30px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .journal .posts-journal .journal-text {
+    padding: 0 20px;
+  }
 }
 @media screen and (max-width: 991px) {
   .journal .posts-journal .journal-text {
@@ -12604,11 +12635,12 @@ h6 {
   align-items: center;
 }
 .journal .pagination-journal a {
+  font-family: 'Akkurat-Mono';
   position: relative;
   display: block;
   padding: .5rem .75rem;
   color: #253825;
-  background-color: #FFFFFF;
+  background-color: #F7F4F2;
   border: none;
   font-size: 16px;
   line-height: 20px;
@@ -12639,6 +12671,16 @@ h6 {
   padding: .5rem .75rem;
   color: #253825;
   text-decoration: underline;
+  font-family: 'Akkurat-Mono';
+  position: relative;
+  display: block;
+  padding: .5rem .75rem;
+  background-color: #F7F4F2;
+  border: none;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0;
+  outline: none;
 }
 
 .newsletter {
@@ -13209,6 +13251,7 @@ h6 {
 }
 .single .single-content img {
   max-width: 100%;
+  width: 100%;
   height: auto;
   margin-bottom: 24px;
 }
@@ -14310,7 +14353,7 @@ h6 {
   border: none;
   border-bottom: 1px solid #E05555;
   border-top: 1px solid #E05555;
-  padding: 40px 0;
+  padding: 26px 0;
   margin-top: 45px;
 }
 @media screen and (max-width: 991px) {
