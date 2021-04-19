@@ -66,10 +66,6 @@
 				line-height: 42px;
 				padding-top: 40px;
 			}
-			@media screen and (max-width: 767px) {
-				font-size: 30px;
-				line-height: 38px;
-			}
 		}
 
 		.subtitle {
@@ -171,7 +167,7 @@
 			@media screen and (max-width: 767px) {
 				padding-top: 40px;
 				font-size: 13px;
-				line-height: 20px;
+				line-height: 1;
 			}
 		}
 	}

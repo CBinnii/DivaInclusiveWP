@@ -31,6 +31,10 @@
 		}
 	}
 
+	.category-name {
+		word-break: break-all;
+	}
+
 	.posts-journal {
 		.seach-none {
 			font-size: 70px;
@@ -101,8 +105,7 @@
 				}
 
 				@media screen and (max-width: 991px) {
-					padding: 15px 0;
-					padding-bottom: 30px;
+					padding: 25px 0;
 				}
 			}
 
@@ -135,15 +138,10 @@
 				font-size: 25px;
 				line-height: 32px;
 			}
-			
-			@media screen and (max-width: 1200px) {
-				font-size: 20px;
-				line-height: 29px;
-			}
 
 			@media screen and (max-width: 991px) {
-				font-size: 25px;
-				line-height: 32px;
+				font-size: 35px;
+				line-height: 42px;
 			}
 		}
 
@@ -156,7 +154,7 @@
 			}
 			@media screen and (max-width: 991px) {
 				padding: 0 15px;
-				min-height: 300px;
+				min-height: 370px;
 				height: auto !important;
 			}
 		}
@@ -190,6 +188,11 @@
 
 			@media screen and (max-width: 991px) {
 				font-size: 13px;
+
+				svg {
+					width: 12px;
+					height: auto;
+				}
 			}
 
 			span {
@@ -223,6 +226,10 @@
 			line-height: 20px;
 			letter-spacing: 0;
 			outline: none;
+
+			@media screen and (max-width: 991px) {
+				font-size: 13px;
+			}
 		}
 	}
 }

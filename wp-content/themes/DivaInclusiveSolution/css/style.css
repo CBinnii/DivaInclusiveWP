@@ -11306,7 +11306,7 @@ h6 {
   font-size: 16px;
   line-height: 20px;
   letter-spacing: 3.2px;
-  background: url('../images/search-solid.svg?1612055118') left 10px center no-repeat;
+  background: url('../images/search-solid.svg?1618488175') left 10px center no-repeat;
   background-size: 20px;
 }
 .searchform:focus {
@@ -11316,7 +11316,7 @@ h6 {
   .searchform {
     height: 3vw;
     font-size: 1.3vw;
-    background: url('../images/search-solid.svg?1612055118') left 0.5vw center no-repeat;
+    background: url('../images/search-solid.svg?1618488175') left 0.5vw center no-repeat;
     background-size: 1.5vw;
     padding-left: 2.5vw;
   }
@@ -11350,8 +11350,6 @@ h6 {
 .header .header-brand a {
   color: #E05555;
   text-decoration: none;
-  font-family: "Monarch";
-  font-size: 55px;
   line-height: 0;
 }
 @media screen and (min-width: 2000px) {
@@ -11361,11 +11359,26 @@ h6 {
     padding: 1vw 0;
   }
 }
+@media screen and (max-width: 991px) {
+  .header .header-brand a {
+    display: flex;
+  }
+  .header .header-brand a svg {
+    width: 11px;
+    height: auto;
+  }
+}
 .header .header-brand.Escuro a {
   color: #253825;
 }
 .header .header-menu input {
   display: none;
+}
+@media screen and (max-width: 991px) {
+  .header .header-menu {
+    display: flex;
+    align-items: center;
+  }
 }
 .header .header-menu .menuOpen {
   display: block;
@@ -11526,16 +11539,22 @@ h6 {
     line-height: 4.3vw;
   }
 }
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1500px) {
   .header .header-menu .menu ul li a {
     font-size: 60px;
-    line-height: 1;
+    line-height: 70px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .header .header-menu .menu ul li a {
+    font-size: 45px;
+    line-height: 55px;
   }
 }
 @media screen and (max-width: 991px) {
   .header .header-menu .menu ul li a {
     font-size: 35px;
-    line-height: 1;
+    line-height: 42px;
   }
 }
 .header .header-menu.Escuro label {
@@ -11600,7 +11619,7 @@ h6 {
   font-size: 16px;
   line-height: 20px;
   letter-spacing: 3.2px;
-  background: url('../images/search-solid.png?1615743896') left center no-repeat;
+  background: url('../images/search-solid.png?1618488175') left center no-repeat;
   background-size: 20px;
   border-radius: 0;
 }
@@ -11627,7 +11646,7 @@ h6 {
   .menu-journal .busca input {
     height: 3vw;
     font-size: 1vw;
-    background: url('../images/search-solid.svg?1612055118') left center no-repeat;
+    background: url('../images/search-solid.svg?1618488175') left center no-repeat;
     background-size: 1.5vw;
     padding-left: 2.5vw;
   }
@@ -11674,7 +11693,7 @@ h6 {
 }
 .menu-journal .menu-dropdown .dropdown-toggle:after {
   border: none;
-  background-image: url('../images/down.svg?1615744962');
+  background-image: url('../images/down.svg?1618488175');
   background-size: contain;
   background-repeat: no-repeat;
   width: 20px;
@@ -11689,7 +11708,7 @@ h6 {
     padding: 0;
   }
   .menu-journal .menu-dropdown .dropdown-toggle:after {
-    content: url('../images/down.svg?1615744962');
+    content: url('../images/down.svg?1618488175');
     border: none;
     position: absolute;
     width: 100%;
@@ -12066,13 +12085,7 @@ h6 {
   .slider-journal .swiper-container .swiper-slide .title {
     font-size: 35px;
     line-height: 42px;
-  }
-}
-@media screen and (max-width: 767px) {
-  .slider-journal .swiper-container .swiper-slide .title {
     padding-top: 30px;
-    font-size: 30px;
-    line-height: 38px;
   }
 }
 .slider-journal .swiper-container .swiper-slide .left {
@@ -12092,7 +12105,7 @@ h6 {
   .slider-journal .swiper-container .swiper-slide .left {
     min-height: 500px;
     display: block;
-    padding: 50px 25px;
+    padding: 50px;
   }
 }
 @media screen and (max-width: 991px) {
@@ -12144,7 +12157,7 @@ h6 {
 @media screen and (max-width: 991px) {
   .slider-journal .swiper-container .swiper-slide .left img {
     max-width: 100%;
-    width: 60%;
+    width: 75%;
     display: block;
     margin: 45px auto;
     margin-bottom: 50px;
@@ -12214,28 +12227,28 @@ h6 {
   text-decoration: underline;
 }
 .slider-journal .swiper-container .swiper-button-next {
-  background-image: url('../images/next.png?1612055118');
+  background-image: url('../images/next.png?1618488175');
   background-repeat: no-repeat;
   background-position: right center;
   right: 38px;
 }
 @media screen and (max-width: 991px) {
   .slider-journal .swiper-container .swiper-button-next {
-    right: 15px;
+    right: 25px;
   }
 }
 .slider-journal .swiper-container .swiper-button-next:after {
   content: "";
 }
 .slider-journal .swiper-container .swiper-button-prev {
-  background-image: url('../images/prev.png?1612055118');
+  background-image: url('../images/prev.png?1618488175');
   background-repeat: no-repeat;
   background-position: left center;
   left: 38px;
 }
 @media screen and (max-width: 991px) {
   .slider-journal .swiper-container .swiper-button-prev {
-    left: 15px;
+    left: 25px;
   }
 }
 .slider-journal .swiper-container .swiper-button-prev:after {
@@ -12248,7 +12261,6 @@ h6 {
   .slider-journal .swiper-container .pagination-journal {
     width: 100%;
     bottom: 25px;
-    display: none;
   }
 }
 
@@ -12303,7 +12315,7 @@ h6 {
 @media screen and (max-width: 991px) {
   .home .home-edicao img {
     max-width: 300px;
-    padding-top: 50px 0;
+    padding: 50px 0;
   }
 }
 .home .home-edicao h1 {
@@ -12336,8 +12348,8 @@ h6 {
   .home .home-edicao h1 {
     font-size: 35px;
     line-height: 42px;
-    padding-top: 25px;
-    padding-bottom: 35px;
+    padding-top: 35px;
+    padding-bottom: 25px;
   }
 }
 @media screen and (max-width: 991px) {
@@ -12367,6 +12379,14 @@ h6 {
     line-height: 20px;
   }
 }
+@media screen and (max-width: 767px) {
+  .home .home-edicao h4 {
+    padding-top: 50px;
+  }
+  .home .home-edicao h4 br {
+    display: none;
+  }
+}
 .home .home-edicao p {
   font-family: 'Akkurat-Mono';
   font-size: 21px;
@@ -12393,7 +12413,7 @@ h6 {
 }
 
 .home-manifesto {
-  background-image: url('../images/manifesto.jpg?1612055118');
+  background-image: url('../images/manifesto.jpg?1618488175');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -12533,6 +12553,9 @@ h6 {
     width: 70vw;
   }
 }
+.journal .category-name {
+  word-break: break-all;
+}
 .journal .posts-journal .seach-none {
   font-size: 70px;
   line-height: 89px;
@@ -12599,8 +12622,7 @@ h6 {
 }
 @media screen and (max-width: 991px) {
   .journal .posts-journal p.categoria {
-    padding: 15px 0;
-    padding-bottom: 30px;
+    padding: 25px 0;
   }
 }
 @media screen and (min-width: 2000px) {
@@ -12637,16 +12659,10 @@ h6 {
     line-height: 32px;
   }
 }
-@media screen and (max-width: 1200px) {
-  .journal .posts-journal .title {
-    font-size: 20px;
-    line-height: 29px;
-  }
-}
 @media screen and (max-width: 991px) {
   .journal .posts-journal .title {
-    font-size: 25px;
-    line-height: 32px;
+    font-size: 35px;
+    line-height: 42px;
   }
 }
 @media screen and (max-width: 1400px) {
@@ -12662,7 +12678,7 @@ h6 {
 @media screen and (max-width: 991px) {
   .journal .posts-journal .journal-text {
     padding: 0 15px;
-    min-height: 300px;
+    min-height: 370px;
     height: auto !important;
   }
 }
@@ -12696,6 +12712,10 @@ h6 {
   .journal .pagination-journal a {
     font-size: 13px;
   }
+  .journal .pagination-journal a svg {
+    width: 12px;
+    height: auto;
+  }
 }
 .journal .pagination-journal a span {
   margin: 0 40px;
@@ -12726,6 +12746,11 @@ h6 {
   line-height: 20px;
   letter-spacing: 0;
   outline: none;
+}
+@media screen and (max-width: 991px) {
+  .journal .pagination-journal .current {
+    font-size: 13px;
+  }
 }
 
 .newsletter {
@@ -12802,12 +12827,6 @@ h6 {
     font-size: 35px;
     line-height: 42px;
     padding-top: 40px;
-  }
-}
-@media screen and (max-width: 767px) {
-  .newsletter .left .title {
-    font-size: 30px;
-    line-height: 38px;
   }
 }
 .newsletter .left .subtitle {
@@ -12912,7 +12931,7 @@ h6 {
   .newsletter .left input[type=button], .newsletter .left input[type=submit], .newsletter .left input[type=reset] {
     padding-top: 40px;
     font-size: 13px;
-    line-height: 20px;
+    line-height: 1;
   }
 }
 .newsletter .right {
@@ -13245,10 +13264,10 @@ h6 {
 }
 @media screen and (max-width: 991px) {
   .single .header-post .title {
-    font-size: 30px;
-    line-height: 40px;
+    font-size: 35px;
+    line-height: 42px;
     padding-top: 25px;
-    padding-bottom: 20px;
+    padding-bottom: 45px;
   }
 }
 .single .header-post img {
@@ -13935,11 +13954,14 @@ h6 {
 }
 .sobre .sobre-content svg {
   margin-top: 50px;
-  margin-bottom: 15px;
+  margin-bottom: 50px;
 }
 @media screen and (max-width: 767px) {
   .sobre .sobre-content svg {
     margin: 0;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 25px;
   }
 }
 .sobre .sobre-content p {
@@ -14339,11 +14361,16 @@ h6 {
 }
 @media screen and (max-width: 991px) {
   .contato .form-email .label-width {
-    width: 90px;
+    width: 75px;
   }
 }
 .contato .form-email .input-width {
   width: calc(100% - 130px);
+}
+@media screen and (max-width: 991px) {
+  .contato .form-email .input-width {
+    width: calc(100% - 75px);
+  }
 }
 @media screen and (max-width: 991px) {
   .contato .form-email .enviar-arquivo {
@@ -14452,7 +14479,7 @@ h6 {
   border: none;
   outline: none;
   width: 450px;
-  background: url('../images/enviar.svg?1614567484') #E05555 no-repeat right 30px center;
+  background: url('../images/enviar.svg?1618488175') #E05555 no-repeat right 30px center;
   font-family: 'Akkurat-Mono';
   font-size: 24px;
   line-height: 30px;

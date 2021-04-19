@@ -33,14 +33,21 @@
 		a {
 			color: $rosa-escuro;
 			text-decoration: none;
-			font-family: "Monarch";
-			font-size: 55px;
 			line-height: 0;
 
 			@media screen and (min-width: 2000px) {
 				font-size: 1vw;
 				line-height: 1.5vw;
 				padding: 1vw 0;
+			}
+
+			@media screen and (max-width: 991px) {
+				display: flex;
+				
+				svg {
+					width: 11px;
+					height: auto;
+				}
 			}
 		}
 
@@ -54,6 +61,11 @@
 	.header-menu {
 		input {
 			display: none;
+		}
+
+		@media screen and (max-width: 991px) { 
+			display: flex;
+			align-items: center;
 		}
 
 		.menuOpen {
@@ -210,14 +222,19 @@
 							line-height: 4.3vw;
 						}
 
-						@media screen and (max-width: 1400px) {
+						@media screen and (max-width: 1500px) {
 							font-size: 60px;
-							line-height: 1;
+							line-height: 70px;
+						}
+
+						@media screen and (max-width: 1200px) {
+							font-size: 45px;
+							line-height: 55px;
 						}
 
 						@media screen and (max-width: 991px) {
 							font-size: 35px;
-							line-height: 1;
+							line-height: 42px;
 						}
 					}
 				}

@@ -49,11 +49,13 @@
 
 		svg {
 			margin-top: 50px;
-			margin-bottom: 15px;
+			margin-bottom: 50px;
 			
 			@media screen and (max-width: 767px) {
-				// width: 50%;
 				margin: 0;
+				max-width: 100%;
+				height: auto;
+				margin-bottom: 25px;
 			}
 		}
 
