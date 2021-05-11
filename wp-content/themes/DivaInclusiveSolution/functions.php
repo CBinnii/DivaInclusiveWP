@@ -29,15 +29,23 @@ if ( function_exists('register_sidebar') ) {
 	);
 }
 
-// if( function_exists('acf_add_options_page') ) {
-
-// 	acf_add_options_page();
-// 	acf_add_options_sub_page('VÅRE ADRESSER');
-// }
-
 if( function_exists('acf_add_options_page') ) {
 
 	acf_add_options_page();
 	acf_add_options_sub_page('Footer Links');
 	
 }
+
+function remove_menus(){
+	remove_menu_page( 'upload.php' ); //Media - imagens, vídeos, docs, etc...
+	// remove_menu_page( 'themes.php' ); //Appearance - aparência (recomendo!)
+	remove_menu_page( 'plugins.php' ); //Plugins (recomendo!)
+	remove_menu_page( 'tools.php' ); //Tools - ferramentas (recomendo!)
+	remove_menu_page( 'edit-comments.php' ); //Comments - comentários
+	remove_menu_page( 'edit.php?post_type=acf-field-group' ); //Advaced Custom Field 
+	remove_menu_page( 'admin.php?page=wpcf7' ); //remove contact-form 7 do menu do wp-admin
+	remove_menu_page( 'theme-editor.php' ); // Editor de temas
+	remove_menu_page( 'customize.php?return=%2Fwp-admin%2Fwidgets.php' ); // Editor de temas
+	remove_menu_page(  'update-core.php' ); // Editor de temas
+}
+add_action( 'admin_menu', 'remove_menus' );

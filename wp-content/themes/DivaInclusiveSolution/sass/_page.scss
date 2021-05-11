@@ -10,6 +10,8 @@
 	}
 
 	.content-page {
+		color: $rosa-escuro !important;
+
 		p {
 			font-size: 21px;
 			font-family: 'Akkurat-Mono';
@@ -146,13 +148,16 @@
 
 		ul {
 			padding-bottom: 25px;
+			padding-left: 8%;
 
 			li {
-				font-family: 'Akkurat';
 				font-size: 21px;
-				line-height: 30px;
-				letter-spacing: 0.32px;
-				color: $verde;
+				font-family: 'Akkurat-Mono';
+				color: $rosa-escuro;
+				line-height: 35px;
+				letter-spacing: 0.53px;
+				list-style: disc;
+				padding-bottom: 10px;
 
 				@media screen and (min-width: 2000px) {
 					font-size: 1.5vw;
@@ -172,13 +177,16 @@
 
 		ol {
 			padding-bottom: 25px;
+			padding-left: 8%;
 
 			li {
-				font-family: 'Akkurat';
 				font-size: 21px;
-				line-height: 30px;
-				letter-spacing: 0.32px;
-				color: $verde;
+				font-family: 'Akkurat-Mono';
+				color: $rosa-escuro;
+				line-height: 35px;
+				letter-spacing: 0.53px;
+				list-style: decimal;
+				padding-bottom: 10px;
 
 				@media screen and (min-width: 2000px) {
 					font-size: 1.5vw;

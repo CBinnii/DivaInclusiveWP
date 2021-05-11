@@ -2,6 +2,10 @@
 	color: $rosa-escuro;
 	padding-bottom: 150px;
 
+	&.servicos {
+		padding-bottom: 50px;
+	}
+
 	@media screen and (max-width: 991px) {
 		padding: 25px;
 	}
@@ -39,7 +43,9 @@
 			max-width: 100%;
 			height: auto;
 			width: 100%;
-			margin: 0 auto;
+			margin: 0px auto;
+			padding-top: 56px;
+			padding-bottom: 76px;
 
 			@media screen and (max-width: 991px) {
 				padding-top: 30px;
@@ -55,7 +61,7 @@
 				margin: 0;
 				max-width: 100%;
 				height: auto;
-				margin-bottom: 25px;
+				margin-bottom: 50px;
 			}
 		}
 
@@ -278,7 +284,7 @@
 		}
 
 		@media screen and (max-width: 991px) {
-			margin: 50px auto !important;
+			margin: 0px auto !important;
 		}
 	}
 

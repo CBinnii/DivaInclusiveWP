@@ -11858,6 +11858,11 @@ h6 {
     height: auto;
   }
 }
+@media screen and (max-width: 767px) {
+  .slider-home .swiper-container .swiper-slide.bg-mobile-flex {
+    display: flex;
+  }
+}
 .slider-home .swiper-container .swiper-slide .overlay-slider {
   position: absolute;
   top: 38px;
@@ -11878,6 +11883,16 @@ h6 {
     flex-wrap: wrap;
     justify-content: center;
   }
+  .slider-home .swiper-container .swiper-slide .overlay-slider.bg-mobile {
+    position: absolute;
+    top: 38px;
+    width: 100%;
+    height: calc(100% - 50px - 15px);
+    padding: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 .slider-home .swiper-container .swiper-slide img {
   height: auto;
@@ -11888,6 +11903,17 @@ h6 {
     margin: 0 auto;
     padding: 0 40px;
     padding-bottom: 30px;
+  }
+}
+.slider-home .swiper-container .swiper-slide img.only-mobile-bg {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .slider-home .swiper-container .swiper-slide img.only-mobile-bg {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    padding: 0;
   }
 }
 .slider-home .swiper-container .swiper-slide .title {
@@ -12206,7 +12232,7 @@ h6 {
   height: auto;
   text-align: center;
   line-height: 20px;
-  font-size: 12px;
+  font-size: 16px;
   color: #E05555;
   opacity: 1;
   background-color: transparent;
@@ -12529,6 +12555,10 @@ h6 {
 }
 .journal .header-text {
   padding: 85px 0;
+}
+.journal .header-text a {
+  text-decoration: none;
+  outline: none;
 }
 @media screen and (min-width: 2000px) {
   .journal .header-text {
@@ -13276,6 +13306,7 @@ h6 {
 }
 .single .single-content {
   font-family: 'Akkurat';
+  color: #E05555 !important;
 }
 .single .single-content .title {
   font-family: 'Monarch';
@@ -13327,6 +13358,11 @@ h6 {
     padding-bottom: 25px;
   }
 }
+.single .single-content a {
+  color: #253825;
+  text-decoration: underline;
+  font-weight: bold;
+}
 .single .single-content img {
   max-width: 100%;
   width: 100%;
@@ -13340,6 +13376,10 @@ h6 {
 }
 .single .single-content figure {
   margin: 0;
+  padding: 0;
+}
+.single .single-content h1, .single .single-content h2, .single .single-content h3, .single .single-content h4, .single .single-content h5, .single .single-content h6, .single .single-content figcaption, .single .single-content legend {
+  color: #253825;
 }
 .single .single-content h1 {
   font-size: 35px;
@@ -13457,6 +13497,51 @@ h6 {
     padding-bottom: 25px;
   }
 }
+.single .single-content blockquote.wp-block-quote {
+  border-left: 10px solid #253825;
+  margin-bottom: 45px;
+  padding: 20px 10px;
+  quotes: "“" "”" "‘" "’";
+  line-height: 1.5;
+}
+.single .single-content blockquote.wp-block-quote:before {
+  color: #253825;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+.single .single-content blockquote.wp-block-quote p {
+  display: inline;
+  font-size: 21px;
+  font-family: 'Akkurat-Mono';
+  line-height: 35px;
+  letter-spacing: 0.53px;
+}
+@media screen and (max-width: 991px) {
+  .single .single-content blockquote.wp-block-quote p {
+    font-size: 18px;
+  }
+}
+.single .single-content figure.wp-block-pullquote > blockquote {
+  border-top: 4px solid #253825;
+  border-bottom: 4px solid #253825;
+  margin-bottom: 45px;
+  padding: 45px 30px;
+}
+.single .single-content figure.wp-block-pullquote > blockquote p {
+  display: inline;
+  font-size: 30px !important;
+  font-family: 'Akkurat-Mono';
+  line-height: 42px !important;
+  letter-spacing: 0.53px;
+}
+@media screen and (max-width: 991px) {
+  .single .single-content figure.wp-block-pullquote > blockquote p {
+    font-size: 18px;
+  }
+}
 .single .single-content legend, .single .single-content figcaption {
   font-family: 'Akkurat';
   font-size: 14px;
@@ -13479,6 +13564,7 @@ h6 {
 }
 .single .single-content ul {
   padding-bottom: 20px;
+  padding-left: 8%;
 }
 .single .single-content ul li {
   font-family: 'Akkurat';
@@ -13486,6 +13572,7 @@ h6 {
   line-height: 30px;
   letter-spacing: 0.32px;
   color: #253825;
+  list-style: disc;
 }
 @media screen and (min-width: 2000px) {
   .single .single-content ul li {
@@ -13500,6 +13587,35 @@ h6 {
 }
 @media screen and (max-width: 991px) {
   .single .single-content ul li {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+.single .single-content ol {
+  padding-bottom: 25px;
+  padding-left: 8%;
+}
+.single .single-content ol li {
+  font-family: 'Akkurat';
+  font-size: 21px;
+  line-height: 30px;
+  letter-spacing: 0.32px;
+  color: #253825;
+  list-style: decimal;
+}
+@media screen and (min-width: 2000px) {
+  .single .single-content ol li {
+    font-size: 1.5vw;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .single .single-content ol li {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .single .single-content ol li {
     font-size: 14px;
     line-height: 20px;
   }
@@ -13595,6 +13711,9 @@ h6 {
   .page .container {
     padding: 0;
   }
+}
+.page .content-page {
+  color: #E05555 !important;
 }
 .page .content-page p {
   font-size: 21px;
@@ -13739,13 +13858,16 @@ h6 {
 }
 .page .content-page ul {
   padding-bottom: 25px;
+  padding-left: 8%;
 }
 .page .content-page ul li {
-  font-family: 'Akkurat';
   font-size: 21px;
-  line-height: 30px;
-  letter-spacing: 0.32px;
-  color: #253825;
+  font-family: 'Akkurat-Mono';
+  color: #E05555;
+  line-height: 35px;
+  letter-spacing: 0.53px;
+  list-style: disc;
+  padding-bottom: 10px;
 }
 @media screen and (min-width: 2000px) {
   .page .content-page ul li {
@@ -13766,13 +13888,16 @@ h6 {
 }
 .page .content-page ol {
   padding-bottom: 25px;
+  padding-left: 8%;
 }
 .page .content-page ol li {
-  font-family: 'Akkurat';
   font-size: 21px;
-  line-height: 30px;
-  letter-spacing: 0.32px;
-  color: #253825;
+  font-family: 'Akkurat-Mono';
+  color: #E05555;
+  line-height: 35px;
+  letter-spacing: 0.53px;
+  list-style: decimal;
+  padding-bottom: 10px;
 }
 @media screen and (min-width: 2000px) {
   .page .content-page ol li {
@@ -13907,6 +14032,9 @@ h6 {
   color: #E05555;
   padding-bottom: 150px;
 }
+.sobre.servicos {
+  padding-bottom: 50px;
+}
 @media screen and (max-width: 991px) {
   .sobre {
     padding: 25px;
@@ -13944,7 +14072,9 @@ h6 {
   max-width: 100%;
   height: auto;
   width: 100%;
-  margin: 0 auto;
+  margin: 0px auto;
+  padding-top: 56px;
+  padding-bottom: 76px;
 }
 @media screen and (max-width: 991px) {
   .sobre .sobre-content img {
@@ -13961,7 +14091,7 @@ h6 {
     margin: 0;
     max-width: 100%;
     height: auto;
-    margin-bottom: 25px;
+    margin-bottom: 50px;
   }
 }
 .sobre .sobre-content p {
@@ -14193,7 +14323,7 @@ h6 {
 }
 @media screen and (max-width: 991px) {
   .servicos figure {
-    margin: 50px auto !important;
+    margin: 0px auto !important;
   }
 }
 @media screen and (min-width: 1700px) {

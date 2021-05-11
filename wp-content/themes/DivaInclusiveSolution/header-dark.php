@@ -6,7 +6,7 @@
 			content="width=device-width, initial-scale=1, user-scalable=no,maximum-scale=1,minimum-scale=1" />
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<title><?php echo get_the_title(); ?> - DIVA* INCLUSIVE</title>
+		<title><?php $title = str_replace("<br>", "", get_the_title());  echo $title; ?> - DIVA* INCLUSIVE</title>
 		<link rel="icon" type="image/x-icon" href="<?php echo get_stylesheet_directory_uri(); ?>/images/icon.png">
 		<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(); ?>/css/style.css">
 		<?php wp_head(); ?>

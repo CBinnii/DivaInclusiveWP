@@ -69,6 +69,7 @@
 
 	.single-content {
 		font-family: 'Akkurat';
+		color: $rosa-escuro !important;
 		
 		.title {
 			font-family: 'Monarch';
@@ -116,6 +117,12 @@
 			}
 		}
 
+		a {
+			color: $verde;
+			text-decoration: underline;
+			font-weight: bold;
+		}
+
 		img {
 			max-width: 100%;
 			width: 100%;
@@ -129,6 +136,11 @@
 
 		figure {
 			margin: 0;
+			padding: 0;
+		}
+		
+		h1, h2, h3, h4, h5, h6, figcaption, legend,  {
+			color: $verde;
 		}
 
 		h1{
@@ -237,6 +249,57 @@
 			}
 		}
 
+		blockquote.wp-block-quote {
+			// background: $claro;
+			border-left: 10px solid $verde;
+			margin-bottom: 45px;
+			padding: 20px 10px;
+			quotes: "\201C""\201D""\2018""\2019";
+			line-height: 1.5;
+			
+			&:before {
+				color: $verde;
+				content: open-quote;
+				font-size: 4em;
+				line-height: 0.1;
+				margin-right: 0.25em;
+				vertical-align: -0.4em;
+			}
+
+			p {
+				display: inline;
+				font-size: 21px;
+				font-family: 'Akkurat-Mono';
+				line-height: 35px;
+				letter-spacing: 0.53px;
+
+				@media screen and (max-width: 991px) {
+					font-size: 18px;
+				}
+			}
+		}
+
+		figure.wp-block-pullquote {
+			> blockquote {
+				border-top: 4px solid $verde;
+				border-bottom: 4px solid $verde;
+				margin-bottom: 45px;
+				padding: 45px 30px;
+
+				p {
+					display: inline;
+					font-size: 30px !important;
+					font-family: 'Akkurat-Mono';
+					line-height: 42px !important;
+					letter-spacing: 0.53px;
+
+					@media screen and (max-width: 991px) {
+						font-size: 18px;
+					}
+				}
+			}
+		}
+
 		legend, figcaption {
 			font-family: 'Akkurat';
 			font-size: 14px;
@@ -258,6 +321,7 @@
 
 		ul {
 			padding-bottom: 20px;
+			padding-left: 8%;
 
 			li {
 				font-family: 'Akkurat';
@@ -265,6 +329,35 @@
 				line-height: 30px;
 				letter-spacing: 0.32px;
 				color: $verde;
+				list-style: disc;
+
+				@media screen and (min-width: 2000px) {
+					font-size: 1.5vw;
+				}
+
+				@media screen and (max-width: 1400px) {
+					font-size: 18px;
+					line-height: 30px;
+				}
+
+				@media screen and (max-width: 991px) {
+					font-size: 14px;
+					line-height: 20px;
+				}
+			}
+		}
+
+		ol {
+			padding-bottom: 25px;
+			padding-left: 8%;
+
+			li {
+				font-family: 'Akkurat';
+				font-size: 21px;
+				line-height: 30px;
+				letter-spacing: 0.32px;
+				color: $verde;
+				list-style: decimal;
 
 				@media screen and (min-width: 2000px) {
 					font-size: 1.5vw;

@@ -27,7 +27,7 @@
 							<ul>
 								<li>
 									<?php if(get_field('email', 'option')) : ?>
-										<a href="<?php echo the_field('email', 'option'); ?>" target="_blank" title="se conecte">se conecte</a>
+										<a href="mailto:<?php echo the_field('email', 'option'); ?>" target="_blank" title="se conecte">se conecte</a>
 									<?php endif; ?>
 								</li>
 								<li>
@@ -177,7 +177,7 @@
 				var a = swiper.activeIndex;
 				var atual = swiper.slides[a];
 
-				console.log($(atual).hasClass("Escuro"));
+				console.log($(atual).hasClass("header_cor_mobile-Claro"));
 
 				var pagination = swiper.pagination.el;
 				var menu = $(".header-menu");
@@ -203,6 +203,19 @@
 				} else {
 					$(menu).removeClass("Escuro");
 					$(brand).removeClass("Escuro");
+					document.getElementById("Caminho_1").setAttribute("fill", "#E05555")
+					document.getElementById("Caminho_2").setAttribute("fill", "#E05555")
+					document.getElementById("Caminho_3").setAttribute("fill", "#E05555")
+					document.getElementById("Caminho_4").setAttribute("fill", "#E05555")
+					document.getElementById("Caminho_5").setAttribute("fill", "#E05555")
+					document.getElementById("Caminho_6").setAttribute("fill", "#E05555")
+				}
+
+				if ($(atual).hasClass("header_cor_mobile-Claro")) {
+					$(menu).removeClass("Escuro");
+					$(brand).removeClass("Escuro");
+					$(menu).addClass("Claro");
+					$(brand).addClass("Claro");
 					document.getElementById("Caminho_1").setAttribute("fill", "#E05555")
 					document.getElementById("Caminho_2").setAttribute("fill", "#E05555")
 					document.getElementById("Caminho_3").setAttribute("fill", "#E05555")
