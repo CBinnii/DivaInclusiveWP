@@ -14,9 +14,23 @@
 			html { margin-top: 0px !important; }
 			.widget.widget_text { list-style: none; }
 		</style>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-TP4LNWTK8T"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'G-TP4LNWTK8T');
+		</script>
 	</head>
 
 	<body>
+	 <!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/gtag/js?id=G-TP4LNWTK8T"
+	  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	  <!-- End Google Tag Manager (noscript) -->
+  <app-root></app-root>
 		<header class="header pink">
 			<div class="header-brand">
 				<a href="/" title="Home">

@@ -42,7 +42,7 @@ function remove_menus(){
 	remove_menu_page( 'plugins.php' ); //Plugins (recomendo!)
 	remove_menu_page( 'tools.php' ); //Tools - ferramentas (recomendo!)
 	remove_menu_page( 'edit-comments.php' ); //Comments - comentários
-	remove_menu_page( 'edit.php?post_type=acf-field-group' ); //Advaced Custom Field 
+	// remove_menu_page( 'edit.php?post_type=acf-field-group' ); //Advaced Custom Field 
 	remove_menu_page( 'admin.php?page=wpcf7' ); //remove contact-form 7 do menu do wp-admin
 	remove_menu_page( 'theme-editor.php' ); // Editor de temas
 	remove_menu_page( 'customize.php?return=%2Fwp-admin%2Fwidgets.php' ); // Editor de temas

@@ -38,7 +38,7 @@
 				letter-spacing: 0.32px;
 				padding-bottom: 64px;
 
-				@media screen and (min-width: 2000px) {
+				@media screen and (min-width: 3000px) {
 					font-size: 1vw;
 					line-height: 1.5vw;
 				}
@@ -141,7 +141,7 @@
 			font-family: 'Akkurat-Mono';
 			background-color: $claro;
 
-			@media screen and (min-width: 2000px) {
+			@media screen and (min-width: 3000px) {
 				font-size: 1.3vw;
 				line-height: 1.5vw;
 				padding: 1vw 0;
@@ -361,7 +361,7 @@
 				padding-bottom: 12px;
 				border-bottom: 1px solid $rosa-escuro;
 
-				@media screen and (min-width: 2000px) {
+				@media screen and (min-width: 3000px) {
 					font-size: 1.5vw;
 				}
 

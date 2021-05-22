@@ -62,7 +62,7 @@
 					<div class="row single-content">
 						<div class="col-md-3 sidebar">
 							<p class="subtitle">
-								<?php echo date('j \d\e F \d\e Y', strtotime($post->post_date)); ?>
+								<?php echo the_time('j \d\e F \d\e Y', strtotime($post->post_date)); ?>
 							</p>
 							<?php if(!empty($post->post_excerpt)) :?>
 								<h1 class="title"><?php echo $post->post_excerpt; ?></h1>
@@ -70,7 +70,7 @@
 
 						</div>
 						<div class="col-md-9">
-							<p class="subtitle">Por  <?php $post_author = get_post_field( 'post_author', $post->ID ); echo the_author_meta( 'nickname', $post_author ) ?>
+							<p class="subtitle">Por <?php $post_author = get_post_field( 'post_author', $post->ID ); echo the_author_meta( 'nickname', $post_author ) ?>
 							</p>
 							
 							<div class="post-text">
@@ -81,32 +81,32 @@
 								<p class="subtitle">Compartilhe</p>
 
 								<div class="social-midias">
-									<a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo get_the_permalink(); ?>" title="Share Facebook">
+									<a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo get_the_permalink(); ?>" target="_blank" title="Share Facebook">
 										<svg xmlns="http://www.w3.org/2000/svg" width="55.436" height="55.436" viewBox="0 0 55.436 55.436">
 											<path id="iconfinder_Circled_Facebook_svg_5279111" d="M27.612,55.436h0Zm.2,0h0Zm-.28,0h0Zm.37,0h0Zm-.451,0h0Zm.541,0h0Zm.089,0h0Zm-.734,0h0Zm.823,0h0Zm-.91,0h0Zm1,0h0Zm-1.081,0h0Zm-.1,0h0Zm1.272,0h0Zm-1.361,0h0Zm1.45,0h0Zm.089,0h0Zm-1.621,0h0Zm-.078,0h0Zm1.787,0h0Zm.089,0h0Zm-1.989,0h0Zm-.081,0h0Zm2.159,0h0Zm-2.239,0,.038,0H26.55Zm2.327,0h-.03l.038,0h-.008Zm-2.439-.005.041,0h-.01Zm2.528,0h-.01l.041,0-.031,0ZM26.359,55.4l.043,0h-.043Zm2.7,0h-.02l.043,0ZM26.28,55.4l.043,0H26.28Zm2.864,0h-.03l.043,0Zm.089,0-.039,0,.035,0,.041,0Zm-3.024,0,.035,0-.039,0-.036,0,.041,0Zm3.112-.005H29.3l.044,0Zm-3.231,0,.044,0h-.017Zm-.078,0,.044,0-.027,0h-.016Zm3.4,0-.027,0,.044,0h-.016Zm-3.472-.006.04,0-.037,0-.037,0,.034,0Zm3.561,0-.037,0,.04,0,.034,0-.037,0Zm.088-.006h-.013l.042,0-.029,0Zm-3.763,0,.042,0h-.013Zm-.078-.005.041,0-.023,0Zm3.929,0-.023,0,.041,0Zm-4.007-.007.038,0-.029,0h-.008Zm4.1,0-.029,0,.038,0h-.008Zm-4.2-.009.033,0h-.008Zm4.288,0h-.008l.033,0Zm.088-.007h-.016l.034,0Zm-4.456,0,.034,0H25.5l-.018,0ZM25.4,55.34l.029,0-.02,0Zm4.623,0-.02,0,.029,0Zm-4.709-.008h0Zm4.8,0h0Zm.088-.008h-.008l.02,0H30.2Zm-4.977,0,.02,0h-.02Zm-.081-.007h0Zm5.145,0h0Zm-6.9-.219a27.718,27.718,0,1,1,8.662,0V35.73h6.459l1.229-8.012H32.049v-5.2c0-2.192,1.074-4.329,4.517-4.329h3.5V11.369a42.624,42.624,0,0,0-6.2-.541c-6.331,0-10.47,3.837-10.47,10.784v6.107H16.349V35.73h7.038Z" fill="#253825" fill-rule="evenodd"/>
 										</svg>
 									</a>
-									<a href="http://twitter.com/share?text=Compartilhando <?php echo get_the_title(); ?>&url=<?php echo get_the_permalink(); ?>" title="Share Twitter">
+									<a href="http://twitter.com/share?text=Compartilhando <?php echo get_the_title(); ?>&url=<?php echo get_the_permalink(); ?>" target="_blank" title="Share Twitter">
 										<svg xmlns="http://www.w3.org/2000/svg" width="55.436" height="55.436" viewBox="0 0 55.436 55.436">
 											<path id="iconfinder_Circled_Twitter_svg_5279123" d="M27.718,0A27.718,27.718,0,1,1,0,27.718,27.731,27.731,0,0,1,27.718,0ZM22.836,42.46C35.1,42.46,41.808,32.3,41.808,23.488c0-.29,0-.581-.014-.857a13.659,13.659,0,0,0,3.333-3.457,13.532,13.532,0,0,1-3.83,1.051,6.664,6.664,0,0,0,2.932-3.692A13.5,13.5,0,0,1,40,18.151a6.672,6.672,0,0,0-11.533,4.563,6.112,6.112,0,0,0,.18,1.521A18.915,18.915,0,0,1,14.9,17.266a6.664,6.664,0,0,0,2.074,8.891,6.55,6.55,0,0,1-3.015-.83v.083a6.675,6.675,0,0,0,5.351,6.541,6.65,6.65,0,0,1-1.756.235,6.359,6.359,0,0,1-1.258-.125,6.658,6.658,0,0,0,6.223,4.632,13.4,13.4,0,0,1-8.283,2.849,12.135,12.135,0,0,1-1.59-.1A18.578,18.578,0,0,0,22.836,42.46Z" fill="#253825" fill-rule="evenodd"/>
 										</svg>
 									</a>
-									<a href="https://www.linkedin.com/sharing/share-offsite/?url=<?php echo get_the_permalink(); ?>" title="Share LinkedIn">
+									<a href="https://www.linkedin.com/sharing/share-offsite/?url=<?php echo get_the_permalink(); ?>" target="_blank" title="Share LinkedIn">
 										<svg xmlns="http://www.w3.org/2000/svg" width="55.436" height="55.436" viewBox="0 0 55.436 55.436">
 											<path id="iconfinder_Circled_Linkedin_svg_5279114" d="M27.718,0A27.718,27.718,0,1,1,0,27.718,27.731,27.731,0,0,1,27.718,0ZM19.052,43.3V21.649h-7.2V43.3ZM45,43.3V30.882c0-6.649-3.55-9.742-8.284-9.742a7.147,7.147,0,0,0-6.484,3.574V21.649H23.034c.1,2.031,0,21.646,0,21.646h7.194V31.207a4.919,4.919,0,0,1,.237-1.756,3.938,3.938,0,0,1,3.692-2.631c2.6,0,3.645,1.986,3.645,4.894V43.3H45ZM15.5,11.212a3.75,3.75,0,1,0-.1,7.481h.046a3.752,3.752,0,1,0,.049-7.481Z" fill="#253825" fill-rule="evenodd"/>
 										</svg>
 									</a>
-									<a href="fb-messenger://share/?link=<?php echo get_the_permalink(); ?>" title="Share Messenger">
+									<a href="fb-messenger://share/?link=<?php echo get_the_permalink(); ?>" target="_blank" title="Share Messenger">
 										<svg xmlns="http://www.w3.org/2000/svg" width="55.436" height="55.436" viewBox="0 0 55.436 55.436">
 										<path id="iconfinder_Circled_Messenger_svg3_5279115" d="M27.718,0A27.718,27.718,0,1,1,0,27.718,27.731,27.731,0,0,1,27.718,0Zm0,11.347c-9.607,0-17.053,7.037-17.053,16.542a16.183,16.183,0,0,0,5.356,12.236,1.374,1.374,0,0,1,.46.971l.093,3.033a1.367,1.367,0,0,0,1.915,1.208l3.383-1.493a1.361,1.361,0,0,1,.909-.069,18.549,18.549,0,0,0,4.938.655c9.607,0,17.053-7.037,17.053-16.542S37.325,11.347,27.718,11.347ZM17.479,32.726l5.009-7.947a2.56,2.56,0,0,1,3.7-.683l3.984,2.989a1.024,1.024,0,0,0,1.232,0L36.783,23a.809.809,0,0,1,1.173,1.077L32.951,32.02a2.56,2.56,0,0,1-3.7.683l-3.984-2.989a1.024,1.024,0,0,0-1.232,0L18.653,33.8a.809.809,0,0,1-1.173-1.077Z" fill="#253825" fill-rule="evenodd"/>
 										</svg>
 									</a>
-									<a href="http://pinterest.com/pin/create/link/?url=<?php echo get_the_permalink(); ?>" title="Share Pinterest">
+									<a href="http://pinterest.com/pin/create/link/?url=<?php echo get_the_permalink(); ?>" target="_blank" title="Share Pinterest">
 										<svg xmlns="http://www.w3.org/2000/svg" width="55.436" height="55.436" viewBox="0 0 55.436 55.436">
 											<path id="iconfinder_Circled_Pinterest_svg_5279116" d="M27.718,0a27.723,27.723,0,0,0-10.1,53.538,26.622,26.622,0,0,1,.1-7.96c.5-2.163,3.25-13.778,3.25-13.778a10.005,10.005,0,0,1-.829-4.115c0-3.854,2.234-6.731,5.016-6.731,2.365,0,3.507,1.776,3.507,3.9,0,2.378-1.514,5.934-2.3,9.229a4.025,4.025,0,0,0,4.1,5.009c4.927,0,8.714-5.195,8.714-12.693,0-6.636-4.769-11.277-11.578-11.277-7.887,0-12.516,5.915-12.516,12.029a10.78,10.78,0,0,0,2.063,6.325.829.829,0,0,1,.192.8c-.211.876-.678,2.758-.77,3.143-.121.507-.4.615-.927.371-3.462-1.612-5.626-6.673-5.626-10.738,0-8.744,6.353-16.773,18.314-16.773,9.615,0,17.088,6.851,17.088,16.008,0,9.553-6.023,17.241-14.383,17.241-2.809,0-5.449-1.459-6.353-3.183,0,0-1.39,5.292-1.727,6.589A30.981,30.981,0,0,1,19.511,54.2,27.721,27.721,0,1,0,27.718,0Z" transform="translate(0 -0.001)" fill="#253825"/>
 										</svg>
 									</a>
-									<a href="https://api.whatsapp.com/send?text=<?php echo get_the_permalink(); ?>" title="Share Whatsapp">
+									<a href="https://api.whatsapp.com/send?text=<?php echo get_the_permalink(); ?>" target="_blank" title="Share Whatsapp">
 										<svg xmlns="http://www.w3.org/2000/svg" width="55.436" height="55.436" viewBox="0 0 55.436 55.436">
 											<path id="iconfinder_Circled_Whatsapp_svg2_5279121" d="M27.718,0A27.718,27.718,0,1,1,0,27.718,27.731,27.731,0,0,1,27.718,0ZM40.876,14.6A17.576,17.576,0,0,0,13.215,35.8l-2.493,9.1,9.317-2.443a17.567,17.567,0,0,0,8.4,2.139h.007a17.576,17.576,0,0,0,12.432-30ZM28.444,41.631h-.006A14.59,14.59,0,0,1,21,39.6l-.533-.317-5.529,1.45,1.476-5.389-.347-.552a14.608,14.608,0,1,1,12.374,6.843Zm8.013-10.937c-.439-.22-2.6-1.282-3-1.428s-.7-.22-.988.22-1.134,1.428-1.391,1.721-.512.33-.951.11a11.988,11.988,0,0,1-3.531-2.179A13.233,13.233,0,0,1,24.152,26.1c-.256-.439-.027-.677.193-.9.2-.2.439-.513.659-.769a3,3,0,0,0,.439-.732.808.808,0,0,0-.037-.769c-.11-.22-.988-2.38-1.354-3.259-.356-.856-.718-.74-.988-.754s-.549-.015-.842-.015a1.614,1.614,0,0,0-1.171.549,4.923,4.923,0,0,0-1.537,3.662,8.538,8.538,0,0,0,1.793,4.541c.22.293,3.1,4.727,7.5,6.629a25.27,25.27,0,0,0,2.5.925,6.022,6.022,0,0,0,2.766.174c.844-.126,2.6-1.062,2.964-2.087a3.67,3.67,0,0,0,.256-2.088c-.11-.183-.4-.293-.842-.513Z" fill="#253825" fill-rule="evenodd"/>
 										</svg>

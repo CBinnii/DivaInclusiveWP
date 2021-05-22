@@ -7,7 +7,7 @@
 	z-index: 100;
 	font-family: 'Akkurat-Mono';
 
-	@media screen and (min-width: 2000px) {
+	@media screen and (min-width: 3000px) {
 		padding: 1.5vw;
 	}
 
@@ -35,7 +35,7 @@
 			text-decoration: none;
 			line-height: 0;
 
-			@media screen and (min-width: 2000px) {
+			@media screen and (min-width: 3000px) {
 				font-size: 1vw;
 				line-height: 1.5vw;
 				padding: 1vw 0;
@@ -77,7 +77,7 @@
 			text-transform: uppercase;
 			color: $rosa-escuro;
 			
-			@media screen and (min-width: 2000px) {
+			@media screen and (min-width: 3000px) {
 				font-size: 1vw;
 			}
 
@@ -118,7 +118,7 @@
 				line-height: 35px;
 				text-transform: uppercase;
 
-				@media screen and (min-width: 2000px) {
+				@media screen and (min-width: 3000px) {
 					font-size: 1vw;
 					bottom: 1.5vw;
 					left: 1.5vw;
@@ -141,7 +141,7 @@
 				color: $rosa-escuro;
 				font-family: 'Akkurat-Mono';
 			
-				@media screen and (min-width: 2000px) {
+				@media screen and (min-width: 3000px) {
 					font-size: 1vw;
 					right: 1.5vw;
 					top: 1.5vw;
@@ -160,7 +160,7 @@
 					text-transform: uppercase;
 					z-index: 1000;
 					
-					@media screen and (min-width: 2000px) {
+					@media screen and (min-width: 3000px) {
 						font-size: 1vw;
 					}
 
@@ -178,7 +178,7 @@
 				text-decoration: none;
 				z-index: 1000;
 				
-				@media screen and (min-width: 2000px) {
+				@media screen and (min-width: 3000px) {
 					font-size: 1vw;
 
 					svg {
@@ -217,7 +217,7 @@
 						line-height: 121px;
 						letter-spacing: 0px;
 
-						@media screen and (min-width: 2000px) {
+						@media screen and (min-width: 3000px) {
 							font-size: 3.7vw;
 							line-height: 4.3vw;
 						}

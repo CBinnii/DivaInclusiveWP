@@ -14,6 +14,15 @@
 			html { margin-top: 0px !important; }
 			.widget.widget_text { list-style: none; }
 		</style>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-TP4LNWTK8T"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'G-TP4LNWTK8T');
+		</script>
 	</head>
 
 	<body>

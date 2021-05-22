@@ -62,7 +62,7 @@
 					<div class="row adjust-margin-journal">
 						<?php foreach ( $more->posts as $post ): ?>
 							<div class="col-md-4 adjust-padding-journal">
-								<a href="<?php echo get_the_permalink(); ?>" title="<?php echo get_the_title($post->ID); ?>">
+								<a href="<?php echo get_the_permalink(); ?>" title="<?php $title = str_replace("<br>", "", get_the_title($post->ID));  echo $title; ?>">
 
 									<?php if(has_post_thumbnail()){?>
 										<img id="img-<?php echo $cont; ?>" src="<?php echo wp_get_attachment_url(get_post_thumbnail_id(), 'full');?>">

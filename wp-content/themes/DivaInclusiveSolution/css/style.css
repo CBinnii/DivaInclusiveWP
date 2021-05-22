@@ -11065,7 +11065,7 @@ body:selection {
   text-transform: uppercase;
   width: 100%;
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 3000px) {
   .title {
     font-size: 4vw;
     line-height: 1;
@@ -11082,7 +11082,7 @@ body:selection {
   letter-spacing: 3.2px;
   padding: 0;
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 3000px) {
   .subtitle {
     font-size: 1vw;
     line-height: 1.5vw;
@@ -11096,7 +11096,7 @@ body:selection {
   }
 }
 
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 3000px) {
   .container {
     max-width: 80vw;
   }
@@ -11116,7 +11116,7 @@ body:selection {
   line-height: 89px;
   text-align: center;
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 3000px) {
   .header-text .title {
     font-size: 4vw;
     line-height: 4vw;
@@ -11147,7 +11147,7 @@ body:selection {
   text-align: center;
   padding-bottom: 30px;
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 3000px) {
   .header-text .subtitle {
     font-size: 1vw;
     line-height: 1.5vw;
@@ -11171,7 +11171,7 @@ h1 {
   line-height: 42px;
   padding-bottom: 20px;
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 3000px) {
   h1 {
     font-size: 3vw;
     line-height: 3vw;
@@ -11184,7 +11184,7 @@ h2 {
   line-height: 36px;
   padding-bottom: 20px;
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 3000px) {
   h2 {
     font-size: 2.5vw;
     line-height: 2.5vw;
@@ -11197,7 +11197,7 @@ h3 {
   line-height: 32px;
   padding-bottom: 20px;
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 3000px) {
   h3 {
     font-size: 2.2vw;
     line-height: 2.2vw;
@@ -11210,7 +11210,7 @@ h4 {
   line-height: 30px;
   padding-bottom: 20px;
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 3000px) {
   h4 {
     font-size: 2vw;
     line-height: 2vw;
@@ -11223,7 +11223,7 @@ h5 {
   line-height: 28px;
   padding-bottom: 20px;
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 3000px) {
   h5 {
     font-size: 1.8vw;
     line-height: 1.8vw;
@@ -11236,7 +11236,7 @@ h6 {
   line-height: 26px;
   padding-bottom: 20px;
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 3000px) {
   h6 {
     font-size: 1.5vw;
     line-height: 1.5vw;
@@ -11312,7 +11312,7 @@ h6 {
 .searchform:focus {
   outline: none;
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 3000px) {
   .searchform {
     height: 3vw;
     font-size: 1.3vw;
@@ -11331,7 +11331,7 @@ h6 {
   z-index: 100;
   font-family: 'Akkurat-Mono';
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 3000px) {
   .header {
     padding: 1.5vw;
   }
@@ -11352,7 +11352,7 @@ h6 {
   text-decoration: none;
   line-height: 0;
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 3000px) {
   .header .header-brand a {
     font-size: 1vw;
     line-height: 1.5vw;
@@ -11389,7 +11389,7 @@ h6 {
   text-transform: uppercase;
   color: #E05555;
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 3000px) {
   .header .header-menu .menuOpen {
     font-size: 1vw;
   }
@@ -11433,7 +11433,7 @@ h6 {
   line-height: 35px;
   text-transform: uppercase;
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 3000px) {
   .header .header-menu .menu p {
     font-size: 1vw;
     bottom: 1.5vw;
@@ -11457,7 +11457,7 @@ h6 {
   color: #E05555;
   font-family: 'Akkurat-Mono';
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 3000px) {
   .header .header-menu .menu label {
     font-size: 1vw;
     right: 1.5vw;
@@ -11478,7 +11478,7 @@ h6 {
   text-transform: uppercase;
   z-index: 1000;
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 3000px) {
   .header .header-menu .menu label.inside {
     font-size: 1vw;
   }
@@ -11496,7 +11496,7 @@ h6 {
   text-decoration: none;
   z-index: 1000;
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 3000px) {
   .header .header-menu .menu .brand {
     font-size: 1vw;
   }
@@ -11533,7 +11533,7 @@ h6 {
   line-height: 121px;
   letter-spacing: 0px;
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 3000px) {
   .header .header-menu .menu ul li a {
     font-size: 3.7vw;
     line-height: 4.3vw;
@@ -11642,7 +11642,7 @@ h6 {
   /* Firefox 18- */
   color: #253825;
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 3000px) {
   .menu-journal .busca input {
     height: 3vw;
     font-size: 1vw;
@@ -11676,7 +11676,7 @@ h6 {
 .menu-journal .menu-dropdown .dropdown-button:focus {
   outline: none;
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 3000px) {
   .menu-journal .menu-dropdown .dropdown-button {
     height: 3vw;
     font-size: 1vw;
@@ -11723,7 +11723,7 @@ h6 {
     top: inherit;
   }
 }
-@media screen and (min-width: 992px) and (min-width: 2000px) {
+@media screen and (min-width: 992px) and (min-width: 3000px) {
   .menu-journal .menu-dropdown .dropdown-toggle:after {
     bottom: -70%;
   }
@@ -11758,7 +11758,7 @@ h6 {
 .menu-journal .menu-dropdown .dropdown-menu li a:last-of-type:hover {
   border-bottom: 1px solid #FFFFFF;
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 3000px) {
   .menu-journal .menu-dropdown .dropdown-menu li a {
     font-size: 1vw;
     padding: 1.5vw 1vw 0.8vw 1vw;
@@ -11784,7 +11784,7 @@ h6 {
   justify-content: center;
   cursor: pointer;
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 3000px) {
   .menu-journal .menu-dropdown .dropdown-menu li.last {
     height: 3vw;
   }
@@ -11814,7 +11814,7 @@ h6 {
   line-height: 20px;
   letter-spacing: 3.2px;
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 3000px) {
   .menu-journal .envie a {
     font-size: 1vw;
     padding: 1vw 0;
@@ -11852,7 +11852,14 @@ h6 {
   position: relative;
   height: auto;
 }
-@media screen and (min-width: 2000px) {
+.slider-home .swiper-container .swiper-slide .link_slider {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+@media screen and (min-width: 3000px) {
   .slider-home .swiper-container .swiper-slide img {
     width: 100%;
     height: auto;
@@ -11897,6 +11904,7 @@ h6 {
 .slider-home .swiper-container .swiper-slide img {
   height: auto;
   max-width: 100%;
+  width: 100%;
 }
 @media screen and (max-width: 767px) {
   .slider-home .swiper-container .swiper-slide img {
@@ -11923,7 +11931,7 @@ h6 {
   padding: 0;
   padding-top: 3%;
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 3000px) {
   .slider-home .swiper-container .swiper-slide .title {
     font-size: 4vw;
     line-height: 4vw;
@@ -11974,7 +11982,7 @@ h6 {
   color: #E05555;
   padding: 0 !important;
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 3000px) {
   .slider-home .swiper-container .swiper-slide .subtitle {
     font-size: 1.2vw;
     line-height: 1.5;
@@ -12018,7 +12026,7 @@ h6 {
   padding-right: 10px;
   line-height: 1;
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 3000px) {
   .slider-home .swiper-container .swiper-pagination-bullet {
     font-size: 1.2vw;
   }
@@ -12036,7 +12044,7 @@ h6 {
 .swiper-container-horizontal > .swiper-pagination-bullets {
   bottom: 38px;
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 3000px) {
   .swiper-container-horizontal > .swiper-pagination-bullets {
     bottom: 4vh;
   }
@@ -12095,7 +12103,7 @@ h6 {
   line-height: 66px;
   padding: 0;
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 3000px) {
   .slider-journal .swiper-container .swiper-slide .title {
     font-size: 3vw;
     line-height: 3vw;
@@ -12122,7 +12130,7 @@ h6 {
   justify-content: center;
   align-items: center;
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 3000px) {
   .slider-journal .swiper-container .swiper-slide .left {
     padding: 2vw 4vw;
   }
@@ -12146,7 +12154,7 @@ h6 {
   left: 0;
   top: 38px;
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 3000px) {
   .slider-journal .swiper-container .swiper-slide .left .subtitle {
     font-size: 1.5vw;
     line-height: 1.5;
@@ -12166,7 +12174,7 @@ h6 {
   padding: 0 14%;
   padding-top: 50px;
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 3000px) {
   .slider-journal .swiper-container .swiper-slide .left p:not(.subtitle) {
     font-size: 1.5vw;
     line-height: 1.5;
@@ -12203,7 +12211,7 @@ h6 {
 .slider-journal .swiper-container .swiper-slide .left a:hover {
   font-weight: 700;
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 3000px) {
   .slider-journal .swiper-container .swiper-slide .left a {
     font-size: 1vw;
     line-height: 1.5;
@@ -12238,7 +12246,7 @@ h6 {
   background-color: transparent;
   outline: none;
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 3000px) {
   .slider-journal .swiper-container .swiper-pagination-bullet {
     font-size: 1.3vw;
   }
@@ -12306,7 +12314,7 @@ h6 {
     max-width: 960px;
   }
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 3000px) {
   .home .home-edicao .container {
     max-width: 80vw;
   }
@@ -12322,7 +12330,7 @@ h6 {
   padding-top: 10%;
   padding-bottom: 10%;
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 3000px) {
   .home .home-edicao img {
     max-width: 1000px;
   }
@@ -12350,7 +12358,7 @@ h6 {
   padding-top: 135px;
   padding-bottom: 110px;
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 3000px) {
   .home .home-edicao h1 {
     font-size: 5vw;
     line-height: 5vw;
@@ -12392,7 +12400,7 @@ h6 {
   letter-spacing: 3.2px;
   padding: 0;
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 3000px) {
   .home .home-edicao h3, .home .home-edicao h4 {
     font-size: 1.5vw;
     line-height: 1.5;
@@ -12419,7 +12427,7 @@ h6 {
   letter-spacing: 0.51px;
   line-height: 35px;
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 3000px) {
   .home .home-edicao p {
     font-size: 1.5vw;
     line-height: 1.5;
@@ -12479,7 +12487,7 @@ h6 {
   line-height: 119px;
   padding: 70px 0;
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 3000px) {
   .home-manifesto a .title {
     font-size: 7vw;
     line-height: 7vw;
@@ -12523,7 +12531,7 @@ h6 {
   width: 60vw;
   height: auto;
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 3000px) {
   .home-manifesto a svg {
     width: 70vw;
   }
@@ -12560,7 +12568,7 @@ h6 {
   text-decoration: none;
   outline: none;
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 3000px) {
   .journal .header-text {
     padding: 3vw 0;
   }
@@ -12591,7 +12599,7 @@ h6 {
   line-height: 89px;
   text-align: center;
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 3000px) {
   .journal .posts-journal .seach-none {
     font-size: 4vw;
     line-height: 4vw;
@@ -12655,7 +12663,7 @@ h6 {
     padding: 25px 0;
   }
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 3000px) {
   .journal .posts-journal p {
     font-size: 1vw;
     padding: 1.4vw 0 2.8vw;
@@ -12677,7 +12685,7 @@ h6 {
   padding: 0px;
   text-align: center;
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 3000px) {
   .journal .posts-journal .title {
     font-size: 2vw;
     line-height: 2.5vw;
@@ -12716,7 +12724,7 @@ h6 {
   height: 16px;
   padding: 64px 0;
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 3000px) {
   .journal .posts-journal .hr {
     padding: 2.8vw 0;
   }
@@ -12803,7 +12811,7 @@ h6 {
   background-color: #EDC8C3;
   text-align: center;
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 3000px) {
   .newsletter .left {
     padding: 2vw 4vw;
   }
@@ -12820,7 +12828,7 @@ h6 {
   font-size: 16px;
   letter-spacing: 3.2px;
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 3000px) {
   .newsletter .left p:not(.subtitle) {
     font-size: 1vw;
     line-height: 1.5vw;
@@ -12838,7 +12846,7 @@ h6 {
   padding-top: 15%;
   padding-bottom: 0;
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 3000px) {
   .newsletter .left .title {
     font-size: 3vw;
     padding-top: 10%;
@@ -12862,7 +12870,7 @@ h6 {
 .newsletter .left .subtitle {
   font-family: 'Akkurat-Mono';
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 3000px) {
   .newsletter .left .subtitle {
     font-size: 1vw;
     line-height: 1.5;
@@ -12902,7 +12910,7 @@ h6 {
   /* Firefox 18- */
   color: #E05555;
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 3000px) {
   .newsletter .left .newsletter-input {
     font-size: 1.5vw;
     border-bottom: 0.1vw solid #E05555;
@@ -12945,7 +12953,7 @@ h6 {
 .newsletter .left input[type=button]:hover, .newsletter .left input[type=submit]:hover, .newsletter .left input[type=reset]:hover {
   font-weight: 700;
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 3000px) {
   .newsletter .left input[type=button], .newsletter .left input[type=submit], .newsletter .left input[type=reset] {
     font-size: 1vw;
     line-height: 1;
@@ -12980,7 +12988,7 @@ h6 {
 .newsletter .right img {
   max-width: 100%;
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 3000px) {
   .newsletter .right img {
     width: 100%;
   }
@@ -13023,7 +13031,7 @@ h6 {
   padding: 38px;
   padding-top: 60px;
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 3000px) {
   .footer {
     padding: 2vw;
     padding-top: 3vw;
@@ -13049,7 +13057,7 @@ h6 {
   line-height: 0;
   padding: 0;
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 3000px) {
   .footer .left h1 {
     font-size: 4vw;
   }
@@ -13071,7 +13079,7 @@ h6 {
 .footer .right ul {
   padding-bottom: 15px;
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 3000px) {
   .footer .right ul {
     padding-bottom: 2vw;
   }
@@ -13089,7 +13097,7 @@ h6 {
   letter-spacing: 3.2px;
   line-height: 35px;
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 3000px) {
   .footer .right ul li a {
     font-size: 1.5vw;
     line-height: 2.8vw;
@@ -13165,7 +13173,7 @@ h6 {
 .footer .right p:not(.subtitle) a:hover {
   font-weight: 700;
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 3000px) {
   .footer .right p:not(.subtitle) {
     font-size: 1.5vw;
     line-height: 1.5;
@@ -13195,7 +13203,7 @@ h6 {
   line-height: 99px;
   padding-top: 15px;
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 3000px) {
   .reforma .title {
     font-size: 5vw;
     line-height: 5vw;
@@ -13223,7 +13231,7 @@ h6 {
   font-family: 'Akkurat-Mono';
   font-size: 16px;
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 3000px) {
   .reforma .subtitle {
     font-size: 1.5vw;
     line-height: 1.5;
@@ -13254,7 +13262,7 @@ h6 {
   padding: 45px 0;
   color: #253825;
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 3000px) {
   .single .subtitle {
     font-size: 1.5vw;
   }
@@ -13280,7 +13288,7 @@ h6 {
   padding: 20px 15px;
   padding-bottom: 45px;
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 3000px) {
   .single .header-post .title {
     font-size: 1.5vw;
     line-height: 1.5;
@@ -13314,7 +13322,7 @@ h6 {
   line-height: 40px;
   color: #253825;
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 3000px) {
   .single .single-content .title {
     font-size: 1vw;
     line-height: 1.5;
@@ -13340,7 +13348,7 @@ h6 {
   padding-bottom: 45px;
   color: #253825;
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 3000px) {
   .single .single-content p:not(.subtitle) {
     font-size: 1.5vw;
   }
@@ -13386,7 +13394,7 @@ h6 {
   line-height: 42px;
   padding-bottom: 60px;
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 3000px) {
   .single .single-content h1 {
     font-size: 3vw;
     line-height: 3vw;
@@ -13405,7 +13413,7 @@ h6 {
   line-height: 37px;
   padding-bottom: 60px;
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 3000px) {
   .single .single-content h2 {
     font-size: 2.5vw;
     line-height: 2.5vw;
@@ -13424,7 +13432,7 @@ h6 {
   line-height: 32px;
   padding-bottom: 60px;
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 3000px) {
   .single .single-content h3 {
     font-size: 2.2vw;
     line-height: 2.2vw;
@@ -13443,7 +13451,7 @@ h6 {
   line-height: 30px;
   padding-bottom: 60px;
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 3000px) {
   .single .single-content h4 {
     font-size: 2vw;
     line-height: 2vw;
@@ -13462,7 +13470,7 @@ h6 {
   line-height: 28px;
   padding-bottom: 60px;
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 3000px) {
   .single .single-content h5 {
     font-size: 1.8vw;
     line-height: 1.8vw;
@@ -13484,7 +13492,7 @@ h6 {
   letter-spacing: 3.2px;
   padding-bottom: 20px;
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 3000px) {
   .single .single-content h6 {
     font-size: 1.5vw;
     line-height: 1.5vw;
@@ -13522,6 +13530,7 @@ h6 {
 @media screen and (max-width: 991px) {
   .single .single-content blockquote.wp-block-quote p {
     font-size: 18px;
+    line-height: 25px;
   }
 }
 .single .single-content figure.wp-block-pullquote > blockquote {
@@ -13529,6 +13538,9 @@ h6 {
   border-bottom: 4px solid #253825;
   margin-bottom: 45px;
   padding: 45px 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .single .single-content figure.wp-block-pullquote > blockquote p {
   display: inline;
@@ -13539,8 +13551,19 @@ h6 {
 }
 @media screen and (max-width: 991px) {
   .single .single-content figure.wp-block-pullquote > blockquote p {
-    font-size: 18px;
+    font-size: 18px !important;
+    line-height: 25px !important;
   }
+}
+.single .single-content figure.wp-block-pullquote > blockquote p:last-child {
+  padding: 0;
+}
+.single .single-content figure.wp-block-pullquote > blockquote cite {
+  color: #253825;
+  font-size: 21px;
+  font-family: 'Akkurat-Mono';
+  line-height: 35px;
+  letter-spacing: 0.53px;
 }
 .single .single-content legend, .single .single-content figcaption {
   font-family: 'Akkurat';
@@ -13550,7 +13573,7 @@ h6 {
   margin: 0;
   padding-bottom: 20px;
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 3000px) {
   .single .single-content legend, .single .single-content figcaption {
     font-size: 0.7vw;
   }
@@ -13574,7 +13597,7 @@ h6 {
   color: #253825;
   list-style: disc;
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 3000px) {
   .single .single-content ul li {
     font-size: 1.5vw;
   }
@@ -13603,7 +13626,7 @@ h6 {
   color: #253825;
   list-style: decimal;
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 3000px) {
   .single .single-content ol li {
     font-size: 1.5vw;
   }
@@ -13722,7 +13745,7 @@ h6 {
   letter-spacing: 0.53px;
   padding-bottom: 20px;
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 3000px) {
   .page .content-page p {
     font-size: 1.5vw;
   }
@@ -13745,7 +13768,7 @@ h6 {
   line-height: 42px;
   padding-bottom: 60px;
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 3000px) {
   .page .content-page h1 {
     font-size: 3vw;
     line-height: 3vw;
@@ -13764,7 +13787,7 @@ h6 {
   line-height: 37px;
   padding-bottom: 60px;
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 3000px) {
   .page .content-page h2 {
     font-size: 2.5vw;
     line-height: 2.5vw;
@@ -13783,7 +13806,7 @@ h6 {
   line-height: 32px;
   padding-bottom: 60px;
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 3000px) {
   .page .content-page h3 {
     font-size: 2.2vw;
     line-height: 2.2vw;
@@ -13802,7 +13825,7 @@ h6 {
   line-height: 30px;
   padding-bottom: 60px;
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 3000px) {
   .page .content-page h4 {
     font-size: 2vw;
     line-height: 2vw;
@@ -13821,7 +13844,7 @@ h6 {
   line-height: 28px;
   padding-bottom: 60px;
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 3000px) {
   .page .content-page h5 {
     font-size: 1.8vw;
     line-height: 1.8vw;
@@ -13843,7 +13866,7 @@ h6 {
   letter-spacing: 3.2px;
   padding-bottom: 20px;
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 3000px) {
   .page .content-page h6 {
     font-size: 1.5vw;
     line-height: 1.5vw;
@@ -13869,7 +13892,7 @@ h6 {
   list-style: disc;
   padding-bottom: 10px;
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 3000px) {
   .page .content-page ul li {
     font-size: 1.5vw;
   }
@@ -13899,7 +13922,7 @@ h6 {
   list-style: decimal;
   padding-bottom: 10px;
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 3000px) {
   .page .content-page ol li {
     font-size: 1.5vw;
   }
@@ -13942,7 +13965,7 @@ h6 {
   margin: 0;
   padding-bottom: 20px;
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 3000px) {
   .page .content-page legend, .page .content-page figcaption {
     font-size: 0.7vw;
   }
@@ -13969,7 +13992,7 @@ h6 {
   line-height: 35px;
   letter-spacing: 0.53px;
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 3000px) {
   .page .content-page table td, .page .content-page table th {
     font-size: 1.5vw;
   }
@@ -14101,7 +14124,7 @@ h6 {
   padding-bottom: 20px;
   font-family: 'Akkurat-Mono';
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 3000px) {
   .sobre .sobre-content p {
     font-size: 1.3vw;
     line-height: 1.8vw;
@@ -14129,7 +14152,7 @@ h6 {
   line-height: 35px;
   letter-spacing: 0.53px;
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 3000px) {
   .sobre .sobre-content ul li {
     font-size: 1.5vw;
   }
@@ -14155,7 +14178,7 @@ h6 {
   line-height: 35px;
   letter-spacing: 0.53px;
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 3000px) {
   .sobre .sobre-content ol li {
     font-size: 1.5vw;
   }
@@ -14177,7 +14200,7 @@ h6 {
   line-height: 42px;
   padding-bottom: 60px;
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 3000px) {
   .sobre .sobre-content h1 {
     font-size: 3vw;
     line-height: 3vw;
@@ -14196,7 +14219,7 @@ h6 {
   line-height: 37px;
   padding-bottom: 60px;
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 3000px) {
   .sobre .sobre-content h2 {
     font-size: 2.5vw;
     line-height: 2.5vw;
@@ -14215,7 +14238,7 @@ h6 {
   line-height: 32px;
   padding-bottom: 60px;
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 3000px) {
   .sobre .sobre-content h3 {
     font-size: 2.2vw;
     line-height: 2.2vw;
@@ -14234,7 +14257,7 @@ h6 {
   line-height: 30px;
   padding-bottom: 60px;
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 3000px) {
   .sobre .sobre-content h4 {
     font-size: 2vw;
     line-height: 2vw;
@@ -14253,7 +14276,7 @@ h6 {
   line-height: 28px;
   padding-bottom: 60px;
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 3000px) {
   .sobre .sobre-content h5 {
     font-size: 1.8vw;
     line-height: 1.8vw;
@@ -14275,7 +14298,7 @@ h6 {
   letter-spacing: 3.2px;
   padding-bottom: 20px;
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 3000px) {
   .sobre .sobre-content h6 {
     font-size: 1.5vw;
     line-height: 1.5vw;
@@ -14304,7 +14327,7 @@ h6 {
   margin: 0;
   padding-bottom: 20px;
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 3000px) {
   .sobre .sobre-content legend, .sobre .sobre-content figcaption {
     font-size: 0.7vw;
   }
@@ -14370,7 +14393,7 @@ h6 {
   letter-spacing: 0.32px;
   padding-bottom: 64px;
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 3000px) {
   .contato .form-tabs .tab .form-about {
     font-size: 1vw;
     line-height: 1.5vw;
@@ -14460,7 +14483,7 @@ h6 {
   font-family: 'Akkurat-Mono';
   background-color: #F7F4F2;
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 3000px) {
   .contato .form-tabs .tab__label {
     font-size: 1.3vw;
     line-height: 1.5vw;
@@ -14676,7 +14699,7 @@ h6 {
   padding-bottom: 12px;
   border-bottom: 1px solid #E05555;
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 3000px) {
   .contato #list ul li {
     font-size: 1.5vw;
   }

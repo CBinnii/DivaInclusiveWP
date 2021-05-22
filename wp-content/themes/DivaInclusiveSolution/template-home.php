@@ -17,6 +17,7 @@
 						while( have_rows('slider_home') ) : the_row();
 
 							$titulo_do_slider = get_sub_field('titulo_do_slider');
+							$link_slider = get_sub_field('link_slider');
 							$svg_titulo = get_sub_field('svg_titulo');
 							$imagem_mobile = get_sub_field('imagem_mobile');
 							$cor_background = get_sub_field('cor_background');
@@ -59,6 +60,10 @@
 
 									<h6 class="subtitle container"><?php echo get_sub_field('subtitulo') ?></h6>
 								</div>
+
+								<?php if ($link_slider != "" || $link_slider != null ): ?> 
+									<a href="<?php echo get_sub_field('link_slider'); ?>" target="_blank" class="link_slider"></a>
+								<?php endif ?>
 							</div>
 						<?php
 						// End loop.

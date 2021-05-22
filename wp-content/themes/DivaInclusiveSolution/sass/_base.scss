@@ -81,7 +81,7 @@ body {
 	text-transform: uppercase;
 	width: 100%;
 
-	@media screen and (min-width: 2000px) {
+	@media screen and (min-width: 3000px) {
 		font-size: 4vw;
 		line-height: 1;
 		padding-top: 1vw;
@@ -97,7 +97,7 @@ body {
 	letter-spacing: 3.2px;
 	padding: 0;
 
-	@media screen and (min-width: 2000px) {
+	@media screen and (min-width: 3000px) {
 		font-size: 1vw;
 		line-height: 1.5vw;
 		padding: 1vw 0;
@@ -109,7 +109,7 @@ body {
 	}
 }
 
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 3000px) {
 	.container {
 		max-width: 80vw;
 	}
@@ -129,7 +129,7 @@ body {
 		line-height: 89px;
 		text-align: center;
 
-		@media screen and (min-width: 2000px) {
+		@media screen and (min-width: 3000px) {
 			font-size: 4vw;
 			line-height: 4vw;
 		}
@@ -159,7 +159,7 @@ body {
 		text-align: center;
 		padding-bottom: 30px;
 
-		@media screen and (min-width: 2000px) {
+		@media screen and (min-width: 3000px) {
 			font-size: 1vw;
 			line-height: 1.5vw;
 			padding: 1vw 0;
@@ -182,7 +182,7 @@ h1{
 	line-height: 42px;
 	padding-bottom: 20px;
 
-	@media screen and (min-width: 2000px) {
+	@media screen and (min-width: 3000px) {
 		font-size: 3vw;
 		line-height: 3vw;
 		padding-bottom: 2vw;
@@ -193,7 +193,7 @@ h2{
 	line-height: 36px;
 	padding-bottom: 20px;
 
-	@media screen and (min-width: 2000px) {
+	@media screen and (min-width: 3000px) {
 		font-size: 2.5vw;
 		line-height: 2.5vw;
 		padding-bottom: 2vw;
@@ -204,7 +204,7 @@ h3{
 	line-height: 32px;
 	padding-bottom: 20px;
 
-	@media screen and (min-width: 2000px) {
+	@media screen and (min-width: 3000px) {
 		font-size: 2.2vw;
 		line-height: 2.2vw;
 		padding-bottom: 2vw;
@@ -215,7 +215,7 @@ h4{
 	line-height: 30px;
 	padding-bottom: 20px;
 
-	@media screen and (min-width: 2000px) {
+	@media screen and (min-width: 3000px) {
 		font-size: 2vw;
 		line-height: 2vw;
 		padding-bottom: 2vw;
@@ -226,7 +226,7 @@ h5{
 	line-height: 28px;
 	padding-bottom: 20px;
 
-	@media screen and (min-width: 2000px) {
+	@media screen and (min-width: 3000px) {
 		font-size: 1.8vw;
 		line-height: 1.8vw;
 		padding-bottom: 2vw;
@@ -237,7 +237,7 @@ h6{
 	line-height: 26px;
 	padding-bottom: 20px;
 
-	@media screen and (min-width: 2000px) {
+	@media screen and (min-width: 3000px) {
 		font-size: 1.5vw;
 		line-height: 1.5vw;
 		padding-bottom: 2vw;
@@ -306,7 +306,7 @@ h6{
 		outline: none;
 	}
 
-	@media screen and (min-width: 2000px) {
+	@media screen and (min-width: 3000px) {
 		height: 3vw;
 		font-size: 1.3vw;
 		background: image-url('search-solid.svg') left 0.5vw center no-repeat;

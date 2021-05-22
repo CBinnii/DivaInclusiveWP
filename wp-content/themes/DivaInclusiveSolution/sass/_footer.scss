@@ -4,7 +4,7 @@
 	padding: 38px;
 	padding-top: 60px;
 
-	@media screen and (min-width: 2000px) {
+	@media screen and (min-width: 3000px) {
 		padding: 2vw;
 		padding-top: 3vw;
 	}
@@ -30,7 +30,7 @@
 			padding: 0;
 			// margin-bottom: -15px;
 
-			@media screen and (min-width: 2000px) {
+			@media screen and (min-width: 3000px) {
 				font-size: 4vw;
 
 				svg {
@@ -53,7 +53,7 @@
 		ul {
 			padding-bottom: 15px;
 			
-			@media screen and (min-width: 2000px) {
+			@media screen and (min-width: 3000px) {
 				padding-bottom: 2vw;
 			}
 			
@@ -70,7 +70,7 @@
 					letter-spacing: 3.2px;
 					line-height: 35px;
 
-					@media screen and (min-width: 2000px) {
+					@media screen and (min-width: 3000px) {
 						font-size: 1.5vw;
 						line-height: 2.8vw;
 					}
@@ -151,7 +151,7 @@
 				}
 			}
 			
-			@media screen and (min-width: 2000px) {
+			@media screen and (min-width: 3000px) {
 				font-size: 1.5vw;
 				line-height: 1.5;
 			}

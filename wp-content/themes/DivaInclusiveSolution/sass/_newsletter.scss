@@ -16,7 +16,7 @@
 		background-color: $rosa-claro;
 		text-align: center;
 
-		@media screen and (min-width: 2000px) {
+		@media screen and (min-width: 3000px) {
 			padding: 2vw 4vw;
 		}
 
@@ -32,7 +32,7 @@
 			font-size: 16px;
 			letter-spacing: 3.2px;
 
-			@media screen and (min-width: 2000px) {
+			@media screen and (min-width: 3000px) {
 				font-size: 1vw;
 				line-height: 1.5vw;
 			}
@@ -49,7 +49,7 @@
 			padding-top: 15%;
 			padding-bottom: 0;
 
-			@media screen and (min-width: 2000px) {
+			@media screen and (min-width: 3000px) {
 				font-size: 3vw;
 				padding-top: 10%;
 				line-height: 3.5vw;
@@ -71,7 +71,7 @@
 		.subtitle {
 			font-family: 'Akkurat-Mono';
 
-			@media screen and (min-width: 2000px) {
+			@media screen and (min-width: 3000px) {
 				font-size: 1vw;
 				line-height: 1.5;
 				padding: 3vw 0;
@@ -111,7 +111,7 @@
 				color: $rosa-escuro;
 			}
 
-			@media screen and (min-width: 2000px) {
+			@media screen and (min-width: 3000px) {
 				font-size: 1.5vw;
 				border-bottom: 0.1vw solid $rosa-escuro;
 				padding: 0.7vw;
@@ -154,7 +154,7 @@
 				font-weight: 700;
 			}
 
-			@media screen and (min-width: 2000px) {
+			@media screen and (min-width: 3000px) {
 				font-size: 1vw;
 				line-height: 1;
 				padding: 0;
@@ -189,7 +189,7 @@
 		img {
 			max-width: 100%;
 
-			@media screen and (min-width: 2000px) {
+			@media screen and (min-width: 3000px) {
 				width: 100%;
 			}
 		}
