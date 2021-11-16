@@ -140,12 +140,13 @@
 			</div>
 		</footer>
 
+		<?php wp_footer(); ?>
 		<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/jquery.min.js"></script>
 		<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/popper.min.js"></script>
 		<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/bootstrap.min.js"></script>
 		<!-- Swiper JS -->
 		<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/swiper/swiper.js"></script>
-
+		<script src='https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit' async defer></script>
 		<!-- Initialize Swiper -->
 		<script>
 			var swiper = new Swiper('.slider-home > .swiper-container', {

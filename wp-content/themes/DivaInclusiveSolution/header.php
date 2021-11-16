@@ -7,9 +7,9 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<title><?php $title = str_replace("<br>", "", get_the_title());  echo $title; ?> - DIVA* INCLUSIVE</title>
+		<?php wp_head(); ?>
 		<link rel="icon" type="image/x-icon" href="<?php echo get_stylesheet_directory_uri(); ?>/images/icon.png">
 		<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(); ?>/css/style.css">
-		<?php wp_head(); ?>
 		<style type="text/css">
 			html { margin-top: 0px !important; }
 			.widget.widget_text { list-style: none; }
@@ -22,6 +22,18 @@
 			gtag('js', new Date());
 
 			gtag('config', 'G-TP4LNWTK8T');
+		</script>
+		
+		<script src="https://www.google.com/recaptcha/api.js?render=6LcmYYAcAAAAAAGcpekObPqvQYcCEhZVN5c00Wl1"></script>
+		<script>
+			function onClick(e) {
+				e.preventDefault();
+				grecaptcha.ready(function() {
+					grecaptcha.execute('6LcmYYAcAAAAAAGcpekObPqvQYcCEhZVN5c00Wl1', {action: 'submit'}).then(function(token) {
+						console.log(token)
+					});
+				});
+			}
 		</script>
 	</head>
 
